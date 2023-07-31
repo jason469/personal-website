@@ -14,20 +14,19 @@ function Dropdown({itemId, dropdownData, showDropdownId}: dropdownProps) {
 
     useEffect(() => {
         (showDropdownId === itemId) ? setDropdown(true) : setDropdown(false)
-        console.log(showDropdownId)
     }, [showDropdownId]);
 
 
     return (
         <>
             <article
-                className={dropdown ? `${styles.submenu}` : `${styles.submenu} hide`}
+                className={`${dropdown ? styles.submenu : "hide"} `}
             >
                 {dropdownData.map((item) => {
                     return (
                         <Link
                             href={`/#${item.scrollId}`}
-                            className={`${styles.link_container__link}`}
+                            className={`w-full h-full text-white p-2 overflow-hidden hover:bg-primary-purple `}
                             key={item.title}
                         >
                             <p>{item.title}</p>
