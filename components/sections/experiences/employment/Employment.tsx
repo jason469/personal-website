@@ -1,6 +1,7 @@
 import {EmploymentData} from '@/content/employment.content';
 import styles from "./Employment.module.scss";
 import Timeline from '@mui/lab/Timeline';
+import EmploymentCard from "@/components/sections/experiences/employment/employmentcard/EmploymentCard";
 
 
 const Employment = () => {
@@ -13,8 +14,8 @@ const Employment = () => {
             >
                 {EmploymentData.map(function (data:employmentData, index:number) {
                         return (
-                            <TimelineCard
-                                data={singleTimelineData}
+                            <EmploymentCard
+                                data={data}
                                 key={index}
                             />
                         )

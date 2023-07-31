@@ -1,0 +1,10 @@
+@mixin clickableIcon($iconColour, $hoverColour) {
+  .icon {
+    font-size: 2rem;
+    color: #{$iconColour};
+
+    &:hover {
+      color: #{$hoverColour};
+    }
+  }
+}
