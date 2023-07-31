@@ -39,69 +39,68 @@ const NavigationBar = () => {
 
 
     return (
-        <div className={`${styles.navbar}`}>
-            <section style={{top: showNavbar ? '0' : '-10vh'}} className={`${styles.navbar}`}>
-                <section className={`${styles.navbar_header}`}>
-                    <Link href={`/`} className={`${styles.navbar_logo}`}>
-                        Jason Liu
-                    </Link>
-                    <article className={`${styles.toggleNavbar}`} onClick={toggleNavbar}>
-                        <FontAwesomeIcon icon={faBars} className={`icon`}/>
-                    </article>
-                </section>
-                <BounceInAnimation isVisible={navbarOpen}>
-                    <article className={`${styles.nav_items} + ${navbarOpen ? ' flex' : ' hidden'}`}>
-                        {navbarItems.navItems.map((item) => {
-                            if (item.dropdownData) {  // Has a dropdown
-                                return (
-                                    <div
-                                        onMouseEnter={() => {
-                                            setShowDropdownId(item.title)
-                                        }}
-                                        onMouseLeave={() => {
-                                            setShowDropdownId("")
-                                        }}
-                                        onClick={() => {
-                                            setShowDropdownId("")
-                                        }}
-                                        key={item.title}
-                                    >
-                                        <article
-                                            key={item.title}
-                                            className={`${styles.nav_item}`}
-                                        >
-                                            <Link
-                                                href={`/#${item.scrollId}`}
-                                                className={`${styles.link}`}
-                                            >
-                                                {item.title}
-                                            </Link>
-                                            {<Dropdown
-                                                itemId={item.title}
-                                                dropdownData={item.dropdownData}
-                                                showDropdownId={showDropdownId}
-                                            />}
-                                        </article>
-                                    </div>
-                                );
-                            }
-                            return (  // Doesn't have a dropdown
-                                <li
-                                    key={item.title}
-                                    className={`${styles.nav_item}`}
-                                >
-                                    <Link
-                                        href={`/#${item.scrollId}`}
-                                    >
-                                        {item.title}
-                                    </Link>
-                                </li>
-                            );
-                        })}
-                    </article>
-                </BounceInAnimation>
+        <section className={`${styles.navbar} | ${showNavbar ? styles.showNavbar : styles.hideNavbar}`}>
+            <section className={`flex items-center justify-between w-11/12 mx-4`}>
+                <Link href={`/`} className={`font-arizonia`}>
+                    <h1 className={`text-white hover:text-primary-blue-100`}>Jason Liu</h1>
+                </Link>
+                <article className={`text-white block text-2xl md:hidden`} onClick={toggleNavbar}>
+                    <FontAwesomeIcon icon={faBars} className={`icon`}/>
+                </article>
             </section>
-        </div>
+            <BounceInAnimation isVisible={navbarOpen}>
+                <article
+                    className={`flex flex-col text-center justify-end mr-4 transition duration-300 ease-in md:flex-row  | ${navbarOpen ? ' flex' : ' hidden'} ${styles.navbar__items}`}>
+                    {navbarItems.navItems.map((item: navItem) => {
+                        if (item.dropdownData) {  // Has a dropdown
+                            return (
+                                <div
+                                    onMouseEnter={() => {
+                                        setShowDropdownId(item.title)
+                                    }}
+                                    onMouseLeave={() => {
+                                        setShowDropdownId("")
+                                    }}
+                                    onClick={() => {
+                                        setShowDropdownId("")
+                                    }}
+                                    key={item.title}
+                                >
+                                    <article
+                                        key={item.title}
+                                        className={`flex items-center h-auto`}
+                                    >
+                                        <Link
+                                            href={`/#${item.scrollId}`}
+                                            className={`${styles.link} | px-2 py-3 rounded-none text-white mr-4 uppercase hover:bg-primary-purple-750 md:px-4 md:py-6 md:rounded-md `}
+                                        >
+                                            <p>{item.title}</p>
+                                        </Link>
+                                        {<Dropdown
+                                            itemId={item.title}
+                                            dropdownData={item.dropdownData}
+                                            showDropdownId={showDropdownId}
+                                        />}
+                                    </article>
+                                </div>
+                            );
+                        }
+                        return (  // Doesn't have a dropdown
+                            <li
+                                key={item.title}
+                                className={`${styles.nav_item}`}
+                            >
+                                <Link
+                                    href={`/#${item.scrollId}`}
+                                >
+                                    <p>{item.title}</p>
+                                </Link>
+                            </li>
+                        );
+                    })}
+                </article>
+            </BounceInAnimation>
+        </section>
     );
 }
 

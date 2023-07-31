@@ -14,14 +14,14 @@ function Dropdown({itemId, dropdownData, showDropdownId}: dropdownProps) {
 
     useEffect(() => {
         (showDropdownId === itemId) ? setDropdown(true) : setDropdown(false)
+        console.log(showDropdownId)
     }, [showDropdownId]);
 
 
     return (
         <>
             <article
-                className={dropdown ? `${styles.submenu}` : `${styles.submenu} ${styles.hide}`}
-                // className={`${styles.submenu}`}
+                className={dropdown ? `${styles.submenu}` : `${styles.submenu} hide`}
             >
                 {dropdownData.map((item) => {
                     return (

@@ -30,7 +30,11 @@ module.exports = {
                 'black-100': '#252525',
                 'gray-50': '#D9D9D9',
 
-                'primary-blue': '#123C69',
+                'primary-blue': '#081a2d',
+                'primary-blue-750': '#123C69',
+                'primary-blue-500': '#3a89dc',
+                'primary-blue-250': '#9dc4ee',
+                'primary-blue-100': '#d6e6f8',
 
                 'primary-purple': '#772943',
                 'primary-purple-750': '#9D3658',
