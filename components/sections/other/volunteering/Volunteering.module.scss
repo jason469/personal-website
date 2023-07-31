@@ -1,0 +1,12 @@
+.volunteering {
+  width: 100%;
+}
+
+.cards{
+  max-width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  justify-items: center;
+  align-items: flex-start;
+}

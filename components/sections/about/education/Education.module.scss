@@ -1,0 +1,12 @@
+.education {
+  .title {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    grid-row: 1 / -1;
+    grid-column: 1 / span 1;
+  }
+
+  &__items {
+    max-width: 35rem;
+  }
+}

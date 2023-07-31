@@ -1,0 +1,10 @@
+@use "styles/abstracts" as a;
+@use "styles/components" as c;
+
+.biography {
+  @include c.bannerPage();
+
+  .title {
+    @include c.title();
+  }
+}

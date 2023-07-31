@@ -41,7 +41,7 @@ const NavigationBar = () => {
     return (
         <section className={`${styles.navbar} | ${showNavbar ? styles.showNavbar : styles.hideNavbar}`}>
             <section className={`flex items-center justify-between w-11/12 mx-4`}>
-                <Link href={`/`} className={`font-arizonia`}>
+                <Link href={`/#hero-photo`} className={`font-arizonia`}>
                     <h1 className={`text-white hover:text-primary-blue-100`}>Jason Liu</h1>
                 </Link>
                 <article className={`text-white block text-2xl md:hidden`} onClick={toggleNavbar}>

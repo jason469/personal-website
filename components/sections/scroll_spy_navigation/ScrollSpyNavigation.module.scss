@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--primaryGrey-500);
+  padding-inline: 1rem;
+  position: sticky;
+  top: 0;
+  gap: 1rem;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.nav__link {
+  cursor: pointer;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.nav__link:hover {
+  background: var(--primaryPurple-750);
+  color: white !important;
+}
+
+.nav__link__noBorder {
+
+}

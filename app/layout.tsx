@@ -19,6 +19,9 @@ import Footer from "@/components/layout/footer/footer";
 export const metadata: Metadata = {
     title: 'Jason Liu',
     description: "Jason Liu's custom website to showcase his portfolio",
+    icons: {
+        icon: '/logos/favicon.ico',
+    },
 }
 
 export default function RootLayout({
