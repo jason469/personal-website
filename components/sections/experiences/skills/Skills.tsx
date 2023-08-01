@@ -1,53 +1,48 @@
 import styles from './Skills.module.scss'
-// import SkillCard from '../../ui/SkillCard'
-// import {TechData} from "./TechData.js"
-// import {ManagementData} from "./ManagementData.js"
-// import {DeploymentData} from "./DeploymentData.js"
+import SkillCard from "@/components/sections/experiences/skills/skillCard/SkillCard";
+import {DeploymentData, ManagementData, TechData} from "@/content/skills.content";
 
 
 const Skills = () => {
     return (
-        <div className={`banner_page`} id={"skills"}>
+        <section className={`${styles.skillPage}`} id={"skills"}>
             <h1 className={`title`}>Skills</h1>
-            <div className={`description`}>
+            <article className={``}>
                 Hover over a card to see my specific skills
-            </div>
+            </article>
 
-            <div className={`${styles.skills}`}>
-                {/*{TechData.map(function (tech) {*/}
-                {/*    return (*/}
-                {/*        <SkillCard*/}
-                {/*            category={tech.category}*/}
-                {/*            skills={tech.skills}*/}
-                {/*            key={tech.category.title}*/}
-                {/*            className={`${styles.skills__column__items__card}`}*/}
-                {/*        />*/}
-                {/*    )*/}
-                {/*})}*/}
-                {/*{ManagementData.map(function (management) {*/}
-                {/*    return (*/}
-                {/*        <SkillCard*/}
-                {/*            category={management.category}*/}
-                {/*            skills={management.skills}*/}
-                {/*            key={management.category.title}*/}
-                {/*            className={`${styles.skills__column__items__card}`}*/}
-                {/*        />*/}
-                {/*    )*/}
-                {/*})}*/}
+            <article className={`flex flex-col flex-wrap gap-4 w-full justify-center items-center md:flex-row`}>
+                {TechData.map(function (tech: allSkillsData) {
+                    return (
+                        <SkillCard
+                            category={tech.category}
+                            skills={tech.skills}
+                            key={tech.category.title}
+                        />
+                    )
+                })}
+                {ManagementData.map(function (management: allSkillsData) {
+                    return (
+                        <SkillCard
+                            category={management.category}
+                            skills={management.skills}
+                            key={management.category.title}
+                        />
+                    )
+                })}
 
-                {/*{DeploymentData.map(function (management) {*/}
-                {/*    return (*/}
-                {/*        <SkillCard*/}
-                {/*            category={management.category}*/}
-                {/*            skills={management.skills}*/}
-                {/*            key={management.category.title}*/}
-                {/*            className={`${styles.skills__column__items__card}`}*/}
-                {/*        />*/}
-                {/*    )*/}
-                {/*})*/}
-                {/*}*/}
-            </div>
-        </div>
+                {DeploymentData.map(function (management: allSkillsData) {
+                    return (
+                        <SkillCard
+                            category={management.category}
+                            skills={management.skills}
+                            key={management.category.title}
+                        />
+                    )
+                })
+                }
+            </article>
+        </section>
     );
 }
 
