@@ -4,7 +4,7 @@ import styles from "./Volunteering.module.scss";
 
 const Volunteering = () => {
     return (
-        <div id={`volunteering`} className={`page banner_page | ${styles.volunteering}`}>
+        <div id={`volunteering`} className={`banner_page | ${styles.volunteering}`}>
             <h1 className={`title`}>Volunteering</h1>
             <div className={`description`}>I always try to give back where I can!</div>
             {/*<div className={`${styles.cards}`}>*/}

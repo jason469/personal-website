@@ -1,5 +1,5 @@
 type tagData = {
-    color: string
+    colour: string
 }
 
 type employmentData = {

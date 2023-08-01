@@ -7,7 +7,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import {faSuitcase} from "@fortawesome/free-solid-svg-icons"
 import {TimelineOppositeContent} from "@mui/lab";
-import {useState, useRef} from "react";
+import {useRef, useState} from "react";
 import styles from "./EmploymentCard.module.scss";
 import ReactCardFlip from "react-card-flip";
 import AnimateHeight from 'react-animate-height';
@@ -16,14 +16,13 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Image from "next/image"
 
 
-
 type employmentCardProps = {
     data: employmentData
 }
 
-function EmploymentCard({data}:employmentCardProps) {
-    const frontCard = useRef<HTMLDivElement>(document.createElement("div"));
-    const backCard = useRef<HTMLDivElement>(document.createElement("div"));
+function EmploymentCard({data}: employmentCardProps) {
+    const frontCard = useRef(document.createElement("div"));
+    const backCard = useRef(document.createElement("div"));
     const [height, setHeight] = useState(110)
     const [isFlipped, setIsFlipped] = useState(false);
 
@@ -34,7 +33,7 @@ function EmploymentCard({data}:employmentCardProps) {
 
 
     return (
-        <div id={`${styles["timelineCard"]}`}>
+        <article className={`cursor-pointer w-full`}>
             <TimelineItem
             >
                 <TimelineOppositeContent
@@ -42,25 +41,21 @@ function EmploymentCard({data}:employmentCardProps) {
                     align="right"
                     variant="body2"
                     color="text.secondary"
-                    className={`${styles.timelineOppositeContent}`}
+                    className={`hidden md:block`}
                 >
                     {data.startDate} - {data.endDate}
                 </TimelineOppositeContent>
                 <TimelineSeparator
-                    className={`${styles.timelineSeperator}`}
+                    className={`hidden md:block`}
                 >
                     <TimelineConnector
-                        className={`${styles.timelineConnector}`}
+                        className={`bg-black`}
                     />
                     <TimelineDot
                         // color="black_theme"
                         variant="outlined"
                     >
                         <FontAwesomeIcon icon={faSuitcase} className={``}/>
-
-                        {/*<WorkHistoryIcon*/}
-                        {/*    style={{color: `${data.category.color}`}}*/}
-                        {/*/>*/}
                     </TimelineDot>
                     <TimelineConnector/>
                 </TimelineSeparator>
@@ -70,7 +65,7 @@ function EmploymentCard({data}:employmentCardProps) {
                         px: 2,
                         textAlign: 'left',
                     }}
-                    className={`${styles.left_side}`}
+                    className={`flex flex-row items-center gap-2`}
                 >
                     <Image
                         src={`/sections/employment/logos/${data.logoName}`}
@@ -78,67 +73,69 @@ function EmploymentCard({data}:employmentCardProps) {
                         alt={data.company}
                         fill={true}
                     />
-                    <div
+                    <article
                         onClick={flipCard}
                         className={`${styles.timelineContent}`}
                     >
                         <ReactCardFlip
                             isFlipped={isFlipped}
                             flipDirection="horizontal"
-                            flipSpeedBackToFront={2}
-                            flipSpeedFrontToBack={2}
+                            flipSpeedBackToFront={1}
+                            flipSpeedFrontToBack={1}
                         >
-                            <div id="front">
+                            <article id="front">
                                 <AnimateHeight
                                     duration={500}
                                     height={height}
                                 >
-                                    <div
-                                        className={`${styles.content}`}
+                                    <article
+                                        className={`p-4 bg-white ${styles.content}`}
                                         ref={frontCard}
                                     >
-                                        <div
-                                            className={`${styles.content__role}`}
+                                        <article
+                                            className={`mb-4 flex flex-row items-baseline`}
                                         >
-                                            <div className={`${styles.content__role__title}`}>{data.role}</div>
-                                            <div className={`${styles.content__role__company}`}>- {data.company}</div>
-                                        </div>
-                                        <div
-                                            className={`${styles.help_text}`}
+                                            <span className={`bold text-primary-purple`}><p>{data.role}</p></span>
+                                            <span
+                                                className={`ml-2 bold text-primary-blue`}>- <p>{data.company}</p></span>
+                                        </article>
+                                        <article
+                                            className={`italic`}
                                         >
                                             Click for more details
-                                        </div>
-                                    </div>
+                                        </article>
+                                    </article>
                                 </AnimateHeight>
-                            </div>
-                            <div id="back">
+                            </article>
+                            <article id="back">
                                 <AnimateHeight
                                     duration={500}
                                     height={height}
                                 >
-                                    <div className={`${styles.content}`}
-                                         ref={backCard}
+                                    <article className={`p-4 bg-white ${styles.content}`}
+                                             ref={backCard}
                                     >
-                                        <div
-                                            className={`${styles.content__role}`}
+                                        <article
+                                            className={`mb-4 flex flex-row items-baseline`}
                                         >
-                                            <div className={`${styles.content__role__title}`}>{data.role}</div>
-                                            <div className={`${styles.content__role__company}`}>- {data.company}</div>
-                                        </div>
-                                        <div className={`${styles.content__date}`}>{data.startDate} - {data.endDate}</div>
-                                        <div
-                                            className={`${styles.content__description}`}
+                                            <span className={`bold text-primary-purple`}>{data.role}</span>
+                                            <span className={`ml-2 bold text-primary-blue`}>- {data.company}</span>
+                                        </article>
+                                        <article
+                                            className={`block italic mb-4 md:hidden`}>{data.startDate} - {data.endDate}</article>
+                                        <article
+                                            className={``}
                                         >
                                             {parse(`${data.description}`)}
-                                        </div>
-                                    </div>
+                                        </article>
+                                    </article>
                                 </AnimateHeight>
-                            </div>
+                            </article>
                         </ReactCardFlip>
-                    </div>
+                    </article>
                 </TimelineContent>
             </TimelineItem>
-        </div>
+        </article>
     )
         ;
 }

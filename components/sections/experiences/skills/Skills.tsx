@@ -7,7 +7,7 @@ import styles from './Skills.module.scss'
 
 const Skills = () => {
     return (
-        <div className={`page | banner_page`} id={"skills"}>
+        <div className={`banner_page`} id={"skills"}>
             <h1 className={`title`}>Skills</h1>
             <div className={`description`}>
                 Hover over a card to see my specific skills
