@@ -2,9 +2,9 @@ import Contact from "@/components/sections/contact/Contact";
 
 const Footer = () => {
     return (
-        <div className={`raised_box`}>
+        <section id={`footer`} className={`raised_box`}>
             <Contact/>
-        </div>
+        </section>
     );
 }
 

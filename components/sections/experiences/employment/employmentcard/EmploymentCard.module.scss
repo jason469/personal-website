@@ -3,7 +3,7 @@
 .left_side__image {
   display: none;
 
-  @media screen and (max-width: a.$medium_size) {
+  @media screen and (max-width: a.$mediumSize) {
     object-fit: contain;
     max-width: 8rem;
   }
@@ -12,7 +12,7 @@
 .timelineContent {
   width: 100%;
 
-  @media screen and (max-width: a.$medium_size) {
+  @media screen and (max-width: a.$mediumSize) {
     width: 35rem;
   }
 }

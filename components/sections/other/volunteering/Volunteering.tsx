@@ -4,10 +4,10 @@ import VolunteerCard from "@/components/sections/other/volunteering/volunteering
 
 const Volunteering = () => {
     return (
-        <div id={`volunteering`} className={`${styles.volunteering} w-full`}>
+        <section id={`volunteering`} className={`${styles.volunteering} w-full`}>
             <h1 className={`${styles.title}`}>Volunteering</h1>
-            <div className={`description`}>I always try to give back where I can!</div>
-            <div className={`${styles.cards} w-full grid gap-2 justify-center items-start`}>
+            <article className={`description`}>I always try to give back where I can!</article>
+            <section className={`${styles.cards} w-full grid gap-2 justify-center items-start`}>
                 {VolunteeringData.map(function (volunteer:volunteeringData, index:number) {
                         return (
                             <VolunteerCard
@@ -17,8 +17,8 @@ const Volunteering = () => {
                         )
                     }
                 )}
-            </div>
-        </div>
+            </section>
+        </section>
 
     );
 }

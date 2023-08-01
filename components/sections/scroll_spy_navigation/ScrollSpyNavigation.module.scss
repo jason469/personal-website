@@ -1,35 +1,27 @@
+@use "styles/abstracts" as a;
+
 .nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: var(--primaryGrey-500);
-  padding-inline: 1rem;
+  @apply flex flex-col justify-center items-center bg-primary-grey-500 px-2 gap-2 py-10;
   position: sticky;
   top: 0;
   gap: 1rem;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+
+  &__link {
+    cursor: pointer;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+
+    &:hover {
+      background: a.$primary-purple;
+      color: white;
+    }
+  }
 }
 
-.nav__link {
-  cursor: pointer;
-  padding-block: 0.5rem;
-  padding-inline: 1rem;
-  font-size: 1rem;
-  border-radius: 30px;
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
-
-.nav__link:hover {
-  background: var(--primaryPurple-750);
-  color: white !important;
-}
-
-.nav__link__noBorder {
-
-}

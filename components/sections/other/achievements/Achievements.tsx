@@ -11,7 +11,7 @@ const Achievements = () => {
                     <article className={`${styles.title}`}>
                         <h1>Achievements</h1>
                     </article>
-                    <article className={`${styles.items}`}>
+                    <section className={`${styles.items}`}>
                         {AchievementsData.map(function (data:achievementData, index:number) {
                             return (
                                 <AchievementsCard
@@ -20,7 +20,7 @@ const Achievements = () => {
                                 />
                             )
                         })}
-                    </article>
+                    </section>
                 </article>
             </FadeInLeftAnimation>
         </section>

@@ -1,26 +1,16 @@
 @use "styles/abstracts" as a;
 @use "styles/components" as c;
 
-.showNavbar {
-  top: 0;
-}
-
-.hideNavbar {
-  top: -10vh;
-}
-
 .navbar {
-  @apply flex flex-col relative pt-4 pb-2  bg-primary-purple md:flex-row md:fixed md:w-full md:justify-center md:items-center;
+  @apply flex flex-col relative pt-4 pb-2  bg-primary-purple md:flex-row md:w-full md:justify-center md:items-center;
   height: auto;
   box-shadow: none;
 
-  @media screen and (min-width: a.$medium_size) {
+  @media screen and (min-width: a.$mediumSize) {
     -webkit-box-shadow: 0 3px 8px -2px rgba(51, 51, 51, 1);
     -moz-box-shadow: 0 3px 8px -2px rgba(51, 51, 51, 1);
     box-shadow: 0 3px 8px -2px rgba(51, 51, 51, 1);
-    height: 10vh;
     transition: top 0.5s;
-    z-index: 100;
   }
 
   &__items {
@@ -29,7 +19,7 @@
 
     a {
       letter-spacing: 3px;
-      @media screen and (min-width: a.$medium_size) {
+      @media screen and (min-width: a.$mediumSize) {
         letter-spacing: 5px;
       }
     }

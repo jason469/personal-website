@@ -13,7 +13,7 @@ import AnimateHeight from 'react-animate-height';
 import parse from "html-react-parser";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-const ExpandMore = styled((props) => {
+const ExpandMore:any = styled((props) => {
     const {expand, ...other}: any = props;
     return <IconButton {...other} />;
 })(({theme, expand}: any) => ({
@@ -29,7 +29,7 @@ type volunteeringCardProp = {
 }
 
 export default function VolunteerCard({data}: volunteeringCardProp) {
-    const hiddenDescription = useRef(document.createElement("div"));
+    const hiddenDescription:any = useRef();
 
     const [expanded, setExpanded] = useState(false);
     const [height, setHeight] = useState(0)

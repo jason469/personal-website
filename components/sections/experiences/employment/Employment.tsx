@@ -22,11 +22,6 @@ const Employment = () => {
                     }
                 )}
             </Timeline>
-            {/*<div*/}
-            {/*    className={`${styles.timeline}`}*/}
-            {/*>*/}
-            {/*    <TimelineComponent data={EmploymentData}/>*/}
-            {/*</div>*/}
         </section>
     )
         ;

@@ -11,7 +11,7 @@ const Skills = () => {
                 Hover over a card to see my specific skills
             </article>
 
-            <article className={`flex flex-col flex-wrap gap-4 w-full justify-center items-center md:flex-row`}>
+            <section className={`flex flex-col flex-wrap gap-4 w-full justify-center items-center md:flex-row`}>
                 {TechData.map(function (tech: allSkillsData) {
                     return (
                         <SkillCard
@@ -41,7 +41,7 @@ const Skills = () => {
                     )
                 })
                 }
-            </article>
+            </section>
         </section>
     );
 }

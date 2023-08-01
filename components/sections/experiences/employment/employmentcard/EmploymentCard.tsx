@@ -21,8 +21,8 @@ type employmentCardProps = {
 }
 
 function EmploymentCard({data}: employmentCardProps) {
-    const frontCard = useRef(document.createElement("div"));
-    const backCard = useRef(document.createElement("div"));
+    const frontCard:any = useRef(null);
+    const backCard:any = useRef(null);
     const [height, setHeight] = useState(110)
     const [isFlipped, setIsFlipped] = useState(false);
 
@@ -55,7 +55,11 @@ function EmploymentCard({data}: employmentCardProps) {
                         // color="black_theme"
                         variant="outlined"
                     >
-                        <FontAwesomeIcon icon={faSuitcase} className={``}/>
+                        <FontAwesomeIcon
+                            icon={faSuitcase}
+                            className={``}
+                            size={`2xl`}
+                        />
                     </TimelineDot>
                     <TimelineConnector/>
                 </TimelineSeparator>

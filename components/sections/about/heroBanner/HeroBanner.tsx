@@ -5,14 +5,17 @@ import Image from "next/image"
 
 const HeroBanner = () => {
     return (
-        <div className={`${styles.banner}`} id={"hero-photo"}>
+        <section className={`${styles.banner}`} id={"hero-photo"}>
             <Image
                 src={`/sections/heroBanner/ProfileWithText/Profile1.svg`}
                 alt="Profile Image"
                 className={`${styles.banner__photo}`}
-                fill={true}
+                priority
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
             />
-        </div>
+        </section>
     );
 }
 

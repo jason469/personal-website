@@ -4,7 +4,7 @@
 .submenu {
   display: none;
 
-  @media screen and (min-width: a.$medium_size)  {
+  @media screen and (min-width: a.$mediumSize)  {
     width: 11rem;
     position: fixed;
     top: 10.2vh;

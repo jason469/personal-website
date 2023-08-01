@@ -74,7 +74,7 @@ const ScrollSpyNavigation = () => {
             <Link
                 href={'/#contact'}
                 className={`${styles.nav__link}`}
-                data-to-scrollspy-id="contact"
+                data-to-scrollspy-id="footer"
             >
                 <p>
                     Contact Me!

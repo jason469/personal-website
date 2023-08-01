@@ -3,15 +3,15 @@ import FadeInLeftAnimation from "@/components/ui/animations/FadeInLeftAnimation"
 
 const Education = () => {
     return (
-        <div className={``}>
+        <section id={`education`}>
             <FadeInLeftAnimation>
-                <div id={`education`}
+                <article
                      className={`${styles.education} w-full flex g-4 justify-center items-center rounded-md`}>
-                    <div className={`${styles.title}`}>
+                    <article className={`${styles.title}`}>
                         <h1>Education</h1>
-                    </div>
-                    <div className={``}>
-                        <div className={`${styles.education__items} | p-2`}>
+                    </article>
+                    <article className={``}>
+                        <article className={`${styles.education__items} | p-2`}>
                             <h6 className={`bold uppercase leading-4 mt-0 mb-2 text-center`}>
                                 University of Auckland
                             </h6>
@@ -39,11 +39,11 @@ const Education = () => {
                                     competitions, all to better develop my speaking and presentation skills.
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </article>
+                    </article>
+                </article>
             </FadeInLeftAnimation>
-        </div>
+        </section>
     );
 }
 

@@ -45,10 +45,10 @@ export default function RootLayout({
         >
         <head>
             <title>Jason Liu</title>
-            {/*<link rel="manifest" href="/manifest.json"/>*/}
-            {/*<link rel="apple-touch-icon" href="/apple-touch-icon.png"></link>*/}
-            {/*<link rel="shortcut icon" href="/favicon.ico"/>*/}
-            {/*<meta name="theme-color" content="#542e23"/>*/}
+            <link rel="manifest" href="/manifest.json"/>
+            <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"></link>
+            <link rel="shortcut icon" href="/logos/favicon.ico"/>
+            <meta name="theme-color" content="#772943"/>
         </head>
         <body>
         <NavigationBar/>

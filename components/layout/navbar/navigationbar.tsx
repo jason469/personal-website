@@ -2,44 +2,20 @@
 
 import styles from "./navigationbar.module.scss";
 import Dropdown from "./dropdown/dropdown";
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 import Link from "next/link";
 import {BounceInAnimation} from "@/components/ui/animations/BounceInAnimation";
 import {navbarItems} from "@/constants/navbar.constants";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
-import {debounce} from "@/utilities/navbar";
 
 const NavigationBar = () => {
     const [showDropdownId, setShowDropdownId] = useState("");  // ID of the dropdown to be shown
     const [navbarOpen, setNavbarOpen] = useState(true)  // Toggling the navbar for mobile use
-    const [showNavbar, setShowNavbar] = useState(true)  // Toggling the navbar on scroll
-
-    const [lastScrollY, setLastScrollY] = useState(0);
-
-
     const toggleNavbar = () => setNavbarOpen(!navbarOpen)
-    const handleScroll = debounce(() => {
-        const currentScrollPos = window.scrollY;
-        if (
-            ((lastScrollY > currentScrollPos) && lastScrollY - currentScrollPos > 50) ||  // Scroll up
-            currentScrollPos < 10  // At top of page
-        ) {
-            setShowNavbar(true);
-        } else {
-            setShowNavbar(false)
-        }
-        setLastScrollY(currentScrollPos);
-    }, 100, null);
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [lastScrollY, showNavbar, handleScroll]);
-
 
     return (
-        <section className={`${styles.navbar} | ${showNavbar ? styles.showNavbar : styles.hideNavbar}`}>
+        <section className={`${styles.navbar}`}>
             <section className={`flex items-center justify-between w-11/12 mx-4`}>
                 <Link href={`/#hero-photo`} className={`font-arizonia`}>
                     <h1 className={`text-white hover:text-primary-blue-100`}>Jason Liu</h1>
