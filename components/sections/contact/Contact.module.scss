@@ -1,0 +1,26 @@
+.page {
+  @apply flex flex-row justify-center items-center gap-6 py-3 ;
+  max-height: 15rem;
+  padding: 2rem;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.71);
+
+  .item {
+    width: 2rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+    .logo {
+      width: 1.5rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: white;
+    }
+  }
+}
+
+
+

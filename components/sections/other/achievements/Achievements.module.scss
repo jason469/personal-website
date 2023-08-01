@@ -1,18 +1,10 @@
-#accomplishments {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.5rem;
-}
-
 .title {
   writing-mode: vertical-rl;
   text-orientation: upright;
+  grid-row: 1 / -1;
+  grid-column: 1 / span 1;
 }
 
-
 .items {
+  max-width: 35rem;
 }

@@ -1,10 +1,9 @@
-import styles from "./Footer.module.scss";
-// import Contact from "./Contact";
+import Contact from "@/components/sections/contact/Contact";
 
 const Footer = () => {
     return (
         <div className={`raised_box`}>
-            {/*<Contact/>*/}
+            <Contact/>
         </div>
     );
 }

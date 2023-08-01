@@ -1,30 +1,29 @@
 import styles from './Achievements.module.scss'
 import FadeInLeftAnimation from "@/components/ui/animations/FadeInLeftAnimation";
-// import {AchievementsData} from "./AchievementsData";
-// import AchievementsCard from "../../ui/AchievementsCard";
-// import SlideInBlock from "../../ui/animation/SlideInBlock";
+import {AchievementsData} from "@/content/achievements.content";
+import AchievementsCard from "@/components/sections/other/achievements/achievementsCard/AchievementsCard";
 
 const Achievements = () => {
     return (
-        <div className={``} id={"achievements"}>
+        <section className={``} id={"achievements"}>
             <FadeInLeftAnimation>
-                <div id={`${styles["accomplishments"]}`} className={`page`}>
-                    <div className={`${styles.title}`}>
-                        <h1 className={`title`}>Achievements</h1>
-                    </div>
-                    {/*<div className={`${styles.items}`}>*/}
-                    {/*    {AchievementsData.map(function (accomplishment, index) {*/}
-                    {/*        return (*/}
-                    {/*            <AchievementsCard*/}
-                    {/*                data={accomplishment}*/}
-                    {/*                key={index}*/}
-                    {/*            />*/}
-                    {/*        )*/}
-                    {/*    })}*/}
-                    {/*</div>*/}
-                </div>
+                <article id={`achievements`} className={`w-full flex flex-row gap-4 justify-center items-center rounded-md`}>
+                    <article className={`${styles.title}`}>
+                        <h1>Achievements</h1>
+                    </article>
+                    <article className={`${styles.items}`}>
+                        {AchievementsData.map(function (data:achievementData, index:number) {
+                            return (
+                                <AchievementsCard
+                                    data={data}
+                                    key={index}
+                                />
+                            )
+                        })}
+                    </article>
+                </article>
             </FadeInLeftAnimation>
-        </div>
+        </section>
     );
 }
 

@@ -1,23 +1,23 @@
-// import {VolunteeringData} from './VolunteeringData.js';
-// import VolunteerCard from "../../ui/VolunteerCard";
 import styles from "./Volunteering.module.scss";
+import {VolunteeringData} from "@/content/volunteering.content";
+import VolunteerCard from "@/components/sections/other/volunteering/volunteeringCard/VolunteeringCard";
 
 const Volunteering = () => {
     return (
-        <div id={`volunteering`} className={`banner_page | ${styles.volunteering}`}>
-            <h1 className={`title`}>Volunteering</h1>
+        <div id={`volunteering`} className={`${styles.volunteering} w-full`}>
+            <h1 className={`${styles.title}`}>Volunteering</h1>
             <div className={`description`}>I always try to give back where I can!</div>
-            {/*<div className={`${styles.cards}`}>*/}
-            {/*    {VolunteeringData.map(function (volunteer, index) {*/}
-            {/*            return (*/}
-            {/*                <VolunteerCard*/}
-            {/*                    data={volunteer}*/}
-            {/*                    key={index}*/}
-            {/*                />*/}
-            {/*            )*/}
-            {/*        }*/}
-            {/*    )}*/}
-            {/*</div>*/}
+            <div className={`${styles.cards} w-full grid gap-2 justify-center items-start`}>
+                {VolunteeringData.map(function (volunteer:volunteeringData, index:number) {
+                        return (
+                            <VolunteerCard
+                                data={volunteer}
+                                key={index}
+                            />
+                        )
+                    }
+                )}
+            </div>
         </div>
 
     );
