@@ -14,9 +14,9 @@ import parse from "html-react-parser";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const ExpandMore = styled((props) => {
-    const {expand, ...other}:any = props;
+    const {expand, ...other}: any = props;
     return <IconButton {...other} />;
-})(({theme, expand}:any) => ({
+})(({theme, expand}: any) => ({
     transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
     marginLeft: 'auto',
     transition: theme.transitions.create('transform', {
@@ -28,7 +28,7 @@ type volunteeringCardProp = {
     data: volunteeringData
 }
 
-export default function VolunteerCard({data}:volunteeringCardProp) {
+export default function VolunteerCard({data}: volunteeringCardProp) {
     const hiddenDescription = useRef(document.createElement("div"));
 
     const [expanded, setExpanded] = useState(false);
