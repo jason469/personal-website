@@ -8,11 +8,11 @@ const Education = () => {
       <section id={`education`}>
         <FadeInLeftAnimation>
           <article
-            className={`${styles.education} w-full flex g-4 justify-center items-center rounded-md`}
+            className={`${styles.education} w-full flex gap-4 justify-center items-center rounded-md`}
           >
-            <article className={`${styles.title}`}>
-              <h1>Education</h1>
-            </article>
+            <h1 className={`${styles.title}`}>
+              Education
+            </h1>
             <article className={``}>
               <article className={`${styles.education__items} | p-2`}>
                 {EducationData.map(function (

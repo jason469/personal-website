@@ -4,8 +4,12 @@
   @include c.bannerPage();
   @include c.generalSection();
   width: 100%;
-}
 
-.cards{
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  .title {
+    @include c.linedTitle();
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
 }

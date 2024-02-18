@@ -2,8 +2,11 @@
 
 .education {
   @include c.generalSection();
+  @include c.inlineSection();
 
   .title {
+    @include c.unlinedTitle();
+
     writing-mode: vertical-rl;
     text-orientation: upright;
     grid-row: 1 / -1;
@@ -11,6 +14,5 @@
   }
 
   &__items {
-    max-width: 35rem;
   }
 }

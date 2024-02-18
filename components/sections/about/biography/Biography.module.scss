@@ -4,9 +4,11 @@
 .biography {
   @include c.bannerPage();
   @include c.generalSection();
+  @include c.inlineSection();
 
   .title {
-    @include c.title();
+    @include c.linedTitle();
+    width: 40%;
   }
 
   .subtitle {

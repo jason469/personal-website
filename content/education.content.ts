@@ -6,8 +6,7 @@ export const EducationData: Array<educationData> = [
     yearCompleted: 2021,
     description: `
     <p>
-      Fresh out of high school, I spent four years working towards my Bachelors in Mechatronics Engineering.
-      It was here that I gained exposure to circuit design, control systems theory, IoT and software development.
+      During my degree, I gained exposure to circuit design, control systems theory, IoT and software development.
       And although my passion now lies in web development, studying at University helped me build a focused and eager mindset.
 
       <br/><br/>

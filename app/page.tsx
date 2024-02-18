@@ -17,7 +17,7 @@ import Volunteering from "@/components/sections/other/volunteering/Volunteering"
 export default function Home() {
   return (
     <section className={`flex flex-col`}>
-      <HeroBanner />
+      {/* <HeroBanner /> */}
       <section className={`flex flex-row | py-3 gap-3`}>
         <section className={`${styles.left} | flex flex-col gap-2 h-full`}></section>
         <section className={`${styles.center} | flex flex-col h-full`}>

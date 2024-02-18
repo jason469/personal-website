@@ -1,14 +1,17 @@
 @use "styles/components" as c;
 
 .projects {
-  @include c.generalSection()
+  @include c.generalSection();
 
-}
+  .title {
+    @include c.linedTitle();
+  }
 
-.list_of_projects {
-  width: 90%;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  justify-items: center;
+  .list_of_projects {
+    width: 90%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-items: center;
+  }
 }

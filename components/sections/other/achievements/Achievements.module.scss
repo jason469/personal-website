@@ -6,6 +6,8 @@
 }
 
 .title {
+  @include c.unlinedTitle();
+
   writing-mode: vertical-rl;
   text-orientation: upright;
   grid-row: 1 / -1;

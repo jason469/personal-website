@@ -3,4 +3,9 @@
 .skillPage {
   @include c.bannerPage();
   @include c.generalSection();
+
+  .title {
+    @include c.linedTitle();
+    width: 30%;
+  }
 }

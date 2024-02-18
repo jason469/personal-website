@@ -1,26 +1,35 @@
 @use "styles/abstracts" as a;
 
-.left_side__image {
-  display: none;
-
-  @media screen and (max-width: a.$mediumSize) {
-    object-fit: contain;
-    max-width: 8rem;
-  }
+.employmentCard {
+  min-width: 35rem;
+  display: grid;
+  grid-template-areas:
+  "logo content date";
 }
 
-.timelineContent {
-  width: 100%;
+.logo {
+  display: none;
+  grid-area: logo;
 
-  @media screen and (max-width: a.$mediumSize) {
-    width: 35rem;
+  @media screen and (min-width: a.$mediumSize) {
+    display: block;
   }
 }
 
 .content {
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+  grid-area: content;
+
+  .timelineCard {
+    width: 100%;
+
+    @media screen and (max-width: a.$mediumSize) {
+      width: 35rem;
+    }
+  }
 }
 
-
-
+.date {
+  grid-area: date;
+}
