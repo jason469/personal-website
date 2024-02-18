@@ -1,0 +1,3 @@
+type biographyData = {
+  text: string;
+};

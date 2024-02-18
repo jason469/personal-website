@@ -1,22 +1,26 @@
-"use client"
+"use client";
 
-import styles from './HeroBanner.module.scss'
-import Image from "next/image"
+import Carousel from "react-material-ui-carousel";
+import HeroImage from "@/components/ui/common/heroImage/heroImage";
+import { heroImagePaths } from "@/content/homeBanner.content";
 
 const HeroBanner = () => {
-    return (
-        <section className={`${styles.banner}`} id={"hero-photo"}>
-            <Image
-                src={`/sections/heroBanner/ProfileWithText/Profile1.svg`}
-                alt="Profile Image"
-                className={`${styles.banner__photo}`}
-                priority
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
-            />
-        </section>
-    );
-}
+  return (
+    <Carousel
+      interval={6000}
+      animation={"slide"}
+      duration={850}
+      indicatorContainerProps={{
+        style: {
+          marginTop: "-50px", // 5
+        },
+      }}
+    >
+      {heroImagePaths.map((imagePath, i) => {
+        return <HeroImage image={imagePath} key={i}></HeroImage>;
+      })}
+    </Carousel>
+  );
+};
 
 export default HeroBanner;

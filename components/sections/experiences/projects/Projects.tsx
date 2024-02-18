@@ -5,7 +5,7 @@ import ProjectCard from "@/components/sections/experiences/projects/projectCard/
 
 const Projects = () => {
     return (
-        <section id={`projects`}>
+        <section id={`projects`} className={`${styles.projects}`}>
             <FadeInLeftAnimation>
                 <article className={`w-full flex flex-col items-center`}>
                     <h1 className={`title`}>Personal Projects</h1>

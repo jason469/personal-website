@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import styles from "./page.module.scss"
+import styles from "./page.module.scss";
 
 import ScrollSpy from "react-ui-scrollspy";
 
@@ -14,31 +14,29 @@ import Skills from "@/components/sections/experiences/skills/Skills";
 import Achievements from "@/components/sections/other/achievements/Achievements";
 import Volunteering from "@/components/sections/other/volunteering/Volunteering";
 
-
 export default function Home() {
-    return (
-        <section className={`flex flex-col`}>
-            <HeroBanner/>
-            <section className={`flex flex-row | py-3 px-6`}>
-                <section className={`${styles.left} | flex flex-col gap-2`}>
-                    <ScrollSpy
-                        offsetBottom={100}
-                        scrollThrottle={80}
-                        useBoxMethod
-                    >
-                        <Biography/>
-                        <Education/>
-                        <Employment/>
-                        <Projects/>
-                        <Skills/>
-                        <Achievements/>
-                        <Volunteering/>
-                    </ScrollSpy>
-                </section>
-                <section className={`${styles.right} | flex flex-col`}>
-                    <ScrollSpyNavigation/>
-                </section>
-            </section>
+  return (
+    <section className={`flex flex-col`}>
+      <HeroBanner />
+      <section className={`flex flex-row | py-3 gap-3`}>
+        <section className={`${styles.left} | flex flex-col gap-2 h-full`}></section>
+        <section className={`${styles.center} | flex flex-col h-full`}>
+          <ScrollSpy offsetBottom={100} scrollThrottle={80} useBoxMethod>
+            <Biography />
+            <Education />
+            <Employment />
+            <Projects />
+            <Skills />
+            <Achievements />
+            <Volunteering />
+          </ScrollSpy>
         </section>
-    )
+        <section className={`${styles.right} | flex flex-col h-full`}>
+          <section className={`${styles.nav}`}>
+            <ScrollSpyNavigation />
+          </section>
+        </section>
+      </section>
+    </section>
+  );
 }

@@ -5,7 +5,7 @@ import Link from "next/link";
 const ScrollSpyNavigation = () => {
 
     return (
-        <section className={`${styles.nav}`}>
+        <section className={`${styles.nav} | h-full`}>
             <Link
                 href={'/#biography'}
                 className={`${styles.nav__link} ${styles.nav__link__noBorder}`}

@@ -1,3 +1,10 @@
+@use "styles/components" as c;
+
+.projects {
+  @include c.generalSection()
+
+}
+
 .list_of_projects {
   width: 90%;
   display: grid;

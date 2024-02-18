@@ -2,5 +2,5 @@
 
 .skillPage {
   @include c.bannerPage();
+  @include c.generalSection();
 }
-

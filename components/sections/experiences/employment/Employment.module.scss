@@ -1,9 +1,5 @@
-.employment {
-}
+@use "styles/components" as c;
 
-.timeline {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 100%;
+.employment {
+  @include c.generalSection();
 }

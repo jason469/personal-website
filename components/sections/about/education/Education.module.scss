@@ -1,4 +1,8 @@
+@use "styles/components" as c;
+
 .education {
+  @include c.generalSection();
+
   .title {
     writing-mode: vertical-rl;
     text-orientation: upright;

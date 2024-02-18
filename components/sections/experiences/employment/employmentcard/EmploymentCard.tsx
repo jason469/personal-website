@@ -1,12 +1,6 @@
 "use client"
 
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
 import {faSuitcase} from "@fortawesome/free-solid-svg-icons"
-import {TimelineOppositeContent} from "@mui/lab";
 import {useRef, useState} from "react";
 import styles from "./EmploymentCard.module.scss";
 import ReactCardFlip from "react-card-flip";
@@ -34,42 +28,13 @@ function EmploymentCard({data}: employmentCardProps) {
 
     return (
         <article className={`cursor-pointer w-full`}>
-            <TimelineItem
-            >
-                <TimelineOppositeContent
-                    sx={{m: 'auto 0'}}
-                    align="right"
-                    variant="body2"
-                    color="text.secondary"
-                    className={`hidden md:block`}
+                <div
+                    className={`hidden md:block ${styles.date}`}
                 >
                     {data.startDate} - {data.endDate}
-                </TimelineOppositeContent>
-                <TimelineSeparator
-                    className={`hidden md:block`}
-                >
-                    <TimelineConnector
-                        className={`bg-black`}
-                    />
-                    <TimelineDot
-                        // color="black_theme"
-                        variant="outlined"
-                    >
-                        <FontAwesomeIcon
-                            icon={faSuitcase}
-                            className={``}
-                            size={`2xl`}
-                        />
-                    </TimelineDot>
-                    <TimelineConnector/>
-                </TimelineSeparator>
-                <TimelineContent
-                    sx={{
-                        py: '12px',
-                        px: 2,
-                        textAlign: 'left',
-                    }}
-                    className={`flex flex-row items-center gap-2`}
+                </div>
+                <div
+                    className={`flex flex-row items-center gap-2 ${styles.content}`}
                 >
                     <Image
                         src={`/sections/employment/logos/${data.logoName}`}
@@ -137,8 +102,7 @@ function EmploymentCard({data}: employmentCardProps) {
                             </article>
                         </ReactCardFlip>
                     </article>
-                </TimelineContent>
-            </TimelineItem>
+                </div>
         </article>
     )
         ;

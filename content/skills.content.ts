@@ -21,10 +21,6 @@ export const TechData:Array<allSkillsData> = [
                 iconName: "NodeJS.svg",
                 title: "NodeJS"
             },
-            {
-                iconName: "PHP.png",
-                title: "PHP"
-            }
         ]
     },
     {
@@ -96,10 +92,6 @@ export const TechData:Array<allSkillsData> = [
             {
                 iconName: "FastAPI.svg",
                 title: "FastAPI"
-            },
-            {
-                iconName: "Laravel.png",
-                title: "Laravel"
             },
             {
                 iconName: "GraphQL.png",

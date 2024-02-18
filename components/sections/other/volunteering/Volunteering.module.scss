@@ -2,6 +2,7 @@
 
 .volunteering {
   @include c.bannerPage();
+  @include c.generalSection();
   width: 100%;
 }
 

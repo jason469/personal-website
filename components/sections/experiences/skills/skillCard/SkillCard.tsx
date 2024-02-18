@@ -25,18 +25,20 @@ function SkillCard({category, skills}: allSkillsData) {
                     <article className={`flex flex-col items-center justify-center w-full gap-2 flex-wrap p-4`}>
                         {skills.map(function (skill) {
                             return (
-                                <article
-                                    className={`flex flex-row gap-2 items-center justify-center`}
-                                    key={skill.title}
-                                >
-                                    <Image
-                                        src={`/sections/skills/logos/${skill.iconName}`}
-                                        alt={skill.title}
-                                        fill={true}
-                                    />
-                                    {skill.title}
-                                </article>
-                            )
+                              <article
+                                className={`flex flex-row gap-2 items-center justify-center`}
+                                key={skill.title}
+                              >
+                                <Image
+                                  src={`/sections/skills/logos/${skill.iconName}`}
+                                  alt={skill.title}
+                                  width={40}
+                                  height={40}
+                                  className={`${styles.skillLogo} hidden md:block`}
+                                />
+                                {skill.title}
+                              </article>
+                            );
                         })}
                     </article>
                 }

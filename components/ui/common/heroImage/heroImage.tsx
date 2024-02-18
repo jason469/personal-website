@@ -1,21 +1,19 @@
 import Image from 'next/image'
 import styles from "./heroImage.module.scss"
 
-const {heroContent, heroWrapper, imageWrapper, heroImage} = styles;
-
 type heroImageProps = {
     image: string,
-    children: any
+    children?: any
 }
 
 const HeroImage = ({image, children}: heroImageProps) => (
-    <section className={heroWrapper}>
-        <section className={imageWrapper}>
+    <section className={`${styles.heroWrapper}`}>
+        <section className={`${styles.imageWrapper}`}>
             <Image
                 priority
                 src={image}
                 layout="fill"
-                className={`${heroImage}`}
+                className={`${styles.heroImage}`}
                 style={{
                     objectFit: "cover",
                     objectPosition: "top",
@@ -25,7 +23,7 @@ const HeroImage = ({image, children}: heroImageProps) => (
             />
         </section>
 
-        <div className={`${heroContent}`}>
+        <div className={`${styles.heroContent}`}>
             {children}
         </div>
     </section>
