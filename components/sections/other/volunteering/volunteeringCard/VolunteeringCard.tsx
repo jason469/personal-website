@@ -41,20 +41,22 @@ export default function VolunteerCard({ data }: volunteeringCardProp) {
           <a href={data.website} target="_blank">
             <HoverCard
               animationSpeed={500}
-              // height={300}
               margin={10}
               className={`w-full | ${styles.hoverWrapper}`}
+              height={300}
               front={
                 <article
                   className={`flex flex-col justify-center items-center text-center w-full p-2`}
                 >
-                  <Image
-                    src={`/sections/volunteering/logos/${data.logoName}`}
-                    alt={` ${data.title}`}
-                    width={200}
-                    height={200}
-                    className={`${styles.card__image_container__image}`}
-                  />
+                  <div className={`${styles.card__imageWrapper}`}>
+                    <Image
+                      src={`/sections/volunteering/logos/${data.logoName}`}
+                      alt={` ${data.title}`}
+                      width={200}
+                      height={200}
+                      className={`${styles.card__imageWrapper__image}`}
+                    />
+                  </div>
                   <p>{parse(data.shortDescription)}</p>
                 </article>
               }

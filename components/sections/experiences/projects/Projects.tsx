@@ -2,27 +2,34 @@ import { projects } from "@/content/projects.content";
 import styles from "./Projects.module.scss";
 import FadeInLeftAnimation from "@/components/ui/animations/FadeInLeftAnimation";
 import ProjectCard from "@/components/sections/experiences/projects/projectCard/ProjectCard";
+import Grid from "@mui/material/Unstable_Grid2";
 
 const Projects = () => {
   return (
     <section id={`projects`} className={`${styles.projects}`}>
       <FadeInLeftAnimation>
         <article className={`w-full flex flex-col items-center`}>
-          <section className={`titleWrapper | w-full flex justify-center`}>
+          <div
+            className={`${styles.headings} | w-full mb-6 flex flex-col items-center`}
+          >
             <h1 className={`${styles.title}`}>Personal Projects</h1>
-          </section>
-          <article className={`description`}>
-            <strong>My favourite things to work on in my spare time!</strong>
-            <br />
-            Please note that due to limited server resources, these apps may
-            take some time to load when opened for the first time. <br />
-            Subsequents pages loads will be faster however.
-          </article>
-          <section className={`${styles.list_of_projects}`}>
+            <article className={`${styles.description}`}>
+              <strong>My favourite things to work on in my spare time!</strong>
+              <br />
+              Please note that due to limited server resources, these apps may
+              take some time to load when opened for the first time. <br />
+              Subsequents pages loads will be faster however.
+            </article>
+          </div>
+          <Grid container spacing={2} className={``}>
             {projects.map(function (project: projectData, index: number) {
-              return <ProjectCard data={project} key={index} />;
+              return (
+                <Grid xs={12} md={6} lg={4}>
+                  <ProjectCard data={project} key={index} />
+                </Grid>
+              );
             })}
-          </section>
+          </Grid>
         </article>
       </FadeInLeftAnimation>
     </section>
