@@ -22,8 +22,8 @@ export default function ProjectCard({ data }: projectCardProps) {
                 <Image
                   src={`/sections/projects/logos/${data.logoName}`}
                   alt={` ${data.logoName}`}
-                  width={200}
-                  height={200}
+                  width={70}
+                  height={70}
                 />
               </a>
             </div>
