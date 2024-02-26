@@ -5,6 +5,7 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 import styles from "./ProjectCard.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Image from "next/image";
 
 type projectCardProps = {
   data: projectData;
@@ -17,15 +18,13 @@ export default function ProjectCard({ data }: projectCardProps) {
         <a href={data.website.link} target="_blank">
           <CardContent className={`${styles.card__content}`}>
             <div className={`bold text-primary-purple mt-2 `}>
-              <a
-                href={data.website.link}
-                target="_blank"
-                className={`font-${data.logo.fontName}`}
-                style={{
-                  color: `${data.logo.colourHex}`,
-                }}
-              >
-                <p>{data.website.title}</p>
+              <a href={data.website.link} target="_blank">
+                <Image
+                  src={`/sections/projects/logos/${data.logoName}`}
+                  alt={` ${data.logoName}`}
+                  width={200}
+                  height={200}
+                />
               </a>
             </div>
             {data.inDevelopment && (

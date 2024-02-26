@@ -11,10 +11,7 @@ export const projects: Array<projectData> = [
       title: "Jason Liu",
       link: "https://jasonliu.onrender.com/",
     },
-    logo: {
-      fontName: "JourneyBegins",
-      colourHex: "#123C69",
-    },
+    logoName: "portfolio.png",
     inDevelopment: false,
   },
   {
@@ -30,10 +27,7 @@ export const projects: Array<projectData> = [
       title: "Balfolk NZ/Aotearoa",
       link: "https://www.balfolk.co.nz",
     },
-    logo: {
-      fontName: "cormorantSC",
-      colourHex: "#542e23",
-    },
+    logoName: "balfolk-nz.png",
   },
   {
     title: "Ringcraft Boxing",
@@ -45,10 +39,7 @@ export const projects: Array<projectData> = [
       title: "Ringcraft Boxing",
       link: "https://www.ringcraftboxing.co.nz/home",
     },
-    logo: {
-      fontName: "cormorantSC",
-      colourHex: "#542e23",
-    },
+    logoName: "ringcraft-boxing.png",
   },
   {
     title: "Waves",
@@ -63,10 +54,7 @@ export const projects: Array<projectData> = [
       title: "Waves",
       link: "https://waves-app.onrender.com",
     },
-    logo: {
-      fontName: "shrikhand",
-      colourHex: "#17d7e8",
-    },
+    logoName: "waves.png",
   },
   {
     title: "Salt",
@@ -82,10 +70,7 @@ export const projects: Array<projectData> = [
       title: "Salt",
       link: "https://salt-recipes.netlify.app/",
     },
-    logo: {
-      fontName: "cevicheOne",
-      colourHex: "#000000",
-    },
+    logoName: "salt.png",
   },
   {
     title: "Latte",
@@ -100,10 +85,7 @@ export const projects: Array<projectData> = [
       title: "Latte",
       link: "https://latte-frontend.onrender.com",
     },
-    logo: {
-      fontName: "eczar",
-      colourHex: "#592a0f",
-    },
+    logoName: "latte.png",
   },
   {
     title: "Chai",
@@ -118,11 +100,7 @@ export const projects: Array<projectData> = [
       title: "Chai",
       link: "https://chai-soft-toys.netlify.app",
     },
-    logo: {
-      fontName: "kavoon",
-      colourHex: "#ef820d",
-      additionalTailwindClass: "italic",
-    },
+    logoName: "chai.png",
   },
   {
     title: "Glass",
@@ -137,28 +115,6 @@ export const projects: Array<projectData> = [
       title: "Glass",
       link: "https://glass-rouge.vercel.app/",
     },
-    logo: {
-      fontName: "playfairDisplay",
-      colourHex: "#caafa8",
-      additionalTailwindClass: "italic",
-    },
-  },
-  {
-    title: "Mocha",
-    inDevelopment: true,
-    description:
-      "Mocha is a calender and agenda mobile application that I developed. It was designed for a small audience and allows users to create custom events and agendas to keep them organised.",
-    skills: ["Flutter/Dart", "NodeJS", "MongoDB"],
-    github: {
-      link: "https://github.com/jason469/Mocha",
-    },
-    website: {
-      title: "Mocha",
-      link: "https://github.com/jason469/Mocha",
-    },
-    logo: {
-      fontName: "lato",
-      colourHex: "#123C69",
-    },
+    logoName: "glass.png",
   },
 ];

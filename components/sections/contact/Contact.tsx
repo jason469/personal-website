@@ -29,14 +29,6 @@ const Contact = () => {
                         />
                     </a>
                 </article>
-                <article className={styles.contacts__item}>
-                    <a href={"/contact/files/Jason Liu CV.pdf"} target="_blank">
-                        <FontAwesomeIcon
-                            icon={faFile}
-                            className={`${styles.logo}`}
-                        />
-                    </a>
-                </article>
             </article>
         </section>
     );
