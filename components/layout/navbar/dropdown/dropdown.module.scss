@@ -7,13 +7,14 @@
   @media screen and (min-width: a.$mediumSize)  {
     width: 11rem;
     position: fixed;
-    top: 10.2vh;
+    top: calc(a.$navbarHeight + 0.1rem);
     list-style: none;
     text-align: start;
     display: flex;
     flex-direction: column;
     background-color: a.$primary-purple-750;
     border-radius: 5px;
+    z-index: 999;
   }
 
 }

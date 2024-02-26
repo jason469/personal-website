@@ -17,7 +17,7 @@ type projectData = {
     title: string,
     description: string,
     skills: Array<string>
-    github: githubData,
+    github?: githubData,
     website: websiteData,
     logo: logoData,
     inDevelopment?: boolean

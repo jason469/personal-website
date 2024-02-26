@@ -36,6 +36,11 @@ main {
 a {
   cursor: pointer;
   text-decoration: none;
+  color: a.$primary-blue-500
+}
+
+a:hover {
+  color: a.$primary-purple
 }
 
 h1, h2, h3, h4, h5, h6 {

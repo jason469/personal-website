@@ -23,9 +23,9 @@ const HeroImage = ({image, children}: heroImageProps) => (
             />
         </section>
 
-        <div className={`${styles.heroContent}`}>
+        {/* <div className={`${styles.heroContent}`}>
             {children}
-        </div>
+        </div> */}
     </section>
 );
 

@@ -3,11 +3,10 @@ type tagData = {
 }
 
 type employmentData = {
-    role: string,
-    company: string,
-    startDate: string,
-    endDate: string,
-    description: string,
-    category: tagData,
-    logoName: string,
-}
+  role: string;
+  company: string;
+  startDate: string;
+  endDate: string;
+  description: Array<string>;
+  category: tagData;
+};

@@ -1,3 +1,4 @@
 type biographyData = {
-  text: string;
+  motto: string
+  description: string;
 };

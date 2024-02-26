@@ -1,35 +1,16 @@
 @use "styles/abstracts" as a;
 
-.employmentCard {
-  min-width: 35rem;
-  display: grid;
-  grid-template-areas:
-  "logo content date";
-}
-
-.logo {
-  display: none;
-  grid-area: logo;
-
-  @media screen and (min-width: a.$mediumSize) {
-    display: block;
-  }
-}
-
-.content {
-  border-radius: 0.5rem;
+.summaryWrapper {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
-  grid-area: content;
 
-  .timelineCard {
+  .summary {
+    display: grid;
     width: 100%;
-
-    @media screen and (max-width: a.$mediumSize) {
-      width: 35rem;
-    }
+    grid-template-columns: repeat(3, 1fr);
+    margin-inline-end: 2rem;
   }
 }
 
-.date {
-  grid-area: date;
+.descriptionWrapper {
+  cursor: pointer;
 }

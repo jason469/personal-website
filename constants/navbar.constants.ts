@@ -8,10 +8,6 @@ export const navbarItems: navbarItems = {
                     title: "Biography",
                     scrollId: "biography",
                 },
-                {
-                    title: "Education",
-                    scrollId: "education",
-                }
             ],
         },
         {
@@ -48,4 +44,3 @@ export const navbarItems: navbarItems = {
         },
     ]
 }
-

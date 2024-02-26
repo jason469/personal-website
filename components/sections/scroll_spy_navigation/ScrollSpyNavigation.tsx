@@ -17,16 +17,6 @@ const ScrollSpyNavigation = () => {
                 </p>
             </Link>
             <Link
-                href={'/#education'}
-                className={`${styles.nav__link}`}
-                data-to-scrollspy-id="education"
-            >
-                <p
-                >
-                    Education
-                </p>
-            </Link>
-            <Link
                 href={'/#employment'}
                 className={`${styles.nav__link}`}
                 data-to-scrollspy-id="employment"

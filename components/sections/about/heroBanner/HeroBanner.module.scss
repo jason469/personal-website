@@ -1,5 +1,5 @@
-.banner {
-  min-width: 100vw;
-  min-height: 100vh;
-  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 20%), 0 -2px 1px -1px rgb(0 0 0 / 20%), 0 -1px 1px 0 rgb(0 0 0 / 20%), 0 -1px 3px 0 rgb(0 0 0 / 20%);
+@use "styles/abstracts" as a;
+
+.carousel {
+    height: calc(100vh - a.$navbarHeight);
 }

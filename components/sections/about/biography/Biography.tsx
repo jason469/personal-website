@@ -12,7 +12,8 @@ const Biography = () => {
         <article className={`flex flex-col items-center py-6 w-full`}>
           <h1 className={`${styles.title}`}>About me</h1>
           <article className={`my-4 w-full`}>
-            <h3 className={`${styles.subtitle}`}>{parse(`${BiographyData.text}`)}</h3>
+            <h3 className={`${styles.subtitle}`}>{parse(`${BiographyData.motto}`)}</h3>
+            <p className={`${styles.description}`}>{parse(`${BiographyData.description}`)}</p>
           </article>
         </article>
       </section>

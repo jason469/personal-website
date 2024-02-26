@@ -1,25 +1,18 @@
 "use client";
 
-import Carousel from "react-material-ui-carousel";
 import HeroImage from "@/components/ui/common/heroImage/heroImage";
 import { heroImagePaths } from "@/content/homeBanner.content";
+import styles from "./HeroBanner.module.scss";
 
 const HeroBanner = () => {
   return (
-    <Carousel
-      interval={6000}
-      animation={"slide"}
-      duration={850}
-      indicatorContainerProps={{
-        style: {
-          marginTop: "-50px", // 5
-        },
-      }}
+    <section
+      className={`${styles.carousel}`}
     >
-      {heroImagePaths.map((imagePath, i) => {
-        return <HeroImage image={imagePath} key={i}></HeroImage>;
-      })}
-    </Carousel>
+        {heroImagePaths.map((imagePath, i) => {
+          return <HeroImage image={imagePath} key={i}></HeroImage>;
+        })}
+    </section>
   );
 };
 

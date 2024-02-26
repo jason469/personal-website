@@ -3,7 +3,7 @@
 
 .navbar {
   @apply flex flex-col relative pt-4 pb-2  bg-primary-purple md:flex-row md:w-full md:justify-center md:items-center;
-  height: auto;
+  height: a.$navbarHeight;
   box-shadow: none;
 
   @media screen and (min-width: a.$mediumSize) {
