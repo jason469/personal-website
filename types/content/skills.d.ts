@@ -3,12 +3,7 @@ type singleSkillData = {
     title: string
 }
 
-type categoryData = {
-    title: string,
-    description: string
-}
-
 type allSkillsData = {
-    category: categoryData,
+    categoryTitle: string,
     skills: Array<singleSkillData>
 }
