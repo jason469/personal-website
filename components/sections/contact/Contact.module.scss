@@ -1,26 +1,20 @@
 .page {
-  @apply flex flex-row justify-center items-center gap-6 py-3 ;
-  max-height: 15rem;
-  padding: 2rem;
+  @apply flex flex-row justify-center items-center gap-12;
+  padding-block: 1.5rem;
   width: 100vw;
   background: rgba(0, 0, 0, 0.71);
 
-  .item {
-    width: 2rem;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
+  .email {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: white;
+  }
 
-    .logo {
-      width: 1.5rem;
-      font-size: 1.5rem;
-      cursor: pointer;
-      color: white;
-    }
+  .logo {
+    width: 1.8rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+    height: 100%;
   }
 }
-
-
-

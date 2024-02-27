@@ -12,7 +12,6 @@ function CategoryRow({ categoryTitle, skills }: allSkillsData) {
         // let iconName = skill.iconName
         // let Icon = siIcons[iconName]
         let Icon = siIcons["SiPython"]
-        console.log(Icon)
         return (
           <Icon className={`${styles.skillLogo}`} />
         );
