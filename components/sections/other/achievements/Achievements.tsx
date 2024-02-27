@@ -7,9 +7,9 @@ const Achievements = () => {
     return (
         <section className={`${styles.achievements}`} id={"achievements"}>
             <FadeInLeftAnimation>
-                <article id={`achievements`} className={`w-full flex flex-row gap-4 justify-center rounded-md`}>
+                <article id={`achievements`} className={`w-full flex flex-row gap-10 justify-center rounded-md`}>
                     <h1 className={`${styles.title}`}>Achievements</h1>
-                    <section className={`${styles.items}`}>
+                    <section className={`${styles.items} | flex flex-col gap-6`}>
                         {AchievementsData.map(function (data:achievementData, index:number) {
                             return (
                                 <AchievementsCard

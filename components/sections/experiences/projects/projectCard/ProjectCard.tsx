@@ -10,33 +10,41 @@ type projectCardProps = {
 export default function ProjectCard({ data }: projectCardProps) {
   return (
     <div
-      className={`${styles.card} | flex flex-col justify-between bg-white p-3`}
+      className={`${styles.card} | flex flex-col justify-between bg-white p-6`}
     >
-      <div className={`hover:bg-primary-grey-500 transition-duration-500`}>
+      <div className={``}>
         <a href={data.website.link} target="_blank">
-          <div className={`${styles.card__content} | flex flex-col justify-between h-full`}>
-            <div className={`${styles.text}`}>
-              <div className={` `}>
+          <div
+            className={`${styles.card__content} | flex flex-col justify-between h-full gap-3`}
+          >
+            <div className={`${styles.logo}`}>
+              <div className={`${styles.imageWrapper}`}>
                 <Image
                   src={`/sections/projects/logos/${data.logoName}`}
                   alt={` ${data.logoName}`}
-                  width={70}
-                  height={70}
+                  fill={true}
+                  style={{
+                    objectFit: "contain",
+                  }}
                 />
               </div>
-              {data.inDevelopment && <p className={`italic`}>In development</p>}
-              <p className={`${styles.description}`}>{data.description}</p>
             </div>
             <div
-              className={`${styles.skills} | flex flex-row gap-2 mt-2 flex-wrap`}
+              className={`${styles.text} | hover:bg-primary-grey-500 transition-duration-500`}
             >
-              {data.skills.map(function (skill, index) {
-                return (
-                  <div className={`${styles.skill}`} key={index}>
-                    <p className={`${styles.skill__text}`}>{skill}</p>
-                  </div>
-                );
-              })}
+              {data.inDevelopment && <p className={`italic`}>In development</p>}
+              <p className={`${styles.description}`}>{data.description}</p>
+              <div
+                className={`${styles.skills} | flex flex-row gap-2 mt-2 flex-wrap`}
+              >
+                {data.skills.map(function (skill, index) {
+                  return (
+                    <div className={`${styles.skill}`} key={index}>
+                      <p className={`${styles.skill__text}`}>{skill}</p>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </a>

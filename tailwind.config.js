@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         epilogue: "var(--font-epilogue)",
         journeyBegins: "var(--font-journey-begins)",
+        sourceSansThree: "var(--font-source-sans-three)",
       },
       colors: {
         "nav-border": "#EBEAEA",

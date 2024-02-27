@@ -1,5 +1,6 @@
 import {
-  Epilogue
+  Epilogue,
+  Source_Sans_3
 } from "next/font/google";
 import localFont from "@next/font/local";
 
@@ -8,6 +9,12 @@ export const epilogue = Epilogue({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-epilogue",
+});
+
+export const sourceSansThree = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-source-sans-three",
 });
 
 

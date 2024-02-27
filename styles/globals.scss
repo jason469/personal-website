@@ -13,7 +13,7 @@
 }
 
 body {
-  @apply font-epilogue;
+  @apply font-sourceSansThree;
   overscroll-behavior: none;
   scrollbar-gutter: auto;
   max-width: 100vw;
@@ -44,32 +44,36 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  @apply font-epilogue;
   @apply break-normal;
   font-weight: 400;
   text-transform: uppercase;
   color: a.$primary-blue;
-  letter-spacing: 0.5rem;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
+  letter-spacing: 15px;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
+  letter-spacing: 10px;
 }
 
 h3 {
-  font-size: 1.5rem;
-  letter-spacing: 5px;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
 }
 
-h6 {
-
+h4 {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
 }
 
 p {
+  @apply font-sourceSansThree;
   font-size: 1rem;
   //max-width: 25ch;
   text-align: left;
