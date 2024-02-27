@@ -1,6 +1,3 @@
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import { CardActionArea, CardActions } from "@mui/material";
 import styles from "./ProjectCard.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -12,23 +9,27 @@ type projectCardProps = {
 
 export default function ProjectCard({ data }: projectCardProps) {
   return (
-    <Card className={`${styles.card}`}>
-      <CardActionArea
-        className={`hover:bg-primary-grey-500 transition-duration-500`}
-      >
+    <div
+      className={`${styles.card} | flex flex-col justify-between bg-white p-3`}
+    >
+      <div className={`hover:bg-primary-grey-500 transition-duration-500`}>
         <a href={data.website.link} target="_blank">
-          <CardContent className={`${styles.card__content}`}>
-            <div className={` `}>
-              <Image
-                src={`/sections/projects/logos/${data.logoName}`}
-                alt={` ${data.logoName}`}
-                width={70}
-                height={70}
-              />
+          <div className={`${styles.card__content} | flex flex-col justify-between h-full`}>
+            <div className={`${styles.text}`}>
+              <div className={` `}>
+                <Image
+                  src={`/sections/projects/logos/${data.logoName}`}
+                  alt={` ${data.logoName}`}
+                  width={70}
+                  height={70}
+                />
+              </div>
+              {data.inDevelopment && <p className={`italic`}>In development</p>}
+              <p className={`${styles.description}`}>{data.description}</p>
             </div>
-            {data.inDevelopment && <p className={`italic`}>In development</p>}
-            <p className={`${styles.description}`}>{data.description}</p>
-            <div className={`${styles.skills} | flex flex-row gap-2 mt-2`}>
+            <div
+              className={`${styles.skills} | flex flex-row gap-2 mt-2 flex-wrap`}
+            >
               {data.skills.map(function (skill, index) {
                 return (
                   <div className={`${styles.skill}`} key={index}>
@@ -37,10 +38,12 @@ export default function ProjectCard({ data }: projectCardProps) {
                 );
               })}
             </div>
-          </CardContent>
+          </div>
         </a>
-      </CardActionArea>
-      <CardActions>
+      </div>
+      <div
+        className={`${styles.card__actions} | flex flex-row align-baseline gap-2`}
+      >
         {data.github && (
           <a href={data.github.link} target="_blank">
             <FontAwesomeIcon icon={faGithub} />
@@ -49,7 +52,7 @@ export default function ProjectCard({ data }: projectCardProps) {
         <a href={data.website.link} target="_blank">
           Visit
         </a>
-      </CardActions>
-    </Card>
+      </div>
+    </div>
   );
 }

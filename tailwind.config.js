@@ -8,14 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        lato: "var(--font-lato)",
-        cevicheOne: "var(--font-ceviche-one)",
-        cormorantSC: "var(--font-cormorant-sc)",
-        eczar: "var(--font-eczat)",
-        arizonia: "var(--font-arizonia)",
-        kavoon: "var(--font-kavoon)",
-        playfairDisplay: "var(--font-playfairDisplay)",
-        shrikhand: "var(--font-shrikhand)",
+        epilogue: "var(--font-epilogue)",
+        journeyBegins: "var(--font-journey-begins)",
       },
       colors: {
         "nav-border": "#EBEAEA",

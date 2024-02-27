@@ -19,6 +19,7 @@
     "@headlessui/react": "^1.7.16",
     "@mui/lab": "^5.0.0-alpha.137",
     "@mui/material": "^5.14.2",
+    "@next/font": "^14.1.0",
     "@react-three/drei": "^9.80.3",
     "@react-three/fiber": "^8.13.7",
     "@types/node": "20.4.5",

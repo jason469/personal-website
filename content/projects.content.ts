@@ -46,7 +46,7 @@ export const projects: Array<projectData> = [
     inDevelopment: false,
     description:
       "This is a website that I am built to organise songs into different playlists. A fellow collaborator is also building a machine learning model to give song recommendations based on the user's playlist. It's aesthetics were modelled off Spotify.",
-    skills: ["Django", "Django Rest Framework", "HTMX", "CSS", "Postgres"],
+    skills: ["Django", "DRF", "HTMX", "CSS", "Postgres"],
     github: {
       link: "https://github.com/jason469/waves",
     },
@@ -62,7 +62,7 @@ export const projects: Array<projectData> = [
     description:
       "This is a responsive " +
       "website that I built as an online cookbook. Anybody can view the recipes, but only authorised users can add recipes via a CMS, to make it easier for non-developers to interact with it.",
-    skills: ["Gatsby", "GraphQL", "SCSS", "TailwindCSS", "Contentful"],
+    skills: ["Gatsby", "GraphQL", "SCSS", "TailwindCSS"],
     github: {
       link: "https://github.com/jason469/Salt",
     },
@@ -77,7 +77,7 @@ export const projects: Array<projectData> = [
     inDevelopment: false,
     description:
       "Latte is a image categorisation web application that I developed. It was designed for a small audience of two people and allows users to upload and categorise images within tags and albums. Images can also have additional metadata attached to them.",
-    skills: ["React", "Django Rest Framework", "PostgresSQL", "CSS"],
+    skills: ["React", "DRF", "PostgresSQL", "CSS"],
     github: {
       link: "https://github.com/jason469/Latte",
     },

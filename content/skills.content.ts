@@ -28,10 +28,6 @@ export const SkillsData: Array<allSkillsData> = [
         title: "React",
       },
       {
-        iconName: "Flutter.svg",
-        title: "Flutter",
-      },
-      {
         iconName: "Angular.png",
         title: "Angular",
       },
@@ -58,14 +54,6 @@ export const SkillsData: Array<allSkillsData> = [
       {
         iconName: "jQuery.png",
         title: "jQuery",
-      },
-      {
-        iconName: "Highcharts.svg",
-        title: "Highcharts",
-      },
-      {
-        iconName: "Mapbox.png",
-        title: "Mapbox",
       },
     ],
   },
@@ -100,10 +88,6 @@ export const SkillsData: Array<allSkillsData> = [
       {
         iconName: "PostgresSQL.png",
         title: "PostgresSQL",
-      },
-      {
-        iconName: "MySQL.svg",
-        title: "MySQL",
       },
       {
         iconName: "MongoDB.svg",
@@ -176,10 +160,6 @@ export const SkillsData: Array<allSkillsData> = [
       {
         iconName: "AWS.png",
         title: "Amazon Web Services",
-      },
-      {
-        iconName: "Render.png",
-        title: "Render",
       },
     ],
   },

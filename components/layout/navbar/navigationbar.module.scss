@@ -13,6 +13,13 @@
     transition: top 0.5s;
   }
 
+  .logo {
+    font-size: 2rem;
+    text-transform: none;
+    color: white;
+    letter-spacing: 0;
+  }
+
   &__items {
     list-style: none;
     width: 70vw;

@@ -13,7 +13,7 @@
 }
 
 body {
-  @apply font-lato;
+  @apply font-epilogue;
   overscroll-behavior: none;
   scrollbar-gutter: auto;
   max-width: 100vw;
@@ -45,8 +45,8 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   @apply break-normal;
-  font-weight: 400 !important;
-  text-transform: uppercase !important;
+  font-weight: 400;
+  text-transform: uppercase;
   color: a.$primary-blue;
   letter-spacing: 0.5rem;
 }

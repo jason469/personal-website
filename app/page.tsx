@@ -21,14 +21,14 @@ export default function Home() {
       <Grid container spacing={2} className={``}>
         <Grid
           xs={0}
-          md={3}
-          lg={3}
+          md={1}
+          lg={1}
           className={`${styles.left} | flex flex-col gap-2 h-full`}
         ></Grid>
         <Grid
           xs={12}
-          md={6}
-          lg={6}
+          md={8}
+          lg={8}
           className={`${styles.center} | flex flex-col h-full`}
         >
           <ScrollSpy offsetBottom={100} scrollThrottle={80} useBoxMethod>

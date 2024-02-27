@@ -1,62 +1,44 @@
-import '@/styles/globals.scss'
-import '@/styles/reset.scss'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-import {Metadata} from "next";
-import {
-    arizonia,
-    cevicheOne,
-    cormorantSC,
-    eczar,
-    kavoon,
-    lato,
-    playfairDisplay,
-    shrikhand
-} from "@/constants/fonts.constants";
-import NavigationBar from "@/components/layout/navbar/navigationbar";
+import "@/styles/globals.scss";
+import "@/styles/reset.scss";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { Metadata } from "next";
+import { epilogue, journeyBegins } from "@/constants/fonts.constants";
+import NavigationBar from "@/components/layout/navbar/navigationBar";
 import Footer from "@/components/layout/footer/footer";
 
-
 export const metadata: Metadata = {
-    title: 'Jason Liu',
-    description: "Jason Liu's custom website to showcase his portfolio",
-    icons: {
-        icon: '/logos/favicon.ico',
-    },
-}
+  title: "Jason Liu",
+  description: "Jason Liu's custom website to showcase his portfolio",
+  icons: {
+    icon: "/logos/favicon.ico",
+  },
+};
 
 export default function RootLayout({
-                                       children,
-                                   }: {
-    children: React.ReactNode
+  children,
+}: {
+  children: React.ReactNode;
 }) {
-    return (
-        <html
-            lang="en"
-            className={`
-            ${lato.variable} 
-            ${cevicheOne.variable} 
-            ${cormorantSC.variable} 
-            ${eczar.variable}
-            ${arizonia.variable}
-            ${kavoon.variable}
-            ${playfairDisplay.variable}
-            ${shrikhand.variable}
+  return (
+    <html
+      lang="en"
+      className={`
+            ${epilogue.variable}
+            ${journeyBegins.variable}
             `}
-        >
-        <head>
-            <title>Jason Liu</title>
-            <link rel="manifest" href="/manifest.json"/>
-            <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"></link>
-            <link rel="shortcut icon" href="/logos/favicon.ico"/>
-            <meta name="theme-color" content="#772943"/>
-        </head>
-        <body>
-        <NavigationBar/>
-        <main>
-            {children}
-        </main>
-        <Footer/>
-        </body>
-        </html>
-    )
+    >
+      <head>
+        <title>Jason Liu</title>
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"></link>
+        <link rel="shortcut icon" href="/logos/favicon.ico" />
+        <meta name="theme-color" content="#772943" />
+      </head>
+      <body>
+        <NavigationBar />
+        <main>{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
 }
