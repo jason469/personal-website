@@ -9,7 +9,7 @@ const Biography = () => {
         className={`${styles.biography} | flex flex-col items-center g-3 w-full`}
         id={`biography`}
       >
-        <article className={`flex flex-col items-center py-6 w-full`}>
+        <article className={`flex flex-col items-center w-full`}>
           <h1 className={`${styles.title}`}>About me</h1>
           <article className={`my-4 w-full`}>
             <h3 className={`${styles.subtitle}`}>{parse(`${BiographyData.motto}`)}</h3>

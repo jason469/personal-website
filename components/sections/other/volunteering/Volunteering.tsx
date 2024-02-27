@@ -18,7 +18,7 @@ const Volunteering = () => {
           index: number
         ) {
           return (
-            <Grid xs={12} md={6} lg={4}>
+            <Grid xs={12} md={6} xl={4}>
               <VolunteerCard data={volunteer} key={index} />
             </Grid>
           );

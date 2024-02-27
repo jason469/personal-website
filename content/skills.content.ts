@@ -3,19 +3,19 @@ export const SkillsData: Array<allSkillsData> = [
     categoryTitle: "Languages",
     skills: [
       {
-        iconName: "Python.svg",
+        iconName: "SiLogoPython",
         title: "Python",
       },
       {
-        iconName: "JavaScript.svg",
+        iconName: "SiLogoJavascript",
         title: "JavaScript",
       },
       {
-        iconName: "Typescript.png",
+        iconName: "SiLogoTypescript",
         title: "TypeScript",
       },
       {
-        iconName: "NodeJS.svg",
+        iconName: "SiLogoNodejs",
         title: "NodeJS",
       },
     ],
@@ -24,35 +24,31 @@ export const SkillsData: Array<allSkillsData> = [
     categoryTitle: "Frontend Technologies",
     skills: [
       {
-        iconName: "React.png",
+        iconName: "SiLogoReact",
         title: "React",
       },
       {
-        iconName: "Angular.png",
+        iconName: "SiLogoAngular",
         title: "Angular",
       },
       {
-        iconName: "HTML.png",
+        iconName: "SiLogoHtml5",
         title: "HTML",
       },
       {
-        iconName: "HTMX.png",
-        title: "HTMX",
-      },
-      {
-        iconName: "CSS.png",
+        iconName: "SiLogoCss3",
         title: "CSS",
       },
       {
-        iconName: "SCSS.png",
+        iconName: "SiLogoSass",
         title: "SCSS",
       },
       {
-        iconName: "TailwindCSS.png",
+        iconName: "SiLogoTailwindCss",
         title: "Tailwind CSS",
       },
       {
-        iconName: "jQuery.png",
+        iconName: "SiLogoJquery",
         title: "jQuery",
       },
     ],
@@ -61,24 +57,20 @@ export const SkillsData: Array<allSkillsData> = [
     categoryTitle: "Backend Technologies",
     skills: [
       {
-        iconName: "Django.svg",
+        iconName: "SiDjango",
         title: "Django",
       },
       {
-        iconName: "Express.svg",
+        iconName: "SiExpress",
         title: "Express",
       },
       {
-        iconName: "FastAPI.svg",
+        iconName: "SiFastapi",
         title: "FastAPI",
       },
       {
-        iconName: "GraphQL.png",
+        iconName: "SiGraphql",
         title: "GraphQL",
-      },
-      {
-        iconName: "NextJS.png",
-        title: "NextJS",
       },
     ],
   },
@@ -86,15 +78,15 @@ export const SkillsData: Array<allSkillsData> = [
     categoryTitle: "Databases",
     skills: [
       {
-        iconName: "PostgresSQL.png",
+        iconName: "SiPostgresql",
         title: "PostgresSQL",
       },
       {
-        iconName: "MongoDB.svg",
+        iconName: "SiMongodb",
         title: "MongoDB",
       },
       {
-        iconName: "Redis.svg",
+        iconName: "SiRedis",
         title: "Redis",
       },
     ],
@@ -103,16 +95,12 @@ export const SkillsData: Array<allSkillsData> = [
     categoryTitle: "Planning",
     skills: [
       {
-        iconName: "Github.svg",
+        iconName: "SiGithub",
         title: "Github",
       },
       {
-        iconName: "Git.png",
+        iconName: "SiGit",
         title: "Git",
-      },
-      {
-        iconName: "dbdiagrams.png",
-        title: "dbdiagrams",
       },
     ],
   },
@@ -120,15 +108,15 @@ export const SkillsData: Array<allSkillsData> = [
     categoryTitle: "Documentation",
     skills: [
       {
-        iconName: "Microsoft_Word.png",
+        iconName: "SiMicrosoftword",
         title: "Microsoft Word",
       },
       {
-        iconName: "Microsoft_Excel.png",
+        iconName: "SiMicrosoftexcel",
         title: "Microsoft Excel",
       },
       {
-        iconName: "Microsoft_Powerpoint.png",
+        iconName: "SiMicrosoftpowerpoint",
         title: "Microsoft PowerPoint",
       },
     ],
@@ -137,16 +125,12 @@ export const SkillsData: Array<allSkillsData> = [
     categoryTitle: "Design",
     skills: [
       {
-        iconName: "Figma.svg",
+        iconName: "SiFigma",
         title: "Figma",
       },
       {
-        iconName: "Canva.png",
+        iconName: "SiCanva",
         title: "Canva",
-      },
-      {
-        iconName: "Pencil_Projects.png",
-        title: "Pencil Projects",
       },
     ],
   },
@@ -154,11 +138,11 @@ export const SkillsData: Array<allSkillsData> = [
     categoryTitle: "Deployment",
     skills: [
       {
-        iconName: "Docker.png",
+        iconName: "SiDocker",
         title: "Docker",
       },
       {
-        iconName: "AWS.png",
+        iconName: "SiAmazonaws",
         title: "Amazon Web Services",
       },
     ],
@@ -167,11 +151,11 @@ export const SkillsData: Array<allSkillsData> = [
     categoryTitle: "CMS",
     skills: [
       {
-        iconName: "Contentful.png",
+        iconName: "SiContentful",
         title: "Contentful",
       },
       {
-        iconName: "Sanity.png",
+        iconName: "SiSanity",
         title: "Sanity",
       },
     ],

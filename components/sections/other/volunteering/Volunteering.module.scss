@@ -1,7 +1,6 @@
 @use "styles/components" as c;
 
 .volunteering {
-  @include c.bannerPage();
   @include c.generalSection();
   width: 100%;
 

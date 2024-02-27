@@ -1,15 +1,17 @@
 @mixin bannerPage() {
   box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%), 0 -2px 1px -1px rgb(0 0 0 / 20%), 0 -1px 1px 0 rgb(0 0 0 / 14%), 0 -1px 3px 0 rgb(0 0 0 / 12%);
-  background-color: var(--primaryGrey);
-  height: auto;
+  background-color: white;
 }
 
 
 @mixin generalSection() {
   margin-block: 2rem;
+  padding-block: 1.5rem;
+  padding-inline: 1.5rem;
   width: 100%;
 }
 
 @mixin inlineSection() {
+  @include generalSection();
   padding-inline: 10rem;
 }

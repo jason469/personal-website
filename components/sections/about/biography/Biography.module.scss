@@ -3,7 +3,6 @@
 
 .biography {
   @include c.bannerPage();
-  @include c.generalSection();
   @include c.inlineSection();
 
   .title {

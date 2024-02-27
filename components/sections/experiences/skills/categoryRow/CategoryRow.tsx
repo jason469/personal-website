@@ -1,6 +1,7 @@
+import { icon } from "@fortawesome/fontawesome-svg-core";
 import styles from "./CategoryRow.module.scss";
 // @ts-ignore
-import Image from "next/image";
+import * as siIcons from "react-icons/si";
 
 function CategoryRow({ categoryTitle, skills }: allSkillsData) {
   return (
@@ -8,14 +9,12 @@ function CategoryRow({ categoryTitle, skills }: allSkillsData) {
       className={`${styles.categoryRow} | flex flex-row w-full gap-2 justify-center`}
     >
       {skills.map(function (skill: singleSkillData) {
+        // let iconName = skill.iconName
+        // let Icon = siIcons[iconName]
+        let Icon = siIcons["SiPython"]
+        console.log(Icon)
         return (
-          <Image
-            src={`/sections/skills/logos/${skill.iconName}`}
-            alt={skill.title}
-            width={30}
-            height={30}
-            className={`${styles.skillLogo} hidden md:block`}
-          />
+          <Icon className={`${styles.skillLogo}`} />
         );
       })}
     </div>
