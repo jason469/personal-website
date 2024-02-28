@@ -8,9 +8,8 @@ function CategoryRow({ categoryTitle, skills }: allSkillsData) {
     <div
       className={`${styles.categoryRow} | flex flex-row w-full gap-2 justify-center`}
     >
-      {skills.map(function (skill: singleSkillData) {
-        // let iconName = skill.iconName
-        // let Icon = siIcons[iconName]
+      {skills.map(function (skill:singleSkillData) {
+        let iconName = (skill.iconName as string)
         let Icon = siIcons["SiPython"]
         return (
           <Icon className={`${styles.skillLogo}`} />

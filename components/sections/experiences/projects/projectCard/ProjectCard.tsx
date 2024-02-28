@@ -10,14 +10,14 @@ type projectCardProps = {
 export default function ProjectCard({ data }: projectCardProps) {
   return (
     <div
-      className={`${styles.card} | flex flex-col justify-between bg-white p-6`}
+      className={`${styles.card} | flex flex-col justify-between bg-white h-full`}
     >
-      <div className={``}>
+      <div className={`${styles.card__info} | h-full`}>
         <a href={data.website.link} target="_blank">
           <div
             className={`${styles.card__content} | flex flex-col justify-between h-full gap-3`}
           >
-            <div className={`${styles.logo}`}>
+            <div className={`${styles.logo} | px-6 pt-6`}>
               <div className={`${styles.imageWrapper}`}>
                 <Image
                   src={`/sections/projects/logos/${data.logoName}`}
@@ -30,35 +30,38 @@ export default function ProjectCard({ data }: projectCardProps) {
               </div>
             </div>
             <div
-              className={`${styles.text} | hover:bg-primary-grey-500 transition-duration-500`}
+              className={`${styles.text} | px-6 py-3 text-black h-full | hover:bg-primary-grey-500 transition-duration-500`}
             >
               {data.inDevelopment && <p className={`italic`}>In development</p>}
               <p className={`${styles.description}`}>{data.description}</p>
-              <div
-                className={`${styles.skills} | flex flex-row gap-2 mt-2 flex-wrap`}
-              >
-                {data.skills.map(function (skill, index) {
-                  return (
-                    <div className={`${styles.skill}`} key={index}>
-                      <p className={`${styles.skill__text}`}>{skill}</p>
-                    </div>
-                  );
-                })}
-              </div>
+            </div>
+            <div
+              className={`${styles.skills} | flex flex-row gap-2 flex-wrap px-6 items-baseline`}
+            >
+              {data.skills.map(function (skill, index) {
+                return (
+                  <div className={`${styles.skill}`} key={index}>
+                    <p className={`${styles.skill__text}`}>{skill}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </a>
       </div>
       <div
-        className={`${styles.card__actions} | flex flex-row align-baseline gap-2`}
+        className={`${styles.card__actions} | flex flex-row align-baseline gap-6 | px-6 py-3`}
       >
         {data.github && (
-          <a href={data.github.link} target="_blank">
-            <FontAwesomeIcon icon={faGithub} />
+          <a href={data.github.link} target="_blank" className={`=`}>
+            <FontAwesomeIcon
+              icon={faGithub}
+              className={`${styles.logo} | align-middle`}
+            />
           </a>
         )}
         <a href={data.website.link} target="_blank">
-          Visit
+          <p className={`${styles.appLink}`}>Visit</p>
         </a>
       </div>
     </div>
