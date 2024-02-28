@@ -18,7 +18,7 @@ function Dropdown({ itemId, dropdownData, showDropdownId }: dropdownProps) {
 
   return (
     <>
-      <article className={`${dropdown ? styles.submenu : "hide"} `}>
+      <article className={`${dropdown ? styles.submenu : styles.hiddenMenu} `}>
         {dropdownData.map((item) => {
           return (
             <Link

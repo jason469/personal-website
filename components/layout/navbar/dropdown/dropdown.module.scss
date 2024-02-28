@@ -2,16 +2,17 @@
 @use "styles/components" as c;
 
 .submenu {
-  display: none;
+  z-index: 9999;
 
   .title {
     letter-spacing: 2px;
   }
 
   @media screen and (min-width: a.$mediumSize)  {
-    min-width: 8rem;
-    position: fixed;
-    top: calc(a.$navbarHeight + 0.1rem);
+    min-width: 9rem;
+    position: absolute;
+    top: calc(3rem + 2rem);
+    left: 0;
     list-style: none;
     text-align: start;
     display: flex;
@@ -21,4 +22,10 @@
     z-index: 999;
   }
 
+}
+
+.hiddenMenu {
+  @extend .submenu;
+  opacity: 0;
+  transition: opacity 0.5s 0s;
 }

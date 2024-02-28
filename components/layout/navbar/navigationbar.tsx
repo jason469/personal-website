@@ -19,7 +19,9 @@ const NavigationBar = () => {
     <section
       className={`${styles.navbar} | w-full px-10 py-4 flex items-center justify-between `}
     >
-      <section className={`w-11/12 me-4 md:ms-4`}>
+      <section
+        className={` ${styles.smallScreenNav} | flex flex-row justify-between items-center | me-4 md:ms-4 md:block`}
+      >
         <Link href={`/`} className={`my-8 md:mb-0`}>
           <h1
             className={`${styles.logo} | font-journeyBegins text-white hover:text-primary-blue-100`}
@@ -58,21 +60,19 @@ const NavigationBar = () => {
                 >
                   <article
                     key={item.title}
-                    className={`flex items-center h-auto`}
+                    className={`${styles.navItem} | relative flex flex-col items-start gap-2 | px-2 py-3 rounded-none text-white mr-4 uppercase hover:bg-primary-purple-750 md:px-4 md:py-6 md:rounded-md `}
                   >
                     <Link
                       href={`/#${item.scrollId}`}
-                      className={`${styles.link} | px-2 py-3 rounded-none text-white mr-4 uppercase hover:bg-primary-purple-750 md:px-4 md:py-6 md:rounded-md `}
+                      className={`${styles.link}`}
                     >
                       <p>{item.title}</p>
                     </Link>
-                    {
-                      <Dropdown
-                        itemId={item.title}
-                        dropdownData={item.dropdownData}
-                        showDropdownId={showDropdownId}
-                      />
-                    }
+                    <Dropdown
+                      itemId={item.title}
+                      dropdownData={item.dropdownData}
+                      showDropdownId={showDropdownId}
+                    />
                   </article>
                 </div>
               );
