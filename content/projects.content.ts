@@ -5,11 +5,11 @@ export const projects: Array<projectData> = [
       "This is a responsive website that I developed to help share my portfolio with others on the internet. It was also a good opportunity for me to continue honing my skills in front-end development and website design, and experiment with different animations.",
     skills: ["React", "CSS"],
     github: {
-      link: "https://github.com/jason469/jasonliuwebsite",
+      link: "https://github.com/jason469/personal-website",
     },
     website: {
       title: "Jason Liu",
-      link: "https://jasonliu.onrender.com/",
+      link: "https://www.jasonliudev.com",
     },
     logoName: "portfolio.png",
     inDevelopment: false,
