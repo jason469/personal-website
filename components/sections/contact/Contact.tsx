@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Contact = () => {
   return (
     <section
-      className={`${styles.page} | flex flex-col md:flex-row items-center justify-center gap-4`}
+      className={`${styles.page} | flex flex-col md:flex-row items-center justify-center gap-20`}
       id="contact"
     >
       <article className={`${styles.left} | text-white`}>
