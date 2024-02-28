@@ -1,7 +1,7 @@
-import { projects } from "@/content/projects.content";
+import { projects } from"../../../../content/projects.content";
 import styles from "./Projects.module.scss";
-import FadeInLeftAnimation from "@/components/ui/animations/FadeInLeftAnimation";
-import ProjectCard from "@/components/sections/experiences/projects/projectCard/ProjectCard";
+import FadeInLeftAnimation from "../../../../components/ui/animations/FadeInLeftAnimation";
+import ProjectCard from "../../../../components/sections/experiences/projects/projectCard/ProjectCard";
 import Grid from "@mui/material/Unstable_Grid2";
 
 const Projects = () => {

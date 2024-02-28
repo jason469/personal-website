@@ -1,6 +1,6 @@
 import styles from "./Skills.module.scss";
-import CategoryRow from "@/components/sections/experiences/skills/categoryRow/CategoryRow";
-import { SkillsData } from "@/content/skills.content";
+import CategoryRow from "../../../../components/sections/experiences/skills/categoryRow/CategoryRow";
+import { SkillsData } from "../../../../content/skills.content";
 
 const Skills = () => {
 

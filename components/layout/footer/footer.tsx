@@ -1,4 +1,4 @@
-import Contact from "@/components/sections/contact/Contact";
+import Contact from "../../../components/sections/contact/Contact";
 
 const Footer = () => {
     return (

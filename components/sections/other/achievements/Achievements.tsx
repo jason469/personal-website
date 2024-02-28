@@ -1,7 +1,7 @@
 import styles from "./Achievements.module.scss";
-import FadeInLeftAnimation from "@/components/ui/animations/FadeInLeftAnimation";
-import { AchievementsData } from "@/content/achievements.content";
-import AchievementsCard from "@/components/sections/other/achievements/achievementsCard/AchievementsCard";
+import FadeInLeftAnimation from "../../../../components/ui/animations/FadeInLeftAnimation";
+import { AchievementsData } from "../../../../content/achievements.content";
+import AchievementsCard from "../../../../components/sections/other/achievements/achievementsCard/AchievementsCard";
 
 const Achievements = () => {
   return (

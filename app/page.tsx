@@ -5,14 +5,14 @@ import styles from "./page.module.scss";
 import ScrollSpy from "react-ui-scrollspy";
 import Grid from "@mui/material/Unstable_Grid2";
 
-import ScrollSpyNavigation from "@/components/sections/scroll_spy_navigation/ScrollSpyNavigation";
-import HeroBanner from "@/components/sections/about/heroBanner/HeroBanner";
-import Biography from "@/components/sections/about/biography/Biography";
-import Employment from "@/components/sections/experiences/employment/Employment";
-import Projects from "@/components/sections/experiences/projects/Projects";
-import Skills from "@/components/sections/experiences/skills/Skills";
-import Achievements from "@/components/sections/other/achievements/Achievements";
-import Volunteering from "@/components/sections/other/volunteering/Volunteering";
+import ScrollSpyNavigation from "../components/sections/scroll_spy_navigation/ScrollSpyNavigation";
+import HeroBanner from "../components/sections/about/heroBanner/HeroBanner";
+import Biography from "../components/sections/about/biography/Biography";
+import Employment from "../components/sections/experiences/employment/Employment";
+import Projects from "../components/sections/experiences/projects/Projects";
+import Skills from "../components/sections/experiences/skills/Skills";
+import Achievements from "../components/sections/other/achievements/Achievements";
+import Volunteering from "../components/sections/other/volunteering/Volunteering";
 
 export default function Home() {
   return (

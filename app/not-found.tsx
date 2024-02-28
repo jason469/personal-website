@@ -1,7 +1,7 @@
 'use client'
 
 import styles from "./not-found.module.scss";
-import {PageWrapperAnimation} from "@/components/ui/animations/PageWrapperAnimation";
+import {PageWrapperAnimation} from "../components/ui/animations/PageWrapperAnimation";
 import Link from "next/link";
 
 export default function NotFound() {

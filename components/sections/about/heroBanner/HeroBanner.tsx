@@ -1,7 +1,7 @@
 "use client";
 
-import HeroImage from "@/components/ui/common/heroImage/heroImage";
-import { heroImagePaths } from "@/content/homeBanner.content";
+import HeroImage from "../../../../components/ui/common/heroImage/heroImage";
+import { heroImagePaths } from "../../../../content/homeBanner.content";
 import styles from "./HeroBanner.module.scss";
 
 const HeroBanner = () => {
