@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./navigationBar.module.scss";
+import styles from "./navigationbar.module.scss";
 
 import { useState } from "react";
 import { BounceInAnimation } from "../../../components/ui/animations/BounceInAnimation";
