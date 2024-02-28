@@ -34,12 +34,16 @@ function EmploymentCard({ data }: employmentCardProps) {
         </AccordionSummary>
         <AccordionDetails className={`${styles.descriptionWrapper}`}>
           <p className={`${styles.description}`}>
-            <ul>
+            <ul className={`${styles.list}`}>
               {data.description.map(function (
                 bulletPoint: string,
                 index: number
               ) {
-                return <li key={index}>{bulletPoint}</li>;
+                return (
+                  <li key={index} className={`${styles.list__point}`}>
+                    {bulletPoint}
+                  </li>
+                );
               })}
             </ul>
           </p>

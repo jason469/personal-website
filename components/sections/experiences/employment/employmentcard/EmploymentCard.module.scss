@@ -14,4 +14,11 @@
 
 .descriptionWrapper {
   cursor: pointer;
+
+  .list {
+    &__point {
+      list-style: outside;
+      margin-left: 2rem;
+    }
+  }
 }
