@@ -1,6 +1,6 @@
 'use client'
 
-import {PageWrapperAnimation} from "../components/ui/animations/PageWrapperAnimation";
+import {PageWrapperAnimation} from "@/components/ui/animations/PageWrapperAnimation";
 import styles from "./global-error.module.scss";
 import Link from "next/link";
 

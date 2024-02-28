@@ -3,8 +3,8 @@
 import styles from "./navigationbar.module.scss";
 
 import { useState } from "react";
-import { BounceInAnimation } from "../../../components/ui/animations/BounceInAnimation";
-import { navbarItems } from "../../../constants/navbar.constants";
+import { BounceInAnimation } from "@/components/ui/animations/BounceInAnimation";
+import { navbarItems } from "@/constants/navbar.constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Dropdown from "./dropdown/dropdown";

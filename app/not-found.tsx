@@ -3,7 +3,7 @@
 import styles from "./not-found.module.scss";
 import Link from "next/link";
 
-import {PageWrapperAnimation} from "../components/ui/animations/PageWrapperAnimation";
+import {PageWrapperAnimation} from "@/components/ui/animations/PageWrapperAnimation";
 
 export default function NotFound() {
     return (

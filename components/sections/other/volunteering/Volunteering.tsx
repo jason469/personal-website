@@ -1,7 +1,7 @@
 import styles from "./Volunteering.module.scss";
 
-import { VolunteeringData } from "../../../../content/volunteering.content";
-import VolunteerCard from "../../../../components/sections/other/volunteering/volunteeringCard/VolunteeringCard";
+import { VolunteeringData } from "@/content/volunteering.content";
+import VolunteerCard from "@/components/sections/other/volunteering/volunteeringCard/VolunteeringCard";
 import Grid from "@mui/material/Unstable_Grid2";
 
 const Volunteering = () => {
