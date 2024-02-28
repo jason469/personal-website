@@ -1,4 +1,5 @@
 import styles from "./Biography.module.scss";
+
 import { BiographyData } from "../../../../content/biography.content";
 import parse from "html-react-parser";
 

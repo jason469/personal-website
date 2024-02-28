@@ -1,6 +1,6 @@
 import styles from "./VolunteeringCard.module.scss";
-import parse from "html-react-parser";
 
+import parse from "html-react-parser";
 import HoverCard from "react-png-hovercard";
 import Image from "next/image";
 

@@ -1,12 +1,12 @@
 "use client";
 
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import styles from "./EmploymentCard.module.scss";
+
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Accordion from "@mui/material/Accordion";
-import parse from "html-react-parser";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 type employmentCardProps = {
   data: employmentData;

@@ -1,14 +1,14 @@
 "use client";
 
 import styles from "./navigationBar.module.scss";
-import Dropdown from "./dropdown/dropdown";
+
 import { useState } from "react";
-import Link from "next/link";
 import { BounceInAnimation } from "../../../components/ui/animations/BounceInAnimation";
 import { navbarItems } from "../../../constants/navbar.constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import Grid from "@mui/material/Unstable_Grid2";
+import Dropdown from "./dropdown/dropdown";
+import Link from "next/link";
 
 const NavigationBar = () => {
   const [showDropdownId, setShowDropdownId] = useState(""); // ID of the dropdown to be shown

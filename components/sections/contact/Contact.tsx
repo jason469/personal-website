@@ -1,4 +1,5 @@
 import styles from "./Contact.module.scss";
+
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
