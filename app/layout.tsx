@@ -27,7 +27,7 @@ export default function RootLayout({
             ${epilogue.variable}
             ${journeyBegins.variable}
             ${sourceSansThree.variable}
-            h-screen
+            min-h-screen
             `}
     >
       <head>
@@ -37,7 +37,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/logos/logo_red.svg" />
         <meta name="theme-color" content="#772943" />
       </head>
-      <body id="body">
+      <body className="h-full">
         <NavigationBar />
         <main className={`h-full`}>{children}</main>
         <Footer />
