@@ -33,12 +33,12 @@ export default function RootLayout({
         <title>Jason Liu</title>
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"></link>
-        <link rel="shortcut icon" href="/logos/favicon.ico" />
+        <link rel="shortcut icon" href="/logos/logo_red.svg" />
         <meta name="theme-color" content="#772943" />
       </head>
       <body>
         <NavigationBar />
-        <main>{children}</main>
+        <main className={`h-full`}>{children}</main>
         <Footer />
       </body>
     </html>

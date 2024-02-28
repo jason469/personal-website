@@ -4,6 +4,10 @@
 .notFoundPage {
   padding-inline: 3rem;
   padding-block: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 
   h1 {
     font-size: 1.5rem;
@@ -16,5 +20,11 @@
   }
 
   .button {
+    @include c.hover-fill-button(a.$primary-blue, a.$primary-brown)
   }
+}
+
+.footer {
+  bottom: 0;
+  position: sticky;
 }
