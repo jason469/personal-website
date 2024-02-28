@@ -16,9 +16,11 @@ const Projects = () => {
             <article className={`${styles.description}`}>
               <strong>My favourite things to work on in my spare time!</strong>
               <br />
-              Please note that due to limited server resources, these apps may
-              take some time to load when opened for the first time. <br />
-              Subsequents pages loads will be faster however.
+              <p>
+                Please note that due to limited server resources, these apps may
+                take some time to load when opened for the first time. <br />
+                Subsequents pages loads will be faster however.
+              </p>
             </article>
           </div>
           <Grid container spacing={2} className={``}>

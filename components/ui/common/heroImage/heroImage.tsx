@@ -16,16 +16,11 @@ const HeroImage = ({image, children}: heroImageProps) => (
                 className={`${styles.heroImage}`}
                 style={{
                     objectFit: "cover",
-                    objectPosition: "top",
 
             }}
                 alt={""}
             />
         </section>
-
-        {/* <div className={`${styles.heroContent}`}>
-            {children}
-        </div> */}
     </section>
 );
 

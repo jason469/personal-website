@@ -5,13 +5,12 @@ import Grid from "@mui/material/Unstable_Grid2";
 
 const Volunteering = () => {
   return (
-    <section id={`volunteering`} className={`${styles.volunteering} w-full`}>
-      <div className={`titleWrapper | w-full flex justify-center`}>
+    <section id={`volunteering`} className={`${styles.volunteering}`}>
+      <div
+        className={`${styles.headings} | w-full mb-6 flex flex-col items-center`}
+      >
         <h1 className={`${styles.title}`}>Volunteering</h1>
       </div>
-      <article className={`description`}>
-        I always try to give back where I can!
-      </article>
       <Grid container spacing={2} className={``}>
         {VolunteeringData.map(function (
           volunteer: volunteeringData,

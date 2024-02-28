@@ -1,8 +1,15 @@
+@use "styles/abstracts" as a;
+
 @mixin bannerPage() {
-  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%), 0 -2px 1px -1px rgb(0 0 0 / 20%), 0 -1px 1px 0 rgb(0 0 0 / 14%), 0 -1px 3px 0 rgb(0 0 0 / 12%);
+  box-shadow:
+    0 2px 1px -1px rgb(0 0 0 / 20%),
+    0 1px 1px 0 rgb(0 0 0 / 14%),
+    0 1px 3px 0 rgb(0 0 0 / 12%),
+    0 -2px 1px -1px rgb(0 0 0 / 20%),
+    0 -1px 1px 0 rgb(0 0 0 / 14%),
+    0 -1px 3px 0 rgb(0 0 0 / 12%);
   background-color: white;
 }
-
 
 @mixin generalSection() {
   margin-block: 2rem;
@@ -13,5 +20,9 @@
 
 @mixin inlineSection() {
   @include generalSection();
-  padding-inline: 10rem;
+  padding-inline: 3rem;
+
+  @media screen and (min-width: a.$mediumSize) {
+    padding-inline: 10rem;
+  }
 }

@@ -2,7 +2,6 @@
 
 .volunteering {
   @include c.generalSection();
-  width: 100%;
 
   .title {
     @include c.linedTitle();

@@ -16,9 +16,11 @@ const NavigationBar = () => {
   const toggleNavbar = () => setNavbarOpen(!navbarOpen);
 
   return (
-    <section className={`${styles.navbar} | w-full`}>
-      <section className={`flex items-center justify-between w-11/12 mx-4`}>
-        <Link href={`/`} className={``}>
+    <section
+      className={`${styles.navbar} | w-full px-10 py-4 flex items-center justify-between `}
+    >
+      <section className={`w-11/12 me-4 md:ms-4`}>
+        <Link href={`/`} className={`my-8 md:mb-0`}>
           <h1
             className={`${styles.logo} | font-journeyBegins text-white hover:text-primary-blue-100`}
           >

@@ -1,14 +1,14 @@
-import {EmploymentData} from '@/content/employment.content';
+import { EmploymentData } from "@/content/employment.content";
 import styles from "./Employment.module.scss";
 import EmploymentCard from "@/components/sections/experiences/employment/employmentcard/EmploymentCard";
 
-
 const Employment = () => {
-    return (
-      <section
-        className={`${styles.employment} banner_page page`}
-        id={`employment`}
-      >
+  return (
+    <section
+      className={`${styles.employment} banner_page page`}
+      id={`employment`}
+    >
+      <div id="experiences">
         <section className={`titleWrapper | w-full flex justify-center`}>
           <h1 className={`${styles.title}`}>Employment</h1>
         </section>
@@ -17,8 +17,9 @@ const Employment = () => {
             return <EmploymentCard data={data} key={index} />;
           })}
         </section>
-      </section>
-    );
-}
+      </div>
+    </section>
+  );
+};
 
 export default Employment;
