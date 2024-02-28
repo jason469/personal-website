@@ -1,6 +1,15 @@
 @use "/styles/components" as c;
 @use "/styles/abstracts" as a;
 
+#body {
+  height: 100%;
+}
+
+.footer {
+  bottom: 0;
+  position: sticky;
+}
+
 .notFoundPage {
   padding-inline: 3rem;
   padding-block: 3rem;
@@ -22,9 +31,4 @@
   .button {
     @include c.hover-fill-button(a.$primary-blue, a.$primary-brown)
   }
-}
-
-.footer {
-  bottom: 0;
-  position: sticky;
 }
