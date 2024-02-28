@@ -3,9 +3,9 @@ import "../styles/reset.scss";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import { Metadata } from "next";
-import { epilogue, journeyBegins, sourceSansThree } from "../constants/fonts.constants";
-import NavigationBar from "../components/layout/navbar/navigationBar";
-import Footer from "../components/layout/footer/footer";
+import { epilogue, journeyBegins, sourceSansThree } from "@/constants/fonts.constants";
+import NavigationBar from "@/components/layout/navbar/navigationBar";
+import Footer from "@/components/layout/footer/footer";
 
 export const metadata: Metadata = {
   title: "Jason Liu",
