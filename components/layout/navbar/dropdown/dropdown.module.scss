@@ -3,12 +3,14 @@
 
 .submenu {
   z-index: 9999;
+  display: none;
 
   .title {
     letter-spacing: 2px;
   }
 
   @media screen and (min-width: a.$mediumSize)  {
+    display: block;
     min-width: 9rem;
     position: absolute;
     top: calc(3rem + 2rem);

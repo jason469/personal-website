@@ -18,16 +18,16 @@ export default function Home() {
   return (
     <section className={`flex flex-col`}>
       <HeroBanner />
-      <Grid container spacing={2} className={``}>
+      <Grid container spacing={2} className={`w-full`}>
         <Grid
-          xs={0}
+          xs={1}
           md={1}
           lg={1}
           xl={2}
           className={`${styles.left} | flex flex-col gap-2 h-full`}
         ></Grid>
         <Grid
-          xs={12}
+          xs={10}
           md={8}
           lg={8}
           xl={7}
@@ -43,11 +43,11 @@ export default function Home() {
           </ScrollSpy>
         </Grid>
         <Grid
-          xs={12}
+          xs={1}
           md={3}
           lg={3}
           xl={3}
-          className={`${styles.right} | h-full hidden lg:flex lg:flex-col`}
+          className={`${styles.right} | h-full hidden md:flex md:flex-col`}
         >
           <section className={`${styles.nav}`}>
             <ScrollSpyNavigation />

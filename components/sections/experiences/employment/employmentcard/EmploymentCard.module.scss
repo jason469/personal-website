@@ -1,14 +1,18 @@
 @use "styles/abstracts" as a;
 
+.accordion {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+}
+
 .summaryWrapper {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
 
   .summary {
     display: grid;
-    width: 100%;
     grid-template-columns: repeat(3, 1fr);
     margin-inline-end: 2rem;
-    column-gap: 1rem ;
+    column-gap: 1rem;
+    margin: 0;
   }
 }
 

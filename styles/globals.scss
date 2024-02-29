@@ -12,20 +12,27 @@
   box-sizing: border-box;
 }
 
+html {
+  overscroll-behavior-x: none;
+  width: 100%;
+}
+
 body {
   @apply font-sourceSansThree;
-  overscroll-behavior: none;
-  scrollbar-gutter: auto;
-  max-width: 100vw;
-  overflow-x: hidden;
+  scrollbar-gutter: stable both-edges;
   background: a.$primary-blue-100;
   display: flex;
   flex-direction: column;
+  overscroll-behavior-x: none;
 }
 
 main {
+  width: 100%;
 }
 
+::-webkit-scrollbar {
+  display: none !important;
+}
 
 // Utilities
 .hide {
@@ -36,14 +43,19 @@ main {
 a {
   cursor: pointer;
   text-decoration: none;
-  color: a.$primary-blue-500
+  color: a.$primary-blue-500;
 }
 
 a:hover {
-  color: a.$primary-purple
+  color: a.$primary-purple;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @apply font-epilogue;
   @apply break-normal;
   font-weight: 400;

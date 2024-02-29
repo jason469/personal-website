@@ -17,12 +17,12 @@ function EmploymentCard({ data }: employmentCardProps) {
     <article
       className={`cursor-pointer w-full gap-3 | ${styles.employmentCard}`}
     >
-      <Accordion>
+      <Accordion className={`${styles.accordian}`}>
         <AccordionSummary
           expandIcon={<FontAwesomeIcon icon={faAngleDown} className={`p-0`} />}
           aria-controls="panel1-content"
           id="panel1-header"
-          className={`${styles.summaryWrapper}`}
+          className={`${styles.summaryWrapper} | p-2`}
         >
           <div className={`${styles.summary}`}>
             <p className={`${styles.company}`}>{data.company}</p>

@@ -22,7 +22,7 @@ const NavigationBar = () => {
       <section
         className={` ${styles.smallScreenNav} | flex flex-row justify-between items-center | me-4 md:ms-4 md:block`}
       >
-        <Link href={`/`} className={`my-8 md:mb-0`}>
+        <Link href={`/`} className={`my-2 md:my-8 md:mb-0`}>
           <h1
             className={`${styles.logo} | font-journeyBegins text-white hover:text-primary-blue-100`}
           >
