@@ -30,6 +30,9 @@ import {
   SiContentful,
   SiSanity,
 } from "react-icons/si";
+import Tooltip from "@mui/material/Tooltip";
+import IconButton from "@mui/material/IconButton";
+
 
 function CategoryRow({ categoryTitle, skills }: allSkillsData) {
   function getIcon(iconName: string) {
@@ -89,7 +92,7 @@ function CategoryRow({ categoryTitle, skills }: allSkillsData) {
       return <SiAmazonaws className={`${styles.skillLogo}`} />;
     } else if (iconName == "SiContentful") {
       return <SiContentful className={`${styles.skillLogo}`} />;
-    } else if (iconName == "SiSanity") {
+    } else {//if (iconName == "SiSanity")
       return <SiSanity className={`${styles.skillLogo}`} />;
     }
   }
@@ -99,7 +102,11 @@ function CategoryRow({ categoryTitle, skills }: allSkillsData) {
       className={`${styles.categoryRow} | flex flex-row w-full gap-4 justify-center`}
     >
       {skills.map(function (skill: singleSkillData) {
-        return getIcon(skill.iconName);
+        return (
+          <Tooltip title={skill.title}>
+            <IconButton className={`${styles.iconButton}`}>{getIcon(skill.iconName)}</IconButton>
+          </Tooltip>
+        );
       })}
     </div>
   );

@@ -31,6 +31,7 @@ module.exports = {
         "primary-a90": "#000000",
 
         "secondary-a0": "#5F0000",
+        "secondary-a05": "#f0dad4",
         "secondary-a10": "#e6c2b9",
         "secondary-a20": "#c98877",
         "secondary-a30": "#a74e3a",

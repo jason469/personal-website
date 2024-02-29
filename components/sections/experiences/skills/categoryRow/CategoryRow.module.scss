@@ -4,3 +4,8 @@
   font-size: 2.5rem;
   color: a.$secondary-a50;
 }
+
+.iconButton:hover {
+  cursor: default;
+  background-color: a.$secondary-a05;
+}
