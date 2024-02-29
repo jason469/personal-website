@@ -20,7 +20,7 @@ const NavigationBar = () => {
       className={`${styles.navbar} | w-full px-10 py-4 flex items-start justify-between md:items-center `}
     >
       <section
-        className={` ${styles.smallScreenNav} | flex flex-row justify-between items-center me-4 mb-6 | md:mb-0 md:ms-4 md:block`}
+        className={` ${styles.smallScreenNav} | flex flex-row justify-between items-center me-4 | md:ms-4 md:block`}
       >
         <Link href={`/`} className={`my-2 md:my-8 md:mb-0`}>
           <h1
@@ -38,7 +38,7 @@ const NavigationBar = () => {
       </section>
       <BounceInAnimation isVisible={navbarOpen}>
         <article
-          className={`flex flex-col text-center justify-end mr-4 transition duration-300 ease-in md:flex-row  | ${
+          className={`flex flex-col text-center justify-end mr-4 transition duration-300 ease-in mt-6 md:mt-0 md:flex-row  | ${
             navbarOpen ? " flex" : " hidden"
           } ${styles.navbar__items}`}
         >
