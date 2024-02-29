@@ -24,6 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   overscroll-behavior-x: none;
+  color: a.$secondary-a60;
 }
 
 main {
@@ -42,11 +43,11 @@ main {
 .link {
   cursor: pointer;
   text-decoration: none;
-  color: a.$primary-a70;
+  color: a.$secondary-a70;
 }
 
 .link:hover {
-  color: a.$primary-a10;
+  color: a.$secondary-a10;
 }
 
 // Element-specific styles
@@ -61,37 +62,34 @@ h6 {
   font-weight: 400;
   text-transform: uppercase;
   max-width: 60ch;
+  color: a.$secondary-a50;
 }
 
 h1 {
   font-size: 1.5rem;
   text-align: center;
   letter-spacing: 15px;
-  color: a.$primary-a60;
+  color: a.$secondary-a60;
 }
 
 h2 {
   font-size: 1.3rem;
   letter-spacing: 10px;
-  color: a.$secondary-a50;
 }
 
 h3 {
   font-size: 1.2rem;
   letter-spacing: 4px;
-  color: a.$secondary-a50;
 }
 
 h4 {
   font-size: 1.1rem;
   letter-spacing: 2px;
-  color: a.$secondary-a50;
 }
 
 p {
   @apply font-sourceSansThree;
   font-size: 1rem;
-  //max-width: 25ch;
   text-align: left;
 }
 
@@ -113,7 +111,7 @@ p {
 .active-scroll-spy {
   transition: 0.1s ease-in-out;
   background: a.$primary-a50;
-  color: white;
+  color: white !important;
 }
 
 // Material UI
