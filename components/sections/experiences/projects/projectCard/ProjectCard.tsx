@@ -31,7 +31,7 @@ export default function ProjectCard({ data }: projectCardProps) {
               </div>
             </div>
             <div
-              className={`${styles.text} | px-6 py-3 text-black h-full | hover:bg-primary-grey-500 transition-duration-500`}
+              className={`${styles.text} | px-6 py-3 text-black h-full | hover:bg-primary-a20 transition-duration-500`}
             >
               {data.inDevelopment && <p className={`italic`}>In development</p>}
               <p className={`${styles.description}`}>{data.description}</p>

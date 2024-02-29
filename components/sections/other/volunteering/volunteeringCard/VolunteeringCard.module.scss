@@ -1,4 +1,8 @@
+@use "styles/abstracts" as a;
+
 .card {
+  box-shadow: 0 3px 10px a.$primary-a20;
+
   &__content {
     padding: 0;
     margin: 0;

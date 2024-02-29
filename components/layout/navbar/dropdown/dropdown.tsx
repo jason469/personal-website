@@ -23,7 +23,7 @@ function Dropdown({ itemId, dropdownData, showDropdownId }: dropdownProps) {
           return (
             <Link
               href={`/#${item.scrollId}`}
-              className={`${styles.title} | w-full h-full text-white p-3 overflow-hidden hover:bg-accent-colour-1250 `}
+              className={`${styles.title} | w-full h-full text-white p-3 overflow-hidden hover:bg-primary-a30 `}
               key={item.title}
             >
               <p>{item.title}</p>

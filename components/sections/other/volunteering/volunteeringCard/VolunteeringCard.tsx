@@ -15,7 +15,7 @@ export default function VolunteerCard({ data }: volunteeringCardProp) {
         className={`${styles.card__header} | flex flex-col gap-2 items-start justify-center mb-5`}
       >
         <a href={data.website} target="_blank">
-          <h4>{data.company}</h4>
+          <h3 className={`hover:text-secondary-a30`}>{data.company}</h3>
         </a>
         <div>
           <p className={`italic`}>{data.title}</p>

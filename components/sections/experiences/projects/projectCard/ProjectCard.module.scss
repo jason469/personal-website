@@ -1,6 +1,9 @@
+@use "styles/components" as c;
+@use "styles/abstracts" as a;
+
 .card {
   box-shadow: none !important;
-  border: 1px solid rgba(102, 119, 136, 0.5);
+  border: 1px solid a.$primary-a50;
   border-radius: 0 !important;
   height: 100%;
 
@@ -16,21 +19,23 @@
     }
 
     .skill {
-      background-color: #d3d3d3;
+      background-color: a.$primary-a50;
       border-radius: 0.5rem;
       padding: 0.5rem;
+      color: white;
 
       &__text {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
       }
     }
   }
 
-  .logo {
+  .logo, .appLink {
     font-size: 1.2rem;
+
+    &:hover {
+      color: a.$secondary-a50;
+    }
   }
 
-  .appLink {
-    font-size: 1.2rem;
-  }
 }

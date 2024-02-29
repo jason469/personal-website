@@ -9,11 +9,11 @@ const Contact = () => {
       className={`${styles.page} | flex flex-col md:flex-row items-center justify-center gap-4 md:gap-20`}
       id="contact"
     >
-      <article className={`${styles.left} | text-white`}>
+      <article className={`${styles.left}`}>
         <a
           href="mailto:Jliu21500@gmail.com"
           target="_blank"
-          className={`bold hover:text-secondary-a50`}
+          className={`text-white hover:text-secondary-a10`}
           rel="noreferrer"
         >
           <p className={`${styles.email} | font-epilogue`}>

@@ -32,7 +32,7 @@ function EmploymentCard({ data }: employmentCardProps) {
             <p className={`${styles.role} | italic`}>{data.role}</p>
           </div>
         </AccordionSummary>
-        <AccordionDetails className={`${styles.descriptionWrapper}`}>
+        <AccordionDetails className={`${styles.descriptionWrapper} } py-6`}>
           <p className={`${styles.description}`}>
             <ul className={`${styles.list}`}>
               {data.description.map(function (

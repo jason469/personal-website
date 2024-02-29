@@ -1,3 +1,5 @@
+@use "styles/abstracts" as a;
+
 @mixin unlinedTitle() {
   margin-bottom: 1.5rem !important;
   display: flex;
@@ -17,7 +19,7 @@
   &:after {
     content: "";
     flex: 1 1;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid a.$primary-a70;
   }
 
   &:before {

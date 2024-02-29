@@ -60,7 +60,7 @@ const NavigationBar = () => {
                 >
                   <article
                     key={item.title}
-                    className={`${styles.navItem} | relative flex flex-col items-start gap-2 | px-2 py-3 rounded-none text-white mr-4 uppercase hover:bg-accent-colour md:px-4 md:py-6 md:rounded-md `}
+                    className={`${styles.navItem} | relative flex flex-col items-start gap-2 | px-2 py-3 rounded-none text-white mr-4 uppercase hover:bg-primary-a50 md:px-4 md:py-6`}
                   >
                     <Link
                       href={`/#${item.scrollId}`}
