@@ -34,7 +34,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"></link>
         <link rel="shortcut icon" href="/logos/logo_red.svg" />
-        <meta name="theme-color" content="#772943" />
+        <meta name="theme-color" content="#008080" />
       </head>
       <body className="">
         <NavigationBar />
