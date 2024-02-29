@@ -7,6 +7,7 @@
 .summaryWrapper {
   box-shadow: 0 2px 10px 0 a.$primary-a20;
   transition: 300ms;
+  padding: 1rem !important;
 
   &:hover {
     background-color: a.$primary-a10;
@@ -23,6 +24,7 @@
 
 .descriptionWrapper {
   cursor: default;
+  padding-block: 1.5rem !important;
 
   .list {
     &__point {

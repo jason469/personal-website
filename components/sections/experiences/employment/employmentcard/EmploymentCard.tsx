@@ -22,7 +22,7 @@ function EmploymentCard({ data }: employmentCardProps) {
           expandIcon={<FontAwesomeIcon icon={faAngleDown} className={`p-0`} />}
           aria-controls="panel1-content"
           id="panel1-header"
-          className={`${styles.summaryWrapper} | p-4`}
+          className={`${styles.summaryWrapper}`}
         >
           <div className={`${styles.summary}`}>
             <p className={`${styles.company} | font-bold text-primary-a50`}>{data.company}</p>
@@ -32,7 +32,7 @@ function EmploymentCard({ data }: employmentCardProps) {
             <p className={`${styles.role} | italic`}>{data.role}</p>
           </div>
         </AccordionSummary>
-        <AccordionDetails className={`${styles.descriptionWrapper} } py-6`}>
+        <AccordionDetails className={`${styles.descriptionWrapper}`}>
           <p className={`${styles.description}`}>
             <ul className={`${styles.list}`}>
               {data.description.map(function (
