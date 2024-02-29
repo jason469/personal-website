@@ -22,8 +22,8 @@
 }
 
 .expanded {
-  background-color: a.$primary-a10;
-  box-shadow: 0 2px 10px 0 a.$primary-a30;
+  background-color: a.$primary-a10 !important;
+  box-shadow: 0 2px 10px 0 a.$primary-a30 !important;
 }
 
 .descriptionWrapper {
