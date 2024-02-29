@@ -11,7 +11,7 @@ const Achievements = () => {
         <FadeInLeftAnimation>
           <article
             id={`achievements`}
-            className={`w-full flex flex-row gap-10 justify-center rounded-md`}
+            className={`w-full flex flex-row gap-5 justify-center rounded-md md:gap-10`}
           >
             <h1 className={`${styles.title}`}>Achievements</h1>
             <section className={`${styles.items} | flex flex-col gap-6`}>
