@@ -8,6 +8,10 @@
   transition: 300ms;
   padding: 1rem !important;
 
+  &:hover {
+    background-color: a.$primary-a10;
+  }
+
   .summary {
     width: 100%;
     display: grid;
