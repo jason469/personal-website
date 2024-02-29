@@ -19,10 +19,11 @@
     }
 
     .skill {
-      background-color: a.$primary-a50;
-      border-radius: 0.5rem;
+      // background-image: linear-gradient(to right, a.$primary-a50, a.$secondary-a50);
+      background: a.$primary-a10;
       padding: 0.5rem;
-      color: white;
+      color: a.$primary-a70;
+      box-shadow: 0px 0px 2px 1px a.$primary-a20;
 
       &__text {
         font-size: 0.75rem;
@@ -30,12 +31,12 @@
     }
   }
 
-  .logo, .appLink {
+  .logo,
+  .appLink {
     font-size: 1.2rem;
 
     &:hover {
       color: a.$secondary-a50;
     }
   }
-
 }

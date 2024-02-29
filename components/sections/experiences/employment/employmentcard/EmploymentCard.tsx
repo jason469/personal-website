@@ -25,7 +25,7 @@ function EmploymentCard({ data }: employmentCardProps) {
           className={`${styles.summaryWrapper} | p-4`}
         >
           <div className={`${styles.summary}`}>
-            <p className={`${styles.company} | font-bold`}>{data.company}</p>
+            <p className={`${styles.company} | font-bold text-primary-a50`}>{data.company}</p>
             <p className={`${styles.dates}`}>
               {data.startDate} - {data.endDate}
             </p>

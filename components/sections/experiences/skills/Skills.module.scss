@@ -3,6 +3,9 @@
 .skillPage {
   @include c.bannerPage();
   @include c.generalSection();
+  width: 100%;
+  flex-wrap: wrap;
+  padding-inline: 1rem;
 
   .title {
     @include c.linedTitle();

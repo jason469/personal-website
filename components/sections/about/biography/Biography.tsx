@@ -13,7 +13,7 @@ const Biography = () => {
         <article className={`flex flex-col items-center w-full`}>
           <h1 className={`${styles.title}`}>About me</h1>
           <article className={`flex flex-col my-4 w-full gap-3`}>
-            <h3 className={`${styles.subtitle} | subtitle`}>
+            <h3 className={`${styles.subtitle}`}>
               {parse(`${BiographyData.motto}`)}
             </h3>
             <p className={`${styles.description}`}>

@@ -12,7 +12,7 @@ const Skills = () => {
       </section>
 
       <section
-        className={`flex flex-col flex-wrap gap-4 w-full justify-center items-center`}
+        className={`flex flex-col flex-wrap gap-6 w-full justify-center items-center`}
       >
         {SkillsData.map(function (categorySkills: allSkillsData) {
           return (

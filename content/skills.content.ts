@@ -15,7 +15,7 @@ export const SkillsData: Array<allSkillsData> = [
         title: "TypeScript",
       },
       {
-        iconName: "SiNodejs",
+        iconName: "SiNodedotjs",
         title: "NodeJS",
       },
     ],
@@ -44,7 +44,7 @@ export const SkillsData: Array<allSkillsData> = [
         title: "SCSS",
       },
       {
-        iconName: "SiTailwindCss",
+        iconName: "SiTailwindcss",
         title: "Tailwind CSS",
       },
       {
