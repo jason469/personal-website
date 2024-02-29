@@ -8,11 +8,11 @@
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
 
   .summary {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 33% 33% 33%;
     margin-inline-end: 2rem;
     column-gap: 1rem;
-    margin: 0;
   }
 }
 

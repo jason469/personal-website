@@ -102,6 +102,10 @@ p {
   border-radius: 12px;
 }
 
+.MuiAccordionSummary-expandIconWrapper {
+  @apply hidden md:block;
+}
+
 // Scrollspy
 .active-scroll-spy {
   transition: 0.1s ease-in-out;

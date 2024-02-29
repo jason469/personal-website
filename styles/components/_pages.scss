@@ -14,15 +14,17 @@
 @mixin generalSection() {
   margin-block: 2rem;
   padding-block: 1.5rem;
-  padding-inline: 1.5rem;
   width: 100%;
+
+  @media screen and (min-width: a.$mediumSize) {
+    padding-inline: 1.5rem;
+  }
 }
 
 @mixin inlineSection() {
   @include generalSection();
-  padding-inline: 3rem;
 
-  @media screen and (min-width: a.$mediumSize) {
+  @media screen and (min-width: a.$largeSize) {
     padding-inline: 10rem;
   }
 }

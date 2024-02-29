@@ -17,7 +17,7 @@ const NavigationBar = () => {
 
   return (
     <section
-      className={`${styles.navbar} | w-full px-10 py-4 flex items-center justify-between `}
+      className={`${styles.navbar} | w-full px-10 py-4 flex items-start justify-between md:items-center `}
     >
       <section
         className={` ${styles.smallScreenNav} | flex flex-row justify-between items-center | me-4 md:ms-4 md:block`}

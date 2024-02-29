@@ -21,16 +21,16 @@ export default function Home() {
       <Grid container spacing={2} className={`w-full`}>
         <Grid
           xs={1}
+          sm={1}
           md={1}
-          lg={1}
-          xl={2}
-          className={`${styles.left} | flex flex-col gap-2 h-full`}
+          lg={2}
+          className={`${styles.left} | h-full`}
         ></Grid>
         <Grid
           xs={10}
+          sm={10}
           md={8}
-          lg={8}
-          xl={7}
+          lg={7}
           className={`${styles.center} | flex flex-col h-full`}
         >
           <ScrollSpy offsetBottom={100} scrollThrottle={80} useBoxMethod>
@@ -44,12 +44,12 @@ export default function Home() {
         </Grid>
         <Grid
           xs={1}
+          sm={1}
           md={3}
           lg={3}
-          xl={3}
-          className={`${styles.right} | h-full hidden md:flex md:flex-col`}
+          className={`${styles.right} | h-full`}
         >
-          <section className={`${styles.nav}`}>
+          <section className={`hidden md:flex md:flex-col`}>
             <ScrollSpyNavigation />
           </section>
         </Grid>
