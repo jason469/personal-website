@@ -25,11 +25,11 @@
   @include generalSection();
 
   @media screen and (min-width: a.$mediumSize) {
-    padding-inline: 6rem;
+    padding-inline: 4rem;
   }
 
   @media screen and (min-width: a.$largeSize) {
-    padding-inline: 8rem;
+    padding-inline: 6rem;
   }
 
   @media screen and (min-width: a.$xtralargeSize) {

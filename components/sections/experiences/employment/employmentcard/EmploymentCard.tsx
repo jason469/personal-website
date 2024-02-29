@@ -22,7 +22,7 @@ function EmploymentCard({ data }: employmentCardProps) {
           expandIcon={<FontAwesomeIcon icon={faAngleDown} className={`p-0`} />}
           aria-controls="panel1-content"
           id="panel1-header"
-          className={`${styles.summaryWrapper} | p-2`}
+          className={`${styles.summaryWrapper} | p-4`}
         >
           <div className={`${styles.summary}`}>
             <p className={`${styles.company}`}>{data.company}</p>
