@@ -10,21 +10,26 @@ type volunteeringCardProp = {
 
 export default function VolunteerCard({ data }: volunteeringCardProp) {
   return (
-    <div className={`${styles.card} | h-full px-6 py-6 bg-white flex flex-col`}>
-      <div className={`${styles.card__header} | mb-10`}>
+    <div className={`${styles.card} | h-full px-6 pt-6 pb-2 bg-white flex flex-col justify-between`}>
+      <div
+        className={`${styles.card__header} | flex flex-col gap-2 items-start justify-center mb-5`}
+      >
         <a href={data.website} target="_blank">
           <h4>{data.company}</h4>
         </a>
-        <p className={`italic`}>
-          {data.title} ({data.startYear} - {data.endYear})
-        </p>
+        <div>
+          <p className={`italic`}>{data.title}</p>
+          <p className={`italic`}>
+            ({data.startYear} - {data.endYear})
+          </p>
+        </div>
       </div>
-      <div className={`${styles.card__content} | h-full`}>
-        <a href={data.website} target="_blank" className={`h-full`}>
+      <div className={`${styles.card__content}`}>
+        <a href={data.website} target="_blank" className={``}>
           <HoverCard
             animationSpeed={500}
             className={`w-full | ${styles.hoverWrapper}`}
-            height={200}
+            height={250}
             front={
               <article className={`flex flex-col gap-4 justify-between w-full`}>
                 <div className={`${styles.card__imageWrapper}`}>
@@ -45,7 +50,9 @@ export default function VolunteerCard({ data }: volunteeringCardProp) {
               <article
                 className={`${styles.back} | flex flex-col items-center justify-center w-full gap-2 flex-wrap p-4 rounded-none | hover:bg-primary-grey-500 transition-duration-500`}
               >
-                <div className={`${styles.card__additional_content} | p-0 rounded-none`}>
+                <div
+                  className={`${styles.card__additional_content} | p-0 rounded-none`}
+                >
                   {parse(data.longDescription)}
                   <br />
                   <a href={data.website} target="_blank">

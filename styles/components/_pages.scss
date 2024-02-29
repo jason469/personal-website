@@ -24,7 +24,15 @@
 @mixin inlineSection() {
   @include generalSection();
 
+  @media screen and (min-width: a.$mediumSize) {
+    padding-inline: 6rem;
+  }
+
   @media screen and (min-width: a.$largeSize) {
+    padding-inline: 8rem;
+  }
+
+  @media screen and (min-width: a.$xtralargeSize) {
     padding-inline: 10rem;
   }
 }
