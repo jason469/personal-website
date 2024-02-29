@@ -1,17 +1,12 @@
 @use "styles/abstracts" as a;
 
 .accordion {
-  box-shadow: 0 4px 4px 0 a.$primary-a20;
+  box-shadow: 0 4px 4px 0 a.$primary-a10;
 }
 
 .summaryWrapper {
-  box-shadow: 0 2px 10px 0 a.$primary-a20;
   transition: 300ms;
   padding: 1rem !important;
-
-  &:hover {
-    background-color: a.$primary-a10;
-  }
 
   .summary {
     width: 100%;
@@ -20,6 +15,11 @@
     margin-inline-end: 2rem;
     column-gap: 1rem;
   }
+}
+
+.expanded {
+  background-color: a.$primary-a10;
+  box-shadow: 0 2px 10px 0 a.$primary-a30;
 }
 
 .descriptionWrapper {

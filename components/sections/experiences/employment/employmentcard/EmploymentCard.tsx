@@ -7,12 +7,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
+import { useState } from "react";
 
 type employmentCardProps = {
   data: employmentData;
 };
 
 function EmploymentCard({ data }: employmentCardProps) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const toggleExpanded = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <article
       className={`cursor-pointer w-full gap-3 | ${styles.employmentCard}`}
@@ -22,10 +28,16 @@ function EmploymentCard({ data }: employmentCardProps) {
           expandIcon={<FontAwesomeIcon icon={faAngleDown} className={`p-0`} />}
           aria-controls="panel1-content"
           id="panel1-header"
-          className={`${styles.summaryWrapper}`}
+          className={`
+          ${styles.summaryWrapper} |
+          ${isExpanded ? styles.expanded : styles.notExpanded}
+          `}
+          onClick={toggleExpanded}
         >
           <div className={`${styles.summary}`}>
-            <p className={`${styles.company} | font-bold text-primary-a50`}>{data.company}</p>
+            <p className={`${styles.company} | font-bold text-primary-a50`}>
+              {data.company}
+            </p>
             <p className={`${styles.dates}`}>
               {data.startDate} - {data.endDate}
             </p>
