@@ -2,7 +2,7 @@
 @use "styles/components" as c;
 
 .submenu {
-  z-index: 9999;
+  z-index: 999;
   display: none;
 
   .title {
@@ -19,7 +19,7 @@
     text-align: start;
     display: flex;
     flex-direction: column;
-    background-color: a.$primary-purple-750;
+    background-color: a.$secondary-a50;
     border-radius: 5px;
     z-index: 999;
   }

@@ -3,19 +3,19 @@ export const SkillsData: Array<allSkillsData> = [
     categoryTitle: "Languages",
     skills: [
       {
-        iconName: "SiLogoPython",
+        iconName: "SiPython",
         title: "Python",
       },
       {
-        iconName: "SiLogoJavascript",
+        iconName: "SiJavascript",
         title: "JavaScript",
       },
       {
-        iconName: "SiLogoTypescript",
+        iconName: "SiTypescript",
         title: "TypeScript",
       },
       {
-        iconName: "SiLogoNodejs",
+        iconName: "SiNodejs",
         title: "NodeJS",
       },
     ],
@@ -24,31 +24,31 @@ export const SkillsData: Array<allSkillsData> = [
     categoryTitle: "Frontend Technologies",
     skills: [
       {
-        iconName: "SiLogoReact",
+        iconName: "SiReact",
         title: "React",
       },
       {
-        iconName: "SiLogoAngular",
+        iconName: "SiAngular",
         title: "Angular",
       },
       {
-        iconName: "SiLogoHtml5",
+        iconName: "SiHtml5",
         title: "HTML",
       },
       {
-        iconName: "SiLogoCss3",
+        iconName: "SiCss3",
         title: "CSS",
       },
       {
-        iconName: "SiLogoSass",
+        iconName: "SiSass",
         title: "SCSS",
       },
       {
-        iconName: "SiLogoTailwindCss",
+        iconName: "SiTailwindCss",
         title: "Tailwind CSS",
       },
       {
-        iconName: "SiLogoJquery",
+        iconName: "SiJquery",
         title: "jQuery",
       },
     ],

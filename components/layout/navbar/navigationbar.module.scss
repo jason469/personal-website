@@ -2,7 +2,7 @@
 @use "styles/components" as c;
 
 .navbar {
-  @apply flex flex-col relative pt-4 pb-2  bg-primary-purple md:flex-row md:w-full md:justify-center md:items-center;
+  @apply flex flex-col relative pt-4 pb-2  bg-primary-a70 md:flex-row md:w-full md:justify-center md:items-center;
   box-shadow: none;
 
   @media screen and (min-width: a.$mediumSize) {

@@ -6,8 +6,7 @@ export const BiographyData: biographyData = {
       As a software developer for the past three years, I've built a strong technical foundation in software development,
       while also honing my professional skills through volunteer work. <br/><br/>
 
-      I work hard to make sure that the project meets the deadlines set and take it upon myself to create a positive team environment. <br/>
-
+      I work hard to make sure that the project meets the deadlines set and take it upon myself to create a positive team environment.
       But I’m always looking at ways to improve the applications I build by constantly investigating new technologies and
       planning my projects thoroughly.
     </p>

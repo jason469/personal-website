@@ -14,44 +14,37 @@ export default function GlobalError({
     console.log(error)
 
     return (
-        <html>
+      <html>
         <body>
-        <PageWrapperAnimation>
-            <section className={`${styles.errorPage}`}>
-                <h1 className={`title`}> Something went wrong sorry :( </h1>
-                <section className={`flex flex-col justify-center items-center gap-5 mt-10`}>
-                    <section className={`flex flex-col justify-center items-center gap-1`}>
-                        <p>Please use the <strong>Home page</strong> below to go back to the <Link className={`link`}
-                                                                                                   href={"/"}>home
-                            page</Link>
-                        </p>
-                        <p>You can also use the <strong>Refresh</strong> button to reload the page</p>
-                    </section>
-                    <section className={`flex flex-row justify0center items-center gap-3`}>
-                        <button className={`${styles.button}`}>
-                            <Link className={`link`} href={"/"}>Home page</Link>
-                        </button>
-                        <button className={`${styles.button}`} onClick={() => reset()}>
-                            <p>Refresh Page</p>
-                        </button>
-                    </section>
-                    <section>
-                        <ul>
-                            <li>
-                                <p>If the issue continues, please contact us at
-                                    <a className={`link text-primary-dark-500`} href={`mailto:balfolkdunedni@gmail.com`}
-                                       target={"_blank"}> Balfolk Dunedin </a>
-                                    describing the issue.</p>
-                            </li>
-                            <li>
-                                <p>Please also include any screenshots if you can :)</p>
-                            </li>
-                        </ul>
-                    </section>
+          <PageWrapperAnimation>
+            <section className={`${styles.page}`}>
+              <h1 className={`title`}> Something went wrong, sorry :( </h1>
+              <section
+                className={`flex flex-col justify-center items-center gap-5 mt-10`}
+              >
+                <section
+                  className={`flex flex-col justify-center items-center gap-1`}
+                >
+                  <p>
+                    Please use the button below to go back to the{" "}
+                    <Link className={`link`} href={"/"}>
+                      home page
+                    </Link>
+                  </p>
+                  <p>
+                    You can also use the navigation bar or footer to find a
+                    specific page
+                  </p>
                 </section>
+                <button className={`${styles.button}`}>
+                  <Link className={`link`} href={"/"}>
+                    Home page
+                  </Link>
+                </button>
+              </section>
             </section>
-        </PageWrapperAnimation>
+          </PageWrapperAnimation>
         </body>
-        </html>
-    )
+      </html>
+    );
 }

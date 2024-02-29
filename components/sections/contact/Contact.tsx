@@ -13,7 +13,7 @@ const Contact = () => {
         <a
           href="mailto:Jliu21500@gmail.com"
           target="_blank"
-          className={`bold hover:text-primary-purple-500`}
+          className={`bold hover:text-secondary-a50`}
           rel="noreferrer"
         >
           <p className={`${styles.email} | font-epilogue`}>

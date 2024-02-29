@@ -26,6 +26,6 @@
   }
 
   .button {
-    @include c.hover-fill-button(a.$primary-blue, a.$primary-brown)
+    @include c.hover-fill-button(a.$primary-a50, a.$secondary-a50)
   }
 }
