@@ -45,7 +45,7 @@ function EmploymentCard({ data }: employmentCardProps) {
           </div>
         </AccordionSummary>
         <AccordionDetails className={`${styles.descriptionWrapper}`}>
-          <p className={`${styles.description} | text-secondary-a70`}>
+          <p className={`${styles.description} | text-secondary-a80`}>
             <ul className={`${styles.list}`}>
               {data.description.map(function (
                 bulletPoint: string,
