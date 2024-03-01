@@ -34,7 +34,7 @@ function EmploymentCard({ data }: employmentCardProps) {
           `}
           onClick={toggleExpanded}
         >
-          <div className={`${styles.summary} | text-secondary-a70`}>
+          <div className={`${styles.summary} | text-secondary-a80`}>
             <p className={`${styles.company} | font-bold text-secondary-a50`}>
               {data.company}
             </p>
