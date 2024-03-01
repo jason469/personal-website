@@ -32,8 +32,8 @@ export default function RootLayout({
       <head>
         <title>Jason Liu</title>
         <link rel="manifest" href="/manifest.json" />
-        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"></link>
-        <link rel="shortcut icon" href="/logos/logo_red.svg" />
+        <link rel="apple-touch-icon" href="/logos/logo.png"></link>
+        <link rel="shortcut icon" href="/logos/logo.png" />
         <meta name="theme-color" content="#008080" />
       </head>
       <body className="">
