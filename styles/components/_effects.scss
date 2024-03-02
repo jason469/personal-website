@@ -1,7 +1,7 @@
 @mixin rippleEffect($hover-colour, $ripple-colour, $rippleSelector) {
   #{$rippleSelector} {
     background-position: center;
-    transition: background 1s;
+    transition: background 0.6s;
 
     &:hover {
       background: $hover-colour radial-gradient(circle, transparent 1%, $hover-colour 1%) center/15000%;
