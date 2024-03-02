@@ -5,5 +5,9 @@
 }
 
 .imageWrapper {
-  height: 100vh;
+  height: 40vh;
+
+  @media (min-aspect-ratio: 1/1) {
+    height: 88vh;
+  }
 }

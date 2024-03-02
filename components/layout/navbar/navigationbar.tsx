@@ -39,7 +39,7 @@ const NavigationBar = () => {
       <BounceInAnimation isVisible={navbarOpen}>
         <article
           className={`flex flex-col text-center justify-end mr-4 transition duration-300 ease-in mt-6 md:mt-0 md:flex-row  | ${
-            navbarOpen ? " flex" : " hidden"
+            navbarOpen ? " flex" : "hidden"
           } ${styles.navbar__items}`}
         >
           {navbarItems.navItems.map((item: navItem) => {
