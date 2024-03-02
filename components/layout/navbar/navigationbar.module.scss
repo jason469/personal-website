@@ -5,13 +5,6 @@
   @apply flex flex-col relative pt-4 pb-2  bg-primary-a70 md:flex-row md:w-full md:justify-center md:items-center;
   box-shadow: none;
 
-  @media screen and (min-width: a.$mediumSize) {
-    -webkit-box-shadow: 0 3px 8px -2px rgba(51, 51, 51, 1);
-    -moz-box-shadow: 0 3px 8px -2px rgba(51, 51, 51, 1);
-    box-shadow: 0 3px 8px -2px rgba(51, 51, 51, 1);
-    transition: top 0.5s;
-  }
-
   .smallScreenNav {
     @media screen and (max-width: a.$mediumSize) {
       width: 100%;
@@ -34,5 +27,35 @@
         letter-spacing: 5px;
       }
     }
+  }
+
+  @media screen and (max-width: a.$smallSize) {
+    @apply py-2;
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    .logo {
+      font-size: 1.2rem;
+    }
+
+    .smallScreenIcon {
+      font-size: 1.2rem;
+    }
+
+    .navItem {
+      &__text {
+        @apply py-1;
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: a.$mediumSize) {
+    -webkit-box-shadow: 0 3px 8px -2px rgba(51, 51, 51, 1);
+    -moz-box-shadow: 0 3px 8px -2px rgba(51, 51, 51, 1);
+    box-shadow: 0 3px 8px -2px rgba(51, 51, 51, 1);
+    transition: top 0.5s;
   }
 }
