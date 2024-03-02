@@ -3,7 +3,11 @@
 .nav {
   @apply flex flex-col justify-center items-center px-2 py-10;
   padding-bottom: 15%;
-  width: 50%;
+  width: clamp(50%, 75%, 100%);
+
+  @media screen and (min-width: a.$largeSize) {
+    width: 50%;
+  }
 
   &__link {
     text-align: center;
