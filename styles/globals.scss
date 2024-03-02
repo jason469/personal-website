@@ -118,3 +118,6 @@ p {
 .MuiAccordionSummary-expandIconWrapper {
   @apply hidden md:block;
 }
+
+// Mixin blocks
+@include c.rippleEffect(a.$primary-a10, a.$primary-a20, ".ripple");

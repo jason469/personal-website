@@ -6,7 +6,7 @@ type achievementsCardProps = {
 
 export default function AchievementsCard({data}:achievementsCardProps) {
     return (
-        <div className={`${styles.card} | p-1`}>
+        <div className={`${styles.card} | p-1 w-full`}>
             <h3 className={`mt-0 mb-1`}>
                 <h6>{data.name}</h6>
             </h3>

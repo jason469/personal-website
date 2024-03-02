@@ -3,11 +3,6 @@
 .card {
   box-shadow: 0 3px 10px a.$primary-a20;
 
-  &__content {
-    padding: 0;
-    margin: 0;
-  }
-
   &__imageWrapper {
     position: relative;
     height: 100px;
@@ -22,4 +17,5 @@
 .hoverWrapper {
   box-shadow: none !important;
   border-radius: 0 !important;
+  margin-bottom: 1rem !important;
 }
