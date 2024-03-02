@@ -23,4 +23,15 @@
       color: a.$secondary-a10;
     }
   }
+
+  @media screen and (max-width: a.$mediumSize) {
+    .email {
+      font-size: 1rem;
+    }
+
+    .logo {
+      width: 1.2rem;
+      font-size: 1.2rem;
+    }
+  }
 }
