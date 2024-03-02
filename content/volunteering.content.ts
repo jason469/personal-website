@@ -14,7 +14,7 @@ export const VolunteeringData: Array<volunteeringData> = [
         longDescription:
             `
             <article>
-                This website had to be scalable and maintainable by non-developers, hence a CMS-style was utilised. 
+                This website had to be scalable and maintainable by non-developers, hence a CMS-style was utilised.
                 I also converted it to a PWA and optimised it for SEOs to improve outreach
             </article>
             `,
@@ -29,7 +29,7 @@ export const VolunteeringData: Array<volunteeringData> = [
         shortDescription:
             `
             <article>
-                Develop features for a number of charity websites, ranging from simple styling to sending email notifications            
+                Develop features for a number of charity websites, ranging from simple styling to sending email notifications
             </article>
             `,
         longDescription:
@@ -43,7 +43,7 @@ export const VolunteeringData: Array<volunteeringData> = [
     },
     {
         title: "Board Member",
-        company: "Volunteering New Zealand’s Youth",
+        company: "VNZ Youth",
         startYear: "2022",
         endYear: "2022",
         logoName: "VNZ.png",
@@ -56,7 +56,7 @@ export const VolunteeringData: Array<volunteeringData> = [
         longDescription:
             `
             <article>
-                Organised events, designed press releases and conducted research into where youth felt was their biggest obstacle in 
+                Organised events, designed press releases and conducted research into where youth felt was their biggest obstacle in
                 volunteering, and how to overcome it
             </article>
             `,
@@ -77,7 +77,7 @@ export const VolunteeringData: Array<volunteeringData> = [
         longDescription:
             `
             <article>
-                This volunteering role gave me a good chance to practise my front-end design skills, especially when it came to 
+                This volunteering role gave me a good chance to practise my front-end design skills, especially when it came to
                 laying out content in an organised and aesthetic fashion
             </article>
             `,
@@ -98,8 +98,8 @@ export const VolunteeringData: Array<volunteeringData> = [
         longDescription:
             `
             <article>
-                This role gave me detailed insight into how a charity operates, and how a board operates on a 
-                governance level. It also allowed me to work in-depth using Microsoft Word and Excel, to 
+                This role gave me detailed insight into how a charity operates, and how a board operates on a
+                governance level. It also allowed me to work in-depth using Microsoft Word and Excel, to
                 do calculations and formatting
             </article>
             `,
@@ -107,7 +107,7 @@ export const VolunteeringData: Array<volunteeringData> = [
     },
     {
         title: "Software Developer",
-        company: "New Zealand Business Association",
+        company: "NZBA",
         startYear: "2021",
         endYear: "2022",
         logoName: "NZBA.png",
@@ -120,7 +120,7 @@ export const VolunteeringData: Array<volunteeringData> = [
         longDescription:
             `
             <article>
-               
+
             </article>
             `,
         website: "https://nzba.org/"
@@ -140,7 +140,7 @@ export const VolunteeringData: Array<volunteeringData> = [
         longDescription:
             `
             <article>
-                As part of the TedxUoA committee, I helped to organise and manage the speakers for our annual conference. 
+                As part of the TedxUoA committee, I helped to organise and manage the speakers for our annual conference.
                 It was good training in how to manage clients in a professional context, in addition to honing my public speaking
             </article>
             `,
