@@ -66,31 +66,32 @@ h6 {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 1.3rem, 1.7rem);
   text-align: center;
   letter-spacing: 15px;
   color: a.$secondary-a60;
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 1.2rem, 1.5rem);
   letter-spacing: 10px;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: clamp(0.8rem, 1.1rem, 1.2rem);
   letter-spacing: 4px;
 }
 
 h4 {
-  font-size: 1.1rem;
+  font-size: clamp(0.7rem, 1.0rem, 1.1rem);
   letter-spacing: 2px;
 }
 
 p {
   @apply font-sourceSansThree;
-  font-size: 1rem;
   text-align: left;
+  font-size: clamp(0.6rem, 0.9rem, 1rem);
+
 }
 
 .subtitle {
