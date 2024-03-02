@@ -49,7 +49,7 @@ export default function Home() {
           lg={3}
           className={`${styles.right} | h-full`}
         >
-          <section className={`hidden md:flex md:flex-col`}>
+          <section className={`hidden md:flex md:flex-col items-center w-full`}>
             <ScrollSpyNavigation />
           </section>
         </Grid>
