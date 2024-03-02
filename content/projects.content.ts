@@ -3,7 +3,7 @@ export const projects: Array<projectData> = [
     title: "Portfolio",
     description:
       "This is a responsive website that I developed to help share my portfolio with others on the internet. It was also a good opportunity for me to continue honing my skills in front-end development and website design, and experiment with different animations.",
-    skills: ["React", "CSS"],
+    skills: ["NextJS", "TailwindCSS", "SCSS"],
     github: {
       link: "https://github.com/jason469/personal-website",
     },
