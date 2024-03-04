@@ -18,7 +18,6 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: 0.3s ease-in;
     border-top: 1px solid a.$primary-a20;
     width: 100%;
 
@@ -27,7 +26,7 @@
     }
 
     &:hover {
-      background: a.$primary-a50;
+      background: a.$secondary-a50;
       color: white !important;
     }
 
