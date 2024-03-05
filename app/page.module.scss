@@ -1,9 +1,13 @@
-.center {
-  gap: 5rem;
-}
+.content {
+  scrollbar-gutter: stable both-edges;
 
-.right {
-  position: sticky;
-  top: 5%;
-  gap: 1rem;
+  .center {
+    gap: 5rem;
+  }
+
+  .right {
+    position: sticky;
+    top: 5%;
+    gap: 1rem;
+  }
 }

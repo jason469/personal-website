@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <section className={`flex flex-col`}>
       <HeroBanner />
-      <Grid container spacing={2} className={`w-full`}>
+      <Grid container spacing={2} className={`${styles.content} | w-full m-0`}>
         <Grid
           xs={1}
           sm={1}
