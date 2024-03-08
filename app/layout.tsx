@@ -51,8 +51,12 @@ export default function RootLayout({
 
         {/* PWA */}
         <link rel="manifest" href="/manifest.json" />
-        <link rel="apple-touch-icon" href="/logos/logo.png"></link>
-        <link rel="shortcut icon" href="/logos/logo.png" />
+        <link
+          rel="apple-touch-icon"
+          type="image/png"
+          href="/logos/logo.png"
+        ></link>
+        <link rel="shortcut icon" type="image/png" href="/logos/logo.png" />
         <meta name="theme-color" content="#008080" />
 
         {/* Open Graph */}
