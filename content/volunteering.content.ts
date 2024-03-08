@@ -4,7 +4,7 @@ export const VolunteeringData: Array<volunteeringData> = [
         company: "Balfolk NZ/Aotearoa",
         startYear: "2023",
         endYear: "2023",
-        logoName: "Balfolk.jpg",
+        logoName: "Balfolk.png",
         shortDescription:
             `
             <article>
