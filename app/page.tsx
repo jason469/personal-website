@@ -33,7 +33,7 @@ export default function Home() {
           lg={7}
           className={`${styles.center} | flex flex-col h-full`}
         >
-          <ScrollSpy offsetBottom={100} scrollThrottle={80} useBoxMethod>
+          <ScrollSpy>
             <Biography />
             <Employment />
             <Projects />
