@@ -7,7 +7,7 @@ import FadeInLeftAnimation from "@/components/ui/animations/FadeInLeftAnimation"
 const Employment = () => {
   return (
     <section
-      className={`${styles.employment} banner_page page`}
+      className={`${styles.employment} page`}
       id={`employment`}
     >
       <FadeInLeftAnimation>
