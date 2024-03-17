@@ -51,6 +51,16 @@ module.exports = {
         "secondary-a70": "#15403f",
         "secondary-a80": "#112322",
         "secondary-a90": "#000000",
+
+        "black-a0": "#ffffff",
+        "black-a10": "#cacaca",
+        "black-a20": "#979797",
+        "black-a30": "#676767",
+        "black-a50": "#3b3b3b",
+        "black-a60": "#2d2d2d",
+        "black-a70": "#202020",
+        "black-a80": "#141414",
+        "black-a90": "#000000",
       },
       boxShadow: {
         menu: "0px 159px 95px rgba(13,12,34,0.01), 0px 71px 71px rgba(13,12,34,0.02), 0px 18px 39px rgba(13,12,34,0.02), 0px 0px 0px rgba(13,12,34,0.02)",

@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   overscroll-behavior-x: none;
-  color: a.$secondary-a80;
+  color: a.$black-a50;
 }
 
 main {
@@ -62,14 +62,13 @@ h6 {
   font-weight: 400;
   text-transform: uppercase;
   max-width: 60ch;
-  color: a.$secondary-a50;
+  color: a.$black-a70;
 }
 
 h1 {
   font-size: clamp(1.2rem, 1.6rem, 1.9rem);
   text-align: center;
   letter-spacing: 15px;
-  color: a.$secondary-a60;
 }
 
 h2 {
@@ -91,10 +90,6 @@ p {
   @apply font-sourceSansThree;
   text-align: left;
   font-size: clamp(0.6rem, 0.9rem, 1rem);
-}
-
-.subtitle {
-  color: a.$secondary-a50;
 }
 
 ::-webkit-scrollbar {

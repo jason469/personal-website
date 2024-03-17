@@ -4,9 +4,8 @@
 .card {
   box-shadow: none !important;
   border: 1px solid a.$primary-a50;
-  border-radius: 0 !important;
   height: 100%;
-  border-radius: 1rem !important;
+  border-radius: 0 !important;
 
   &__content {
     .description {
@@ -19,15 +18,18 @@
       text-align: left;
     }
 
-    .skill {
-      // background-image: linear-gradient(to right, a.$primary-a50, a.$secondary-a50);
-      background: a.$primary-a10;
-      padding: 0.5rem;
-      color: a.$primary-a70;
-      box-shadow: 0px 0px 2px 1px a.$primary-a20;
+    .skills {
+      cursor: default;
+      .skill {
+        // background-image: linear-gradient(to right, a.$primary-a50, a.$secondary-a50);
+        background: a.$primary-a10;
+        padding: 0.5rem;
+        color: a.$primary-a70;
+        box-shadow: 0px 0px 2px 1px a.$primary-a20;
 
-      &__text {
-        font-size: 0.75rem;
+        &__text {
+          font-size: 0.75rem;
+        }
       }
     }
   }

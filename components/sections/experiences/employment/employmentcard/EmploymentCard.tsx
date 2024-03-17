@@ -34,8 +34,8 @@ function EmploymentCard({ data }: employmentCardProps) {
           `}
           onClick={toggleExpanded}
         >
-          <div className={`${styles.summary} | text-secondary-a80`}>
-            <p className={`${styles.company} | font-bold text-secondary-a50`}>
+          <div className={`${styles.summary} | text-black-a60`}>
+            <p className={`${styles.company} | font-bold text-black-a50`}>
               {data.company}
             </p>
             <p className={`${styles.dates}`}>
@@ -45,7 +45,7 @@ function EmploymentCard({ data }: employmentCardProps) {
           </div>
         </AccordionSummary>
         <AccordionDetails className={`${styles.descriptionWrapper}`}>
-          <p className={`${styles.description} | text-secondary-a80`}>
+          <p className={`${styles.description} | text-black-a50`}>
             <ul className={`${styles.list}`}>
               {data.description.map(function (
                 bulletPoint: string,

@@ -30,70 +30,227 @@ import {
   SiContentful,
   SiSanity,
 } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
 
-
-function CategoryRow({ categoryTitle, skills }: allSkillsData) {
+function CategoryRow({
+  categoryTitle,
+  categoryColourHex,
+  skills,
+}: allSkillsData) {
   function getIcon(iconName: string) {
     if (iconName == "SiPython") {
-      return <SiPython className={`${styles.skillLogo}`} />;
+      return (
+        <SiPython
+          className={`${styles.skillLogo}`}
+          style={{ color: `${categoryColourHex}` }}
+        />
+      );
     } else if (iconName == "SiJavascript") {
-      return <SiJavascript className={`${styles.skillLogo}`} />;
+      return (
+        <SiJavascript
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiTypescript") {
-      return <SiTypescript className={`${styles.skillLogo}`} />;
+      return (
+        <SiTypescript
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiNodedotjs") {
-      return <SiNodedotjs className={`${styles.skillLogo}`} />;
+      return (
+        <SiNodedotjs
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiReact") {
-      return <SiReact className={`${styles.skillLogo}`} />;
+      return (
+        <SiReact
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiAngular") {
-      return <SiAngular className={`${styles.skillLogo}`} />;
+      return (
+        <SiAngular
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiHtml5") {
-      return <SiHtml5 className={`${styles.skillLogo}`} />;
+      return (
+        <SiHtml5
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiCss3") {
-      return <SiCss3 className={`${styles.skillLogo}`} />;
+      return (
+        <SiCss3
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiSass") {
-      return <SiSass className={`${styles.skillLogo}`} />;
+      return (
+        <SiSass
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiTailwindcss") {
-      return <SiTailwindcss className={`${styles.skillLogo}`} />;
+      return (
+        <SiTailwindcss
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiJquery") {
-      return <SiJquery className={`${styles.skillLogo}`} />;
+      return (
+        <SiJquery
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiDjango") {
-      return <SiDjango className={`${styles.skillLogo}`} />;
+      return (
+        <SiDjango
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiExpress") {
-      return <SiExpress className={`${styles.skillLogo}`} />;
+      return (
+        <SiExpress
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiFastapi") {
-      return <SiFastapi className={`${styles.skillLogo}`} />;
+      return (
+        <SiFastapi
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiGraphql") {
-      return <SiGraphql className={`${styles.skillLogo}`} />;
+      return (
+        <SiGraphql
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiPostgresql") {
-      return <SiPostgresql className={`${styles.skillLogo}`} />;
+      return (
+        <SiPostgresql
+          className={`${styles.skillLogo}`}
+          style={{color: categoryColourHex}}
+        />
+      );
     } else if (iconName == "SiMongodb") {
-      return <SiMongodb className={`${styles.skillLogo}`} />;
+      return (
+        <SiMongodb
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiRedis") {
-      return <SiRedis className={`${styles.skillLogo}`} />;
+      return (
+        <SiRedis
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiGithub") {
-      return <SiGithub className={`${styles.skillLogo}`} />;
+      return (
+        <SiGithub
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiGit") {
-      return <SiGit className={`${styles.skillLogo}`} />;
+      return (
+        <SiGit
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiMicrosoftword") {
-      return <SiMicrosoftword className={`${styles.skillLogo}`} />;
+      return (
+        <SiMicrosoftword
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiMicrosoftexcel") {
-      return <SiMicrosoftexcel className={`${styles.skillLogo}`} />;
+      return (
+        <SiMicrosoftexcel
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiMicrosoftpowerpoint") {
-      return <SiMicrosoftpowerpoint className={`${styles.skillLogo}`} />;
+      return (
+        <SiMicrosoftpowerpoint
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiFigma") {
-      return <SiFigma className={`${styles.skillLogo}`} />;
+      return (
+        <SiFigma
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiCanva") {
-      return <SiCanva className={`${styles.skillLogo}`} />;
+      return (
+        <SiCanva
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiDocker") {
-      return <SiDocker className={`${styles.skillLogo}`} />;
+      return (
+        <SiDocker
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiAmazonaws") {
-      return <SiAmazonaws className={`${styles.skillLogo}`} />;
+      return (
+        <SiAmazonaws
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     } else if (iconName == "SiContentful") {
-      return <SiContentful className={`${styles.skillLogo}`} />;
-    } else {//if (iconName == "SiSanity")
-      return <SiSanity className={`${styles.skillLogo}`} />;
+      return (
+        <SiContentful
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
+    } else if (iconName == "TbBrandNextjs") {
+      return (
+        <TbBrandNextjs
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
+    } else {
+      //if (iconName == "SiSanity")
+      return (
+        <SiSanity
+          className={`${styles.skillLogo}`}
+          style={{ color: categoryColourHex }}
+        />
+      );
     }
   }
 
@@ -104,7 +261,9 @@ function CategoryRow({ categoryTitle, skills }: allSkillsData) {
       {skills.map(function (skill: singleSkillData) {
         return (
           <Tooltip title={skill.title}>
-            <IconButton className={`${styles.iconButton}`}>{getIcon(skill.iconName)}</IconButton>
+            <IconButton className={`${styles.iconButton}`}>
+              {getIcon(skill.iconName)}
+            </IconButton>
           </Tooltip>
         );
       })}

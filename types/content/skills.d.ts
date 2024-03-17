@@ -5,5 +5,6 @@ type singleSkillData = {
 
 type allSkillsData = {
     categoryTitle: string,
+    categoryColourHex: string,
     skills: Array<singleSkillData>
 }

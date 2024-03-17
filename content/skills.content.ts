@@ -1,6 +1,7 @@
 export const SkillsData: Array<allSkillsData> = [
   {
     categoryTitle: "Languages",
+    categoryColourHex: "#000000",
     skills: [
       {
         iconName: "SiPython",
@@ -22,6 +23,7 @@ export const SkillsData: Array<allSkillsData> = [
   },
   {
     categoryTitle: "Frontend Technologies",
+    categoryColourHex: "#a80000",
     skills: [
       {
         iconName: "SiReact",
@@ -30,6 +32,10 @@ export const SkillsData: Array<allSkillsData> = [
       {
         iconName: "SiAngular",
         title: "Angular",
+      },
+      {
+        iconName: "TbBrandNextjs",
+        title: "NextJS",
       },
       {
         iconName: "SiHtml5",
@@ -55,6 +61,7 @@ export const SkillsData: Array<allSkillsData> = [
   },
   {
     categoryTitle: "Backend Technologies",
+    categoryColourHex: "#000000",
     skills: [
       {
         iconName: "SiDjango",
@@ -76,6 +83,7 @@ export const SkillsData: Array<allSkillsData> = [
   },
   {
     categoryTitle: "Databases",
+    categoryColourHex: "#000000",
     skills: [
       {
         iconName: "SiPostgresql",
@@ -93,6 +101,7 @@ export const SkillsData: Array<allSkillsData> = [
   },
   {
     categoryTitle: "Planning",
+    categoryColourHex: "#000000",
     skills: [
       {
         iconName: "SiGithub",
@@ -106,6 +115,7 @@ export const SkillsData: Array<allSkillsData> = [
   },
   {
     categoryTitle: "Documentation",
+    categoryColourHex: "#000000",
     skills: [
       {
         iconName: "SiMicrosoftword",
@@ -123,6 +133,7 @@ export const SkillsData: Array<allSkillsData> = [
   },
   {
     categoryTitle: "Design",
+    categoryColourHex: "#000000",
     skills: [
       {
         iconName: "SiFigma",
@@ -136,6 +147,7 @@ export const SkillsData: Array<allSkillsData> = [
   },
   {
     categoryTitle: "Deployment",
+    categoryColourHex: "#000000",
     skills: [
       {
         iconName: "SiDocker",
@@ -149,6 +161,7 @@ export const SkillsData: Array<allSkillsData> = [
   },
   {
     categoryTitle: "CMS",
+    categoryColourHex: "#000000",
     skills: [
       {
         iconName: "SiContentful",
