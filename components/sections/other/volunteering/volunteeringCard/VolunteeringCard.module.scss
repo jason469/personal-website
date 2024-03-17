@@ -2,6 +2,7 @@
 
 .card {
   box-shadow: 0 3px 10px a.$primary-a20;
+  border-radius: 1rem !important;
 
   &__imageWrapper {
     position: relative;
