@@ -4,6 +4,7 @@ import styles from "./page.module.scss";
 
 import ScrollSpy from "react-ui-scrollspy";
 import Grid from "@mui/material/Unstable_Grid2";
+import FadeInLeftAnimation from "@/components/ui/animations/FadeInLeftAnimation";
 
 import ScrollSpyNavigation from "@/components/sections/scroll_spy_navigation/ScrollSpyNavigation";
 import HeroBanner from "@/components/sections/about/heroBanner/HeroBanner";
@@ -33,13 +34,47 @@ export default function Home() {
           lg={7}
           className={`${styles.center} | flex flex-col h-full`}
         >
-          <ScrollSpy updateHistoryStack={false} scrollThrottle={200}>
-            <Biography />
-            <Employment />
-            <Projects />
-            <Skills />
-            <Achievements />
-            <Volunteering />
+          <ScrollSpy
+            updateHistoryStack={false}
+            scrollThrottle={200}
+            useBoxMethod={true}
+          >
+            <section id="biography">
+              <div id="about" className={``}>
+                <FadeInLeftAnimation>
+                  <Biography />
+                </FadeInLeftAnimation>
+              </div>
+            </section>
+            <section id="employment">
+              <FadeInLeftAnimation>
+                <div id="experiences">
+                  <Employment />
+                </div>
+              </FadeInLeftAnimation>
+            </section>
+            <section id={`projects`}>
+              <FadeInLeftAnimation>
+                <Projects />
+              </FadeInLeftAnimation>
+            </section>
+            <section id="skills">
+              <FadeInLeftAnimation>
+                <Skills />
+              </FadeInLeftAnimation>
+            </section>
+            <section id="achievements">
+              <section id="other">
+                <FadeInLeftAnimation>
+                  <Achievements />
+                </FadeInLeftAnimation>
+              </section>
+            </section>
+            <section id="volunteering">
+              <FadeInLeftAnimation>
+                <Volunteering />
+              </FadeInLeftAnimation>
+            </section>
           </ScrollSpy>
         </Grid>
         <Grid

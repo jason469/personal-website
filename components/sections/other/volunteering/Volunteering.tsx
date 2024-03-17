@@ -3,12 +3,10 @@ import styles from "./Volunteering.module.scss";
 import { VolunteeringData } from "@/content/volunteering.content";
 import VolunteerCard from "@/components/sections/other/volunteering/volunteeringCard/VolunteeringCard";
 import Grid from "@mui/material/Unstable_Grid2";
-import FadeInLeftAnimation from "@/components/ui/animations/FadeInLeftAnimation";
 
 const Volunteering = () => {
   return (
-    <section id={`volunteering`} className={`${styles.volunteering}`}>
-      <FadeInLeftAnimation>
+    <div className={`${styles.volunteering}`}>
         <div
           className={`${styles.headings} | w-full mb-6 flex flex-col items-center`}
         >
@@ -26,8 +24,7 @@ const Volunteering = () => {
             );
           })}
         </Grid>
-      </FadeInLeftAnimation>
-    </section>
+    </div>
   );
 };
 
