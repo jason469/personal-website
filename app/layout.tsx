@@ -12,7 +12,7 @@ import NavigationBar from "@/components/layout/navbar/navigationbar";
 import Footer from "@/components/layout/footer/footer";
 
 export const metadata: Metadata = {
-  title: "Jason Liu",
+  title: "I'm Jason Liu",
   description:
     "The portfolio for Jason Liu, a really passionate software developer over in Aussie. I specialise in app development across a variety of frameworks, and bring a great deal of energy and noise to a team",
   icons: {

@@ -4,7 +4,7 @@ import styles from "./page.module.scss";
 
 import ScrollSpy from "react-ui-scrollspy";
 import Grid from "@mui/material/Unstable_Grid2";
-import FadeInLeftAnimation from "@/components/ui/animations/FadeInLeftAnimation";
+import FadeInUpAnimation from "@/components/ui/animations/FadeInUpAnimation";
 
 import ScrollSpyNavigation from "@/components/sections/scroll_spy_navigation/ScrollSpyNavigation";
 import HeroBanner from "@/components/sections/about/heroBanner/HeroBanner";
@@ -41,39 +41,39 @@ export default function Home() {
           >
             <section id="biography">
               <div id="about" className={``}>
-                <FadeInLeftAnimation>
+                <FadeInUpAnimation>
                   <Biography />
-                </FadeInLeftAnimation>
+                </FadeInUpAnimation>
               </div>
             </section>
             <section id="employment">
-              <FadeInLeftAnimation>
+              <FadeInUpAnimation>
                 <div id="experiences">
                   <Employment />
                 </div>
-              </FadeInLeftAnimation>
+              </FadeInUpAnimation>
             </section>
             <section id={`projects`}>
-              <FadeInLeftAnimation>
+              <FadeInUpAnimation>
                 <Projects />
-              </FadeInLeftAnimation>
+              </FadeInUpAnimation>
             </section>
             <section id="skills">
-              <FadeInLeftAnimation>
+              <FadeInUpAnimation>
                 <Skills />
-              </FadeInLeftAnimation>
+              </FadeInUpAnimation>
             </section>
             <section id="achievements">
               <section id="other">
-                <FadeInLeftAnimation>
+                <FadeInUpAnimation>
                   <Achievements />
-                </FadeInLeftAnimation>
+                </FadeInUpAnimation>
               </section>
             </section>
             <section id="volunteering">
-              <FadeInLeftAnimation>
+              <FadeInUpAnimation>
                 <Volunteering />
-              </FadeInLeftAnimation>
+              </FadeInUpAnimation>
             </section>
           </ScrollSpy>
         </Grid>
