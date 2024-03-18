@@ -1,6 +1,8 @@
 import "@/styles/globals.scss";
 import "@/styles/reset.scss";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 import { Metadata } from "next";
 import {
@@ -66,6 +68,9 @@ export default function RootLayout({
         <NavigationBar />
         <main className={``}>{children}</main>
         <Footer />
+
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
