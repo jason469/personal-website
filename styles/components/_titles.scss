@@ -6,7 +6,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  letter-spacing: 10px !important;
   text-align: center;
 }
 
@@ -19,7 +18,7 @@
   &:after {
     content: "";
     flex: 1 1;
-    border-bottom: 3px solid a.$primary-a70;
+    border-bottom: 2px solid a.$primary-a70;
   }
 
   &:before {

@@ -12,7 +12,7 @@ const Volunteering = () => {
         >
           <h1 className={`${styles.title}`}>Volunteering</h1>
         </div>
-        <Grid container spacing={2} className={``}>
+        <Grid container spacing={4} className={``}>
           {VolunteeringData.map(function (
             volunteer: volunteeringData,
             index: number

@@ -21,18 +21,11 @@ export default function Home() {
       <HeroBanner />
       <Grid container spacing={2} className={`${styles.content} | w-full m-0`}>
         <Grid
-          xs={1}
-          sm={1}
-          md={1}
-          lg={2}
-          className={`${styles.left} | h-full`}
-        ></Grid>
-        <Grid
-          xs={10}
-          sm={10}
-          md={8}
-          lg={7}
-          className={`${styles.center} | flex flex-col h-full`}
+          xs={12}
+          sm={12}
+          md={9}
+          lg={9}
+          className={`${styles.center} | flex flex-col bg-white px-6 h-full sm:px-12 md:px-0`}
         >
           <ScrollSpy
             updateHistoryStack={false}
@@ -78,13 +71,13 @@ export default function Home() {
           </ScrollSpy>
         </Grid>
         <Grid
-          xs={1}
-          sm={1}
+          xs={0}
+          sm={0}
           md={3}
           lg={3}
           className={`${styles.right} | h-full`}
         >
-          <section className={`hidden md:flex md:flex-col items-center w-full`}>
+          <section className={`hidden md:flex md:flex-col items-center`}>
             <ScrollSpyNavigation />
           </section>
         </Grid>

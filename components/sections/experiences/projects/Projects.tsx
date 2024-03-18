@@ -11,9 +11,8 @@ const Projects = () => {
         className={`${styles.headings} | w-full mb-6 flex flex-col items-center`}
       >
         <h1 className={`${styles.title}`}>Personal Projects</h1>
-        <article className={`${styles.description}`}>
-          <strong>My favourite things to work on in my spare time!</strong>
-          <br />
+        <article className={`${styles.description} | flex flex-col gap-3 w-full items-center`}>
+          <h3 className="text-center">My favourite things to build in my spare time!</h3>
           <p>
             Please note that due to limited server resources, these apps may
             take some time to load when opened for the first time. <br />
@@ -21,7 +20,7 @@ const Projects = () => {
           </p>
         </article>
       </div>
-      <Grid container spacing={2} className={``}>
+      <Grid container spacing={4} className={`mt-4`}>
         {projects.map(function (project: projectData, index: number) {
           return (
             <Grid xs={12} sm={6} lg={4}>

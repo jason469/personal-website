@@ -20,11 +20,15 @@ html {
 body {
   @apply font-sourceSansThree;
   scrollbar-gutter: stable both-edges;
-  background: a.$primary-a05;
   display: flex;
   flex-direction: column;
   overscroll-behavior-x: none;
   color: a.$black-a50;
+  background: white;
+
+  @media screen and (min-width: a.$mediumSize) {
+    background: a.$primary-a05;
+  }
 }
 
 main {
@@ -51,7 +55,6 @@ main {
 }
 
 // Element-specific styles
-h1,
 h2,
 h3,
 h4,
@@ -66,30 +69,36 @@ h6 {
 }
 
 h1 {
-  font-size: clamp(1.2rem, 1.6rem, 1.9rem);
+  @apply font-epilogue;
+  @apply break-normal;
+  font-size: clamp(1.6rem, 2rem, 2.3rem);
   text-align: center;
-  letter-spacing: 15px;
+  letter-spacing: 2px;
+  text-transform: none;
+  font-weight: bold;
+  max-width: 60ch;
+  color: a.$black-a70;
 }
 
 h2 {
-  font-size: clamp(1rem, 1.2rem, 1.5rem);
+  font-size: clamp(1.2rem, 1.4rem, 1.7rem);
   letter-spacing: 10px;
 }
 
 h3 {
-  font-size: clamp(0.8rem, 1.1rem, 1.2rem);
+  font-size: clamp(1rem, 1.3rem, 1.4rem);
   letter-spacing: 4px;
 }
 
 h4 {
-  font-size: clamp(0.7rem, 1rem, 1.1rem);
+  font-size: clamp(0.9rem, 1.2rem, 1.3rem);
   letter-spacing: 2px;
 }
 
 p {
   @apply font-sourceSansThree;
   text-align: left;
-  font-size: clamp(0.6rem, 0.9rem, 1rem);
+  font-size: clamp(0.8rem, 1.1rem, 1.2rem);
 }
 
 ::-webkit-scrollbar {

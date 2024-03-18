@@ -1,3 +1,4 @@
+@use "styles/abstracts" as a;
 @use "styles/components" as c;
 
 .achievements {
@@ -13,9 +14,9 @@
   text-orientation: upright;
   grid-row: 1 / -1;
   grid-column: 1 / span 1;
+  color: a.$black-a10;
 }
 
 .items {
   max-width: 35rem;
-
 }

@@ -1,12 +1,9 @@
 @use "styles/abstracts" as a;
 
-.accordion {
-  box-shadow: 0 4px 4px 0 a.$primary-a10;
-}
-
 .summaryWrapper {
   transition: 300ms;
   padding: 1rem !important;
+  border: 1px solid a.$black-a20;
 
   &:hover {
     background-color: a.$primary-a10;
@@ -23,12 +20,14 @@
 
 .expanded {
   background-color: a.$primary-a10 !important;
-  box-shadow: 0 2px 10px 0 a.$primary-a30 !important;
+  box-shadow: 0 1px 10px 0 a.$primary-a30 !important;
 }
 
 .descriptionWrapper {
   cursor: default;
   padding-block: 1.5rem !important;
+  border: 1px solid a.$black-a20;
+
 
   .list {
     &__point {

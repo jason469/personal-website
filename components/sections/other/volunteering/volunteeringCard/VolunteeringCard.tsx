@@ -53,13 +53,14 @@ export default function VolunteerCard({ data }: volunteeringCardProp) {
                 className={`${styles.back} | flex flex-col items-center justify-center w-full gap-2 flex-wrap p-4 rounded-none | hover:bg-primary-grey-500 transition-duration-500`}
               >
                 <div
-                  className={`${styles.card__additional_content} | p-0 rounded-none`}
+                  className={`${styles.card__additionalContent} | p-0 rounded-none flex flex-col gap-3`}
                 >
-                  {parse(data.longDescription)}
-                  <br />
-                  <a href={data.website} target="_blank">
-                    Click here to see their website!
-                  </a>
+                  <p className={`${styles.card__additionalContent}`}>
+                    {parse(data.longDescription)}
+                  </p>
+                    <p className={`${styles.card__additionalContent} | italic`}>
+                      Click on me to see their website!
+                    </p>
                 </div>
               </article>
             }

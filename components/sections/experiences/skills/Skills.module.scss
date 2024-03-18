@@ -1,7 +1,6 @@
 @use "styles/components" as c;
 
 .skillPage {
-  @include c.bannerPage();
   @include c.generalSection();
   width: 100%;
   flex-wrap: wrap;

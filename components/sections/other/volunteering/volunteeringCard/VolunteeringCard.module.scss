@@ -11,7 +11,9 @@
   }
 
   .back {
-    font-size: 0.8rem;
+    .card__additionalContent {
+      font-size: 0.9rem !important;
+    }
   }
 }
 

@@ -9,7 +9,7 @@
 
   &__content {
     .description {
-      font-size: 0.875rem;
+      font-size: 0.975rem;
     }
 
     .imageWrapper {
@@ -28,7 +28,7 @@
         box-shadow: 0px 0px 2px 1px a.$primary-a20;
 
         &__text {
-          font-size: 0.75rem;
+          font-size: 0.85rem;
         }
       }
     }
@@ -36,7 +36,7 @@
 
   .logo,
   .appLink {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 
     &:hover {
       color: a.$secondary-a50;
