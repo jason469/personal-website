@@ -1,6 +1,7 @@
 @use "styles/abstracts" as a;
 
 @mixin generalSection() {
+  @apply px-12 sm:px-12 md:px-0;
   padding-block: 3rem;
   width: 100%;
 

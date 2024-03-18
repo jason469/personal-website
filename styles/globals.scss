@@ -72,31 +72,31 @@ h6 {
 h1 {
   @apply font-epilogue;
   @apply break-normal;
-  font-size: clamp(1.8rem, 2.2rem, 2.5rem);
+  font-size: clamp(1.8rem, 1.6385rem + 0.7179vw, 2.5rem);
   text-align: center;
   letter-spacing: 8px;
   font-weight: bold;
 }
 
 h2 {
-  font-size: clamp(1.2rem, 1.4rem, 1.7rem);
+  font-size: clamp(1.2rem, 1.0846rem + 0.5128vw, 1.7rem);
   letter-spacing: 10px;
 }
 
 h3 {
-  font-size: clamp(1rem, 1.3rem, 1.4rem);
+  font-size: clamp(1rem, 0.9077rem + 0.4103vw, 1.4rem);
   letter-spacing: 4px;
 }
 
 h4 {
-  font-size: clamp(0.9rem, 1.2rem, 1.3rem);
+  font-size: clamp(0.9rem, 0.8077rem + 0.4103vw, 1.3rem);
   letter-spacing: 2px;
 }
 
 p {
   @apply font-epilogue;
   text-align: left;
-  font-size: clamp(0.9rem, 1.1rem, 1.2rem);
+  font-size: clamp(0.9rem, 0.8308rem + 0.3077vw, 1.2rem);
 }
 
 ::-webkit-scrollbar {

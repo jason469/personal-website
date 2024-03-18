@@ -10,7 +10,7 @@
 
   &__content {
     .description {
-      font-size: 0.975rem;
+      font-size: clamp(0.85rem, 0.7808rem + 0.3077vw, 1.15rem);
     }
 
     .imageWrapper {
@@ -29,7 +29,7 @@
         box-shadow: 0px 0px 2px 1px a.$primary-a20;
 
         &__text {
-          font-size: 0.85rem;
+          font-size: clamp(0.8rem, 0.7423rem + 0.2564vw, 1.05rem);
         }
       }
     }
@@ -37,7 +37,7 @@
 
   .logo,
   .appLink {
-    font-size: 1.3rem;
+    font-size: clamp(1.2rem, 1.0846rem + 0.5128vw, 1.7rem);
 
     &:hover {
       color: a.$secondary-a50;

@@ -6,7 +6,6 @@
   @include c.bannerPage();
   color: a.$black-a10;
 
-
   .title {
     @include c.linedTitle(a.$black-a10);
     width: 70%;

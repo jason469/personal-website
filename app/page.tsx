@@ -25,7 +25,7 @@ export default function Home() {
           sm={12}
           md={9}
           lg={9}
-          className={`${styles.center} | flex flex-col bg-white px-6 h-full sm:px-12 md:px-0`}
+          className={`${styles.center} | flex flex-col bg-white h-full`}
         >
           <ScrollSpy
             updateHistoryStack={false}
