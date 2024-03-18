@@ -9,6 +9,7 @@
   background-image: linear-gradient(to right, a.$secondary-a70, a.$secondary-a60);
 
   .smallScreenNav {
+    align-items: center !important;
     @media screen and (max-width: a.$mediumSize) {
       width: 100%;
     }

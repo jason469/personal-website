@@ -3,7 +3,7 @@
 .summaryWrapper {
   transition: 300ms;
   padding: 1rem !important;
-  border: 1px solid a.$black-a20;
+  border: 1px solid a.$black-a20 !important;
 
   &:hover {
     background-color: a.$primary-a10;
@@ -26,8 +26,8 @@
 .descriptionWrapper {
   cursor: default;
   padding-block: 1.5rem !important;
-  border: 1px solid a.$black-a10;
-  box-shadow: 0px 21px 30px -20px a.$black-a20;
+  border: 1px solid a.$black-a10 !important;
+  box-shadow: 0px 21px 30px -20px a.$black-a20 !important;
 
   .list {
     &__point {
