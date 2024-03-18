@@ -118,7 +118,11 @@ p {
 
 // Material UI
 .MuiAccordionSummary-expandIconWrapper {
-  @apply hidden md:block;
+  display: hidden !important;
+
+  @media screen and (min-width: a.$mediumSize) {
+    display: block !important;
+  }
 }
 
 // Mixin blocks
