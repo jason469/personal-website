@@ -12,7 +12,7 @@ const Projects = () => {
       >
         <h1 className={`${styles.title}`}>Personal Projects</h1>
         <article className={`${styles.description} | flex flex-col gap-3 w-full items-center`}>
-          <h3 className="text-center">My favourite things to build in my spare time!</h3>
+          <h3 className="text-center text-primary-a20">My favourite things to build in my spare time!</h3>
           <p>
             Please note that due to limited server resources, these apps may
             take some time to load when opened for the first time. <br />

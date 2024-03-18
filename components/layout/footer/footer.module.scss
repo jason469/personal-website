@@ -1,6 +1,6 @@
 @use "styles/abstracts" as a;
 
 .footer {
-  box-shadow: 0 -1px 15px 1px rgba(0, 0, 0, 0.597);
-  background-image: linear-gradient(to right, a.$secondary-a70, a.$secondary-a60, a.$secondary-a70);
+  box-shadow: 0 -1px 15px 1px a.$black-a50;
+  background-image: linear-gradient(to right, a.$black-a80, a.$primary-a60, a.$black-a80);
 }

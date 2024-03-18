@@ -8,13 +8,12 @@
 }
 
 .title {
-  @include c.unlinedTitle();
+  @include c.unlinedTitle(a.$black-a10);
 
   writing-mode: vertical-rl;
   text-orientation: upright;
   grid-row: 1 / -1;
   grid-column: 1 / span 1;
-  color: a.$black-a10;
 }
 
 .items {

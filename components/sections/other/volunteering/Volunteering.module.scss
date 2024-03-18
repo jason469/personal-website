@@ -1,10 +1,11 @@
+@use "styles/abstracts" as a;
 @use "styles/components" as c;
 
 .volunteering {
   @include c.generalSection();
 
   .title {
-    @include c.linedTitle();
+    @include c.linedTitle(a.$black-a70);
   }
 
   .cards {

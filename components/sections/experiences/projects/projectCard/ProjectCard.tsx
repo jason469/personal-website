@@ -11,12 +11,12 @@ type projectCardProps = {
 export default function ProjectCard({ data }: projectCardProps) {
   return (
     <div
-      className={`${styles.card} | flex flex-col justify-between bg-white h-full p-3`}
+      className={`${styles.card} | flex flex-col justify-between bg-white h-full`}
     >
       <div className={`${styles.card__info} | h-full`}>
         <a href={data.website.link} target="_blank">
           <div
-            className={`${styles.card__content} | flex flex-col justify-between h-full gap-3`}
+            className={`${styles.card__content} | flex flex-col justify-between h-full gap-6`}
           >
             <div className={`${styles.logo} | px-6 pt-6`}>
               <div className={`${styles.imageWrapper}`}>
@@ -31,13 +31,13 @@ export default function ProjectCard({ data }: projectCardProps) {
               </div>
             </div>
             <div
-              className={`${styles.text} | px-6 py-3 h-full | ripple`}
+              className={`${styles.text} | px-9 py-3 h-full | ripple`}
             >
               {data.inDevelopment && <p className={`italic`}>In development</p>}
               <p className={`${styles.description}`}>{data.description}</p>
             </div>
             <div
-              className={`${styles.skills} | flex flex-row gap-2 flex-wrap px-6 items-baseline`}
+              className={`${styles.skills} | flex flex-row gap-2 flex-wrap px-9 items-baseline`}
             >
               {data.skills.map(function (skill, index) {
                 return (
@@ -51,7 +51,7 @@ export default function ProjectCard({ data }: projectCardProps) {
         </a>
       </div>
       <div
-        className={`${styles.card__actions} | flex flex-row align-baseline gap-6 | px-6 py-3`}
+        className={`${styles.card__actions} | flex flex-row align-baseline gap-6 | px-9 py-6`}
       >
         {data.github && (
           <a href={data.github.link} target="_blank" className={`=`}>

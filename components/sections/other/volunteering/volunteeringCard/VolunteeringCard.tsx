@@ -11,10 +11,10 @@ type volunteeringCardProp = {
 export default function VolunteerCard({ data }: volunteeringCardProp) {
   return (
     <div
-      className={`${styles.card} | h-full bg-white flex flex-col justify-between p-3`}
+      className={`${styles.card} | h-full bg-white flex flex-col justify-between`}
     >
       <div
-        className={`${styles.card__header} | flex flex-col gap-2 items-between justify-center mb-5 px-6 pt-6 lg:mb-1`}
+        className={`${styles.card__header} | flex flex-col gap-2 items-between justify-center mb-5 px-6 pt-9 lg:mb-1`}
       >
         <a href={data.website} target="_blank">
           <h3 className={`hover:text-secondary-a30`}>{data.company}</h3>
@@ -26,7 +26,7 @@ export default function VolunteerCard({ data }: volunteeringCardProp) {
           </p>
         </div>
       </div>
-      <div className={`${styles.card__content} | ripple px-6`}>
+      <div className={`${styles.card__content} | ripple p-6`}>
         <a href={data.website} target="_blank" className={``}>
           <HoverCard
             animationSpeed={500}

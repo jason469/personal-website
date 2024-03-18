@@ -1,10 +1,14 @@
+@use "styles/abstracts" as a;
 @use "styles/components" as c;
 
 .projects {
   @include c.generalSection();
+  @include c.bannerPage();
+  color: a.$black-a10;
+
 
   .title {
-    @include c.linedTitle();
+    @include c.linedTitle(a.$black-a10);
     width: 70%;
   }
 }

@@ -1,24 +1,24 @@
 @use "styles/abstracts" as a;
 
-@mixin unlinedTitle() {
+@mixin unlinedTitle($text-colour) {
   margin-bottom: 1.5rem !important;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: $text-colour;
 }
 
-@mixin linedTitle() {
-  @include unlinedTitle();
-
+@mixin linedTitle($text-colour) {
+  @include unlinedTitle($text-colour);
   width: 50%;
 
   &:before,
   &:after {
     content: "";
     flex: 1 1;
-    border-bottom: 2px solid a.$primary-a70;
+    border-bottom: 2px solid $text-colour;
   }
 
   &:before {

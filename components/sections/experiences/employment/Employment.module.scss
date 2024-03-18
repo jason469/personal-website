@@ -1,3 +1,4 @@
+@use "styles/abstracts" as a;
 @use "styles/components" as c;
 
 .employment {
@@ -5,6 +6,6 @@
   @include c.inlineSection();
 
   .title {
-    @include c.linedTitle();
+    @include c.linedTitle(a.$black-a70);
   }
 }
