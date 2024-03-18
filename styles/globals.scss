@@ -118,7 +118,7 @@ p {
 
 // Material UI
 .MuiAccordionSummary-expandIconWrapper {
-  display: hidden !important;
+  display: none !important;
 
   @media screen and (min-width: a.$mediumSize) {
     display: block !important;
