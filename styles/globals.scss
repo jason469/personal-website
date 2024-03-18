@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  @apply font-sourceSansThree;
+  @apply font-epilogue;
   scrollbar-gutter: stable both-edges;
   display: flex;
   flex-direction: column;
@@ -55,6 +55,7 @@ main {
 }
 
 // Element-specific styles
+h1,
 h2,
 h3,
 h4,
@@ -71,13 +72,10 @@ h6 {
 h1 {
   @apply font-epilogue;
   @apply break-normal;
-  font-size: clamp(1.6rem, 2rem, 2.3rem);
+  font-size: clamp(1.8rem, 2.2rem, 2.5rem);
   text-align: center;
-  letter-spacing: 2px;
-  text-transform: none;
+  letter-spacing: 8px;
   font-weight: bold;
-  max-width: 60ch;
-  color: a.$black-a70;
 }
 
 h2 {
@@ -96,9 +94,9 @@ h4 {
 }
 
 p {
-  @apply font-sourceSansThree;
+  @apply font-epilogue;
   text-align: left;
-  font-size: clamp(0.8rem, 1.1rem, 1.2rem);
+  font-size: clamp(0.8rem, 1.0rem, 1.1rem);
 }
 
 ::-webkit-scrollbar {

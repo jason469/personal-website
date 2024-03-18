@@ -11,7 +11,7 @@ type volunteeringCardProp = {
 export default function VolunteerCard({ data }: volunteeringCardProp) {
   return (
     <div
-      className={`${styles.card} | h-full bg-white flex flex-col justify-between`}
+      className={`${styles.card} | h-full bg-white flex flex-col justify-between p-3`}
     >
       <div
         className={`${styles.card__header} | flex flex-col gap-2 items-between justify-center mb-5 px-6 pt-6 lg:mb-1`}

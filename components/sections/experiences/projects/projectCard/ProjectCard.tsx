@@ -11,7 +11,7 @@ type projectCardProps = {
 export default function ProjectCard({ data }: projectCardProps) {
   return (
     <div
-      className={`${styles.card} | flex flex-col justify-between bg-white h-full`}
+      className={`${styles.card} | flex flex-col justify-between bg-white h-full p-3`}
     >
       <div className={`${styles.card__info} | h-full`}>
         <a href={data.website.link} target="_blank">

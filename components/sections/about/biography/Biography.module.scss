@@ -10,6 +10,7 @@
   }
 
   .subtitle {
+    @apply font-epilogue;
     letter-spacing: 3px;
     align-self: center;
     color: a.$secondary-a50;
