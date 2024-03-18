@@ -43,7 +43,7 @@ const NavigationBar = () => {
         <BounceInAnimation isVisible={navbarOpen}>
           <article
             className={`
-          w-full flex flex-col text-center justify-end mr-4 transition duration-300 ease-in mt-3 sm:mt-6 md:mt-0 md:flex-row  | ${
+          w-full flex flex-col text-center justify-end pr-10 transition duration-300 ease-in mt-3 sm:mt-6 md:mt-0 md:flex-row  | ${
             navbarOpen ? " flex" : "hidden"
           } | ${
               styles.navbar__items
@@ -72,7 +72,7 @@ const NavigationBar = () => {
                     >
                       <article
                         key={item.title}
-                        className={`${styles.navItem} | relative flex flex-col items-center gap-2 | cursor-pointer px-2 py-1 rounded-none text-white mr-4 uppercase hover:bg-primary-a50 transition duration-200 ease-in md:px-4 md:py-6 sm:py-3 md:items-start`}
+                        className={`${styles.navItem} | relative flex flex-col items-center gap-2 | cursor-pointer px-2 py-1 rounded-none text-white uppercase hover:bg-primary-a50 transition duration-200 ease-in md:px-4 md:py-6 sm:py-3 md:items-start`}
                       >
                         <p className={`${styles.navItem__text}`}>
                           {item.title}
