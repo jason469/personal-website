@@ -3,22 +3,27 @@ import styles from "./heroImage.module.scss";
 import Image from "next/image";
 
 type heroImageProps = {
-  image: string;
+  sourceImagePath: string;
+  compressedImagePath: string;
+  title: string;
   children?: any;
 };
 
-const HeroImage = ({ image, children }: heroImageProps) => (
+const HeroImage = ({ sourceImagePath, compressedImagePath, title, children }: heroImageProps) => (
   <section className={`${styles.heroWrapper}`}>
     <section className={`${styles.imageWrapper}`}>
       <Image
-        priority
-        src={image}
+        priority={true}
+        quality={100}
+        src={sourceImagePath}
         layout="fill"
         className={`${styles.heroImage}`}
         style={{
           objectFit: "cover",
         }}
-        alt={""}
+        alt={title}
+        placeholder="blur"
+        blurDataURL={compressedImagePath}
       />
     </section>
   </section>
