@@ -21,7 +21,7 @@ const HeroImage = ({ sourceImagePath, compressedImagePath, title, children }: he
         style={{
           objectFit: "cover",
         }}
-        alt={title}
+        alt={"Profile Picture"}
         placeholder="blur"
         blurDataURL={compressedImagePath}
       />

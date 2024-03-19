@@ -2,7 +2,7 @@ import {
   Epilogue,
   Source_Sans_3
 } from "next/font/google";
-import localFont from "@next/font/local";
+import localFont from "next/font/local";
 
 
 export const epilogue = Epilogue({
