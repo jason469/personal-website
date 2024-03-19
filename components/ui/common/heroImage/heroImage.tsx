@@ -13,7 +13,6 @@ const HeroImage = ({ sourceImagePath, compressedImagePath, title, children }: he
   <section className={`${styles.heroWrapper}`}>
     <section className={`${styles.imageWrapper}`}>
       <Image
-        priority={true}
         quality={100}
         src={sourceImagePath}
         layout="fill"
