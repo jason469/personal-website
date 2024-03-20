@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const NavigationBar = () => {
   const [showDropdownId, setShowDropdownId] = useState(""); // ID of the dropdown to be shown
-  const [navbarOpen, setNavbarOpen] = useState(true); // Toggling the navbar for mobile use
+  const [navbarOpen, setNavbarOpen] = useState(false); // Toggling the navbar for mobile use
   const toggleNavbar = () => setNavbarOpen(!navbarOpen);
 
   return (
