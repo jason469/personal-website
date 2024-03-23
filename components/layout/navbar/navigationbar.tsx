@@ -2,7 +2,7 @@
 
 import styles from "./navigationbar.module.scss";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BounceInAnimation } from "@/components/ui/animations/BounceInAnimation";
 import { navbarItems } from "@/constants/navbar.constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,6 +14,12 @@ const NavigationBar = () => {
   const [showDropdownId, setShowDropdownId] = useState(""); // ID of the dropdown to be shown
   const [navbarOpen, setNavbarOpen] = useState(false); // Toggling the navbar for mobile use
   const toggleNavbar = () => setNavbarOpen(!navbarOpen);
+
+  useEffect(() => {
+    if (window.innerWidth >= 900) {
+      setNavbarOpen(true);
+    }
+  }, []);
 
   return (
     <section
