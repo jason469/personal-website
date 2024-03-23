@@ -3,7 +3,7 @@ export const BiographyData: biographyData = {
     "Based in Melbourne, I'm a full-stack developer passionate about web and app design",
   description: `
     <p>
-      As a software developer for the past three years, I've built a strong technical foundation in software development,
+      As a software developer for the past three years, I've built a strong technical foundation in both front and backend development,
       while also honing my professional skills through volunteer work. <br/><br/>
 
       I work hard to make sure that the project meets the deadlines set and take it upon myself to create a positive team environment.

@@ -6,6 +6,6 @@
   @include c.inlineSection();
 
   .title {
-    @include c.linedTitle(a.$black-a70);
+    @include c.linedTitle(a.$black-a50);
   }
 }

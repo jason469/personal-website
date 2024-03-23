@@ -5,7 +5,7 @@
   @include c.generalSection();
 
   .title {
-    @include c.linedTitle(a.$black-a70);
+    @include c.linedTitle(a.$black-a50);
   }
 
   .cards {

@@ -13,18 +13,20 @@ export default function VolunteerCard({ data }: volunteeringCardProp) {
     <div
       className={`${styles.card} | h-full bg-white flex flex-col justify-between`}
     >
-      <div
-        className={`${styles.card__header} | flex flex-col gap-2 items-between justify-center mb-5 px-6 pt-9 lg:mb-1`}
-      >
-        <a href={data.website} target="_blank">
-          <h3 className={`hover:text-secondary-a30`}>{data.company}</h3>
+      <div className={`${styles.card__header}`}>
+        <a
+          href={data.website}
+          target="_blank"
+          className={`${styles.card__header__content} | flex flex-col gap-2 items-between justify-center mb-5 px-6 pt-9 lg:mb-1`}
+        >
+          <h3 className={``}>{data.company}</h3>
+          <div>
+            <p className={`italic`}>{data.title}</p>
+            <p className={`italic`}>
+              ({data.startYear} - {data.endYear})
+            </p>
+          </div>
         </a>
-        <div>
-          <p className={`italic`}>{data.title}</p>
-          <p className={`italic`}>
-            ({data.startYear} - {data.endYear})
-          </p>
-        </div>
       </div>
       <div className={`${styles.card__content} | ripple p-6`}>
         <a href={data.website} target="_blank" className={``}>
@@ -58,9 +60,9 @@ export default function VolunteerCard({ data }: volunteeringCardProp) {
                   <p className={`${styles.card__additionalContent}`}>
                     {parse(data.longDescription)}
                   </p>
-                    <p className={`${styles.card__additionalContent} | italic`}>
-                      Click on me to see their website!
-                    </p>
+                  <p className={`${styles.card__additionalContent} | italic`}>
+                    Click on me to see their website!
+                  </p>
                 </div>
               </article>
             }
