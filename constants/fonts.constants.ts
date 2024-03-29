@@ -1,6 +1,7 @@
 import {
   Epilogue,
-  Source_Sans_3
+  Source_Sans_3,
+  Arizonia
 } from "next/font/google";
 import localFont from "next/font/local";
 
@@ -17,13 +18,19 @@ export const sourceSansThree = Source_Sans_3({
   variable: "--font-source-sans-three",
 });
 
-
-export const journeyBegins = localFont({
-  src: [
-    {
-      path: "../public/fonts/JourneyBegins/JourneyBegins.ttf",
-      weight: "400",
-    },
-  ],
-  variable: "--font-journey-begins",
+export const arizonia = Arizonia({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-arizonia",
 });
+
+
+// export const journeyBegins = localFont({
+//   src: [
+//     {
+//       path: "../public/fonts/JourneyBegins/JourneyBegins.ttf",
+//       weight: "400",
+//     },
+//   ],
+//   variable: "--font-journey-begins",
+// });

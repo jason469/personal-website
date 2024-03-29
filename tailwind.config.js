@@ -15,8 +15,9 @@ module.exports = {
       },
       fontFamily: {
         epilogue: "var(--font-epilogue)",
-        journeyBegins: "var(--font-journey-begins)",
         sourceSansThree: "var(--font-source-sans-three)",
+        herrVonMullerhoff: "var(--font-herr-von-mullerhoff)",
+        arizonia: "var(--font-arizonia)",
       },
       colors: {
         "primary-a0": "#ffffff",

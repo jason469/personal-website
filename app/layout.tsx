@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
 import {
   epilogue,
-  journeyBegins,
+  arizonia,
   sourceSansThree,
 } from "@/constants/fonts.constants";
 import NavigationBar from "@/components/layout/navbar/navigationbar";
@@ -40,8 +40,8 @@ export default function RootLayout({
       lang="en"
       className={`
             ${epilogue.variable}
-            ${journeyBegins.variable}
             ${sourceSansThree.variable}
+            ${arizonia.variable}
             `}
     >
       <head>

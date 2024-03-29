@@ -16,10 +16,11 @@
   }
 
   .logo {
-    font-size: 2rem;
+    font-size: 3.5rem;
     text-transform: none;
     color: white;
     letter-spacing: 0;
+    font-weight: 200;
   }
 
   &__items {
@@ -40,7 +41,7 @@
     top: 0;
 
     .logo {
-      font-size: 1.2rem;
+      font-size: 2rem;
     }
 
     .smallScreenIcon {

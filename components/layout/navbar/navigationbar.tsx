@@ -30,7 +30,7 @@ const NavigationBar = () => {
       >
         <Link href={`/`} className={`my-2 md:my-8 md:mb-0`}>
           <h1
-            className={`${styles.logo} | font-journeyBegins text-white hover:text-primary-a10`}
+            className={`${styles.logo} | font-arizonia text-white hover:text-primary-a10`}
           >
             Jason Liu
           </h1>
