@@ -34,6 +34,8 @@ import { TbBrandNextjs } from "react-icons/tb";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
 
+import { allSkillsData, singleSkillData } from "@/types/content/skills";
+
 function CategoryRow({
   categoryTitle,
   skills,

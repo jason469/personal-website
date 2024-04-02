@@ -4,6 +4,8 @@ import parse from "html-react-parser";
 import HoverCard from "react-png-hovercard";
 import Image from "next/image";
 
+import { volunteeringData } from "@/types/content/volunteering";
+
 type volunteeringCardProp = {
   data: volunteeringData;
 };

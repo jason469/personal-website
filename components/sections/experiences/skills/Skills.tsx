@@ -3,6 +3,8 @@ import styles from "./Skills.module.scss";
 import { SkillsData } from "@/content/skills.content";
 import CategoryRow from "@/components/sections/experiences/skills/categoryRow/CategoryRow";
 
+import { allSkillsData } from "@/types/content/skills";
+
 const Skills = () => {
   return (
     <div className={`${styles.skillPage}`}>

@@ -3,6 +3,8 @@ import styles from "./Employment.module.scss";
 import { EmploymentData } from "@/content/employment.content";
 import EmploymentCard from "@/components/sections/experiences/employment/employmentcard/EmploymentCard";
 
+import { employmentData } from "@/types/content/employment";
+
 const Employment = () => {
   return (
     <section className={`${styles.employment}`}>

@@ -9,6 +9,8 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import { useState } from "react";
 
+import { employmentData } from "@/types/content/employment";
+
 type employmentCardProps = {
   data: employmentData;
 };

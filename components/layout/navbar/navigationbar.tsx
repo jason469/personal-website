@@ -10,6 +10,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Dropdown from "./dropdown/dropdown";
 import Link from "next/link";
 
+import { navItem } from "@/types/navbar";
+
 const NavigationBar = () => {
   const [showDropdownId, setShowDropdownId] = useState(""); // ID of the dropdown to be shown
   const [navbarOpen, setNavbarOpen] = useState(false); // Toggling the navbar for mobile use

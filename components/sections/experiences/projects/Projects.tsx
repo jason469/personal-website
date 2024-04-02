@@ -4,6 +4,8 @@ import { projects } from "@/content/projects.content";
 import ProjectCard from "@/components/sections/experiences/projects/projectCard/ProjectCard";
 import Grid from "@mui/material/Unstable_Grid2";
 
+import { projectData } from "@/types/content/projects";
+
 const Projects = () => {
   return (
     <div className={`w-full flex flex-col items-center | ${styles.projects}`}>

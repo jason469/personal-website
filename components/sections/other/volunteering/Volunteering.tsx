@@ -4,6 +4,8 @@ import { VolunteeringData } from "@/content/volunteering.content";
 import VolunteerCard from "@/components/sections/other/volunteering/volunteeringCard/VolunteeringCard";
 import Grid from "@mui/material/Unstable_Grid2";
 
+import { volunteeringData } from "@/types/content/volunteering";
+
 const Volunteering = () => {
   return (
     <div className={`${styles.volunteering}`}>

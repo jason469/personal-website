@@ -3,6 +3,8 @@ import styles from "./Achievements.module.scss";
 import { AchievementsData } from "@/content/achievements.content";
 import AchievementsCard from "@/components/sections/other/achievements/achievementsCard/AchievementsCard";
 
+import { achievementData } from "@/types/content/achievements";
+
 const Achievements = () => {
   return (
     <div className={`${styles.achievements}`}>

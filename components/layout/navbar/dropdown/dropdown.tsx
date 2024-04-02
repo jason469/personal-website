@@ -3,6 +3,8 @@ import styles from "./dropdown.module.scss";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
+import { navItem } from "@/types/navbar";
+
 type dropdownProps = {
   itemId: string;
   dropdownData: Array<navItem>;

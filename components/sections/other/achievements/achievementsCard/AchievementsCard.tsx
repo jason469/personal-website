@@ -1,5 +1,8 @@
 import styles from "./AchievementsCard.module.scss";
 
+import { achievementData } from "@/types/content/achievements";
+
+
 type achievementsCardProps = {
     data: achievementData
 }
