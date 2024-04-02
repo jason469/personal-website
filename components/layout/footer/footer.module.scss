@@ -1,6 +1,38 @@
 @use "styles/abstracts" as a;
+@use "styles/components" as c;
 
 .footer {
   box-shadow: 0 -1px 15px 1px a.$black-a50;
   background-image: linear-gradient(to right, a.$black-a80, a.$primary-a60, a.$black-a80);
+    padding-block: 1rem;
+  width: 100vw;
+
+  .email {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: white;
+  }
+
+  .logo {
+    width: 1.7rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: white;
+    height: 100%;
+
+    &:hover {
+      color: a.$secondary-a10;
+    }
+  }
+
+  @media screen and (max-width: a.$mediumSize) {
+    .email {
+      font-size: 1rem;
+    }
+
+    .logo {
+      width: 1.2rem;
+      font-size: 1.2rem;
+    }
+  }
 }

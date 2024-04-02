@@ -2,35 +2,5 @@
 @use "styles/components" as c;
 
 .page {
-  padding-block: 1rem;
-  width: 100vw;
-
-  .email {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    color: white;
-  }
-
-  .logo {
-    width: 1.7rem;
-    font-size: 1.7rem;
-    cursor: pointer;
-    color: white;
-    height: 100%;
-
-    &:hover {
-      color: a.$secondary-a10;
-    }
-  }
-
-  @media screen and (max-width: a.$mediumSize) {
-    .email {
-      font-size: 1rem;
-    }
-
-    .logo {
-      width: 1.2rem;
-      font-size: 1.2rem;
-    }
-  }
+  height: 50vh;
 }

@@ -15,6 +15,7 @@ import Skills from "@/components/sections/experiences/skills/Skills";
 import Achievements from "@/components/sections/other/achievements/Achievements";
 import Volunteering from "@/components/sections/other/volunteering/Volunteering";
 import Link from "next/link";
+import Contact from "@/components/sections/contact/Contact";
 
 export default function Home() {
   return (
@@ -69,6 +70,11 @@ export default function Home() {
                 <Volunteering />
               </FadeInUpAnimation>
             </section>
+            <section id="contact">
+              <FadeInUpAnimation>
+                <Contact />
+              </FadeInUpAnimation>
+            </section>
           </ScrollSpy>
         </Grid>
         <Grid
@@ -81,7 +87,10 @@ export default function Home() {
           <section className={`hidden md:flex md:flex-col items-center`}>
             <ScrollSpyNavigation />
             <h1 className={`${styles.copyrightLogo} | font-arizonia`}>
-              <Link href={`/#biography`} className="hover:text-primary-a50 transition duration-200 ease-in-out">
+              <Link
+                href={`/#biography`}
+                className="hover:text-primary-a50 transition duration-200 ease-in-out"
+              >
                 Jason Liu
               </Link>
             </h1>
