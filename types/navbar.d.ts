@@ -1,9 +1,5 @@
-type navItem = {
-    title: string,
-    scrollId: string,
-    dropdownData?: Array<navItem>
-}
+import { z } from "zod";
+import { NavBarItemsSchema, NavItemSchema } from "@/schemas/navbar";
 
-type navbarItems = {
-    navItems: Array<navItem>
-}
+type navItem = z.infer<typeof NavItemSchema>;
+type navbarItems = z.infer<typeof NavBarItemsSchema>;

@@ -1,12 +1,8 @@
-type tagData = {
-    colour: string
-}
+import { z } from "zod";
+import {
+  TagDataSchema,
+  EmploymentDataSchema,
+} from "@/schemas/content/employment";
 
-type employmentData = {
-  role: string;
-  company: string;
-  startDate: string;
-  endDate: string;
-  description: Array<string>;
-  category: tagData;
-};
+type tagData = z.infer<typeof TagDataSchema>;
+type employmentData = z.infer<typeof EmploymentDataSchema>;

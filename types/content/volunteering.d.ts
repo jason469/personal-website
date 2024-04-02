@@ -1,10 +1,4 @@
-type volunteeringData = {
-    title: string,
-    company: string,
-    startYear: string,
-    endYear: string,
-    logoName: string,
-    shortDescription: string,
-    longDescription: string,
-    website: string
-}
+import { z } from "zod";
+import { VolunteeringDataSchema } from "@/schemas/content/volunteering";
+
+type volunteeringData = z.infer<typeof VolunteeringDataSchema>;

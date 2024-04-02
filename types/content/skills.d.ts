@@ -1,10 +1,8 @@
-type singleSkillData = {
-    iconName: string,
-    title: string
-    iconColourHex: string
-}
+import { z } from "zod";
+import {
+  SingleSkillDataSchema,
+  AllSkillsDataSchema,
+} from "@/schemas/content/skills";
 
-type allSkillsData = {
-    categoryTitle: string,
-    skills: Array<singleSkillData>
-}
+type singleSkillData = z.infer<typeof SingleSkillDataSchema>;
+type allSkillsData = z.infer<typeof AllSkillsDataSchema>;

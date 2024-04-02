@@ -1,18 +1,10 @@
-type githubData = {
-    link: string
-}
+import { z } from "zod";
+import {
+  GitHubDataSchema,
+  WebsiteDataSchema,
+  ProjectDataSchema,
+} from "@/schemas/content/projects";
 
-type websiteData = {
-    title: string
-    link: string
-}
-
-type projectData = {
-    title: string,
-    description: string,
-    skills: Array<string>
-    github?: githubData,
-    website: websiteData,
-    logoName: string,
-    inDevelopment?: boolean
-}
+type githubData = z.infer<typeof GitHubDataSchema>;
+type websiteData = z.infer<typeof WebsiteDataSchema>;
+type projectData = z.infer<typeof ProjectDataSchema>;

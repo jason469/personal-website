@@ -1,5 +1,4 @@
-type heroImageInfo = {
-  imagePath: string,
-  compressedImagePath: string,
-  title: string
-}
+import { z } from "zod";
+import HeroImageInfoSchema from "@/schemas/home";
+
+type heroImageInfo = z.infer<typeof HeroImageInfoSchema>;
