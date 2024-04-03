@@ -1,3 +1,5 @@
+import { achievementData } from "@/types/content/achievements";
+
 export const AchievementsData:Array<achievementData> = [
     {
         name: "Distinguished Graduate Award",

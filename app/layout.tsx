@@ -9,7 +9,7 @@ import {
   epilogue,
   arizonia,
   sourceSansThree,
-} from "@/constants/fonts.constants";
+} from "@/constants/src/fonts.constants";
 import NavigationBar from "@/components/layout/navbar/navigationbar";
 import Footer from "@/components/layout/footer/footer";
 

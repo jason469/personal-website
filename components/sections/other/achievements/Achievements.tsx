@@ -1,6 +1,6 @@
 import styles from "./Achievements.module.scss";
 
-import { AchievementsData } from "@/content/achievements.content";
+import { AchievementsData } from "@/content/src/achievements.content";
 import AchievementsCard from "@/components/sections/other/achievements/achievementsCard/AchievementsCard";
 
 import { achievementData } from "@/types/content/achievements";

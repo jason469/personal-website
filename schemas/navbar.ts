@@ -14,6 +14,6 @@ const NavItemSchema: z.ZodType<INavItemSchema> = z.lazy(() =>
   })
 );
 
-export const NavBarItemsSchema = z.object({
+export const NavBarAllItemsSchema = z.object({
   navItems: z.array(NavItemSchema),
-})
+});

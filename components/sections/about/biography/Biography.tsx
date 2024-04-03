@@ -1,6 +1,6 @@
 import styles from "./Biography.module.scss";
 
-import { BiographyData } from "@/content/biography.content";
+import { BiographyData } from "@/content/src/biography.content";
 import parse from "html-react-parser";
 
 const Biography = () => {

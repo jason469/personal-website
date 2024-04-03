@@ -1,3 +1,5 @@
+import { allSkillsData } from "@/types/content/skills";
+
 export const SkillsData: Array<allSkillsData> = [
   {
     categoryTitle: "Languages",

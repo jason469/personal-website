@@ -1,3 +1,5 @@
+import { biographyData } from "@/types/content/biography";
+
 export const BiographyData: biographyData = {
   motto:
     "Based in Melbourne, I'm a full-stack developer passionate about web and app design",

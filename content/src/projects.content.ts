@@ -1,4 +1,6 @@
-export const projects: Array<projectData> = [
+import { projectData } from "@/types/content/projects";
+
+export const AllProjects: Array<projectData> = [
   {
     title: "Portfolio",
     description:

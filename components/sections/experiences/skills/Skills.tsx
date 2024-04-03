@@ -1,6 +1,6 @@
 import styles from "./Skills.module.scss";
 
-import { SkillsData } from "@/content/skills.content";
+import { SkillsData } from "@/content/src/skills.content";
 import CategoryRow from "@/components/sections/experiences/skills/categoryRow/CategoryRow";
 
 import { allSkillsData } from "@/types/content/skills";

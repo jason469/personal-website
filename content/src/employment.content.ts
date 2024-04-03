@@ -1,3 +1,5 @@
+import { employmentData } from "@/types/content/employment";
+
 export const EmploymentData: Array<employmentData> = [
   {
     role: "Junior Developer",
@@ -5,7 +7,7 @@ export const EmploymentData: Array<employmentData> = [
     startDate: "2024",
     endDate: "Present",
     description: ["TBA"],
-    category: {
+    tagData: {
       colour: "#123C69",
     },
   },
@@ -19,7 +21,7 @@ export const EmploymentData: Array<employmentData> = [
       "Worked with various tech stacks and development concepts such as OOP, asynchronous tasks, websockets among other design principles",
       "Continously iterating and pushing other team members to ensure the best products",
     ],
-    category: {
+    tagData: {
       colour: "#123C69",
     },
   },
@@ -33,7 +35,7 @@ export const EmploymentData: Array<employmentData> = [
       "Ignited my passion for web development",
       "Worked with both hardware and software, writing code for embedded systems and application development",
     ],
-    category: {
+    tagData: {
       colour: "#123C69",
     },
   },
@@ -46,7 +48,7 @@ export const EmploymentData: Array<employmentData> = [
       "Conducted stage 2 testing phases for two devices, alongside smaller tests for various other devices",
       "Really taught me the value of good time management and planning ahead to efficiently conduct a multitude of tests simultaneously",
     ],
-    category: {
+    tagData: {
       colour: "#123C69",
     },
   },
@@ -60,7 +62,7 @@ export const EmploymentData: Array<employmentData> = [
       "Specialised in Mechatronics",
       "8.0 GPA",
     ],
-    category: {
+    tagData: {
       colour: "#123C69",
     },
   },

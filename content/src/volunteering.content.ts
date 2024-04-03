@@ -1,3 +1,5 @@
+import { volunteeringData } from "@/types/content/volunteering";
+
 export const VolunteeringData: Array<volunteeringData> = [
   {
     title: "Software Developer",

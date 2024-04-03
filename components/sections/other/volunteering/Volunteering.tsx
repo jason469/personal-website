@@ -1,6 +1,6 @@
 import styles from "./Volunteering.module.scss";
 
-import { VolunteeringData } from "@/content/volunteering.content";
+import { VolunteeringData } from "@/content/src/volunteering.content";
 import VolunteerCard from "@/components/sections/other/volunteering/volunteeringCard/VolunteeringCard";
 import Grid from "@mui/material/Unstable_Grid2";
 

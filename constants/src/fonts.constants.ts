@@ -25,12 +25,12 @@ export const arizonia = Arizonia({
 });
 
 
-// export const journeyBegins = localFont({
+// export const downloadedFont = localFont({
 //   src: [
 //     {
-//       path: "../public/fonts/JourneyBegins/JourneyBegins.ttf",
+//       path: "../public/fonts/downloadedFont/downloadedFont.ttf",
 //       weight: "400",
 //     },
 //   ],
-//   variable: "--font-journey-begins",
+//   variable: "--font-downloaded-font",
 // });
