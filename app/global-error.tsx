@@ -1,6 +1,5 @@
 'use client'
 
-import {PageWrapperAnimation} from "@/components/ui/animations/PageWrapperAnimation";
 import styles from "./global-error.module.scss";
 import Link from "next/link";
 
@@ -16,7 +15,6 @@ export default function GlobalError({
     return (
       <html>
         <body>
-          <PageWrapperAnimation>
             <section className={`${styles.page}`}>
               <h1 className={`title`}> Something went wrong, sorry :( </h1>
               <section
@@ -43,7 +41,6 @@ export default function GlobalError({
                 </button>
               </section>
             </section>
-          </PageWrapperAnimation>
         </body>
       </html>
     );
